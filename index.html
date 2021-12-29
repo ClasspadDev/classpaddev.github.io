@@ -1,1 +1,399 @@
-<h1>ClasspadDev</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <meta name="description" content="Explore the Classpad fx-CP400">
+    <meta itemprop="name" content="Classpad Dev">
+    <meta itemprop="description" content="Explore the Classpad fx-CP400">
+    <meta itemprop="image" content="https://cdn.shopify.com/s/files/1/0574/2519/9271/products/classspad_2_grande.jpg?v=1623910434">
+    <meta property="og:url" content="https://classpaddev.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Classpad Dev">
+    <meta property="og:description" content="Explore the Classpad fx-CP400">
+    <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0574/2519/9271/products/classspad_2_grande.jpg?v=1623910434">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Classpad Dev">
+    <meta name="twitter:description" content="Explore the Classpad fx-CP400">
+    <meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/0574/2519/9271/products/classspad_2_grande.jpg?v=1623910434">
+    <meta name="description" content="Explore the Classpad fx-CP400" />
+    <meta name="author" content="Sean McGinty, Classpad Dev" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Classpad Dev</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/png"
+    href="https://cdn.shopify.com/s/files/1/0574/2519/9271/products/classspad_2_grande.jpg?v=1623910434" />
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap">
+    </noscript>
+    <!-- Font awesome-->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></noscript>
+    <!-- Overlay Scrollbars-->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.css"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.css"></noscript>
+    <!-- Bootstrap -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"></noscript>
+    <!-- Custom CSS -->
+    <link rel="preload" href="/index.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+    <link rel="stylesheet" href="/index.css"></noscript>
+    <!-- Loader CSS -->
+    <style>
+    #loader {
+        width: 100vw;
+        height: 100vh;
+        background: black;
+        position: fixed;
+        z-index: 1031;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lds-dual-ring {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+    }
+
+    .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        border-color: #fff transparent #fff transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+    }
+
+    @keyframes lds-dual-ring {
+        0% {
+        transform: rotate(0deg);
+        }
+
+        100% {
+        transform: rotate(360deg);
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="lds-dual-ring"></div>
+    </div>
+      <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="top">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" onclick='nav("top")'>Classpad Dev</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav me-auto mb-3 mb-lg-0 ms-lg-4"></div>
+        <div class="d-flex align-items-center">
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link text-white" onclick='nav("get-started")'>Get Started</a></li>
+                <li class="nav-item"><a class="nav-link text-white" onclick='nav("features")'>Features</a></li>
+                <li class="nav-item"><a class="nav-link text-white" onclick='nav("discord")'>Discord</a></li>
+            </ul>
+            
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Background Header -->
+  <div class="bg-head"></div>
+  <!-- Header-->
+  <header class="position-absolute w-100 p-3 p-md-5 text-left">
+    <div class="d-flex flex-column align-items-center text-center">
+      <h1 class="display-4 font-weight-normal">CLASSPAD DEV</h1>
+      <h3 class="lead font-weight-normal">Explore the Classpad II fx-CP400 with various programs and blogs.</h3>
+      <a class="btn btn-primary mt-3" onclick='nav("get-started")'>Get Started</a>
+    </div>
+  </header>
+  <!-- Getting Started -->
+  <section class="position-relative overflow-hidden p-3 p-md-5 text-center d-md-flex flex-md-equal w-100 bg-dark"
+    id="get-started">
+    <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden w-100 d-flex align-items-center">
+      <div class="my-3 py-3 row align-items-center">
+        <h2 class="display-5">GET STARTED</h2>
+        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi odit consequatur tempore porro beatae. Eligendi exercitationem porro repudiandae hic quis eum rem quod adipisci dolores molestiae maxime, distinctio tempora vitae.</p>
+        <br>
+        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi odit consequatur tempore porro beatae. Eligendi exercitationem porro repudiandae hic quis eum rem quod adipisci dolores molestiae maxime, distinctio tempora vitae.</p>
+        <br>
+        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi odit consequatur tempore porro beatae. Eligendi exercitationem porro repudiandae hic quis eum rem quod adipisci dolores molestiae maxime, distinctio tempora vitae.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-- Features -->
+  <section class="position-relative overflow-hidden p-3 p-md-5 text-center w-100" id="features">
+    <h2 class="display-5">FEATURES</h2>
+    <p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row mb-3">
+          <div class="col-2">
+            <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
+          </div>
+          <div class="col-10">
+            <h5 class="font-weight-bold mb-3">International</h5>
+            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
+              nam, aperiam minima assumenda deleniti hic.</p>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-2">
+            <i class="fas fa-2x fa-flask deep-purple-text"></i>
+          </div>
+          <div class="col-10">
+            <h5 class="font-weight-bold mb-3">Experimental</h5>
+            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
+              nam, aperiam minima assumenda deleniti hic.</p>
+          </div>
+        </div>
+        <div class="row mb-md-0 mb-3">
+          <div class="col-2">
+            <i class="fas fa-2x fa-glass-martini deep-purple-text"></i>
+          </div>
+          <div class="col-10">
+            <h5 class="font-weight-bold mb-3">Relaxing</h5>
+            <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+              maiores nam, aperiam minima assumenda deleniti hic.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <img class="img-fluid" src="https://edu.casio.com/assets/images/products/cg/cp2/main.png"
+          alt="Classpad II fx-CP400">
+      </div>
+      <div class="col-md-4">
+        <div class="row mb-3">
+          <div class="col-2">
+            <i class="far fa-2x fa-heart deep-purple-text"></i>
+          </div>
+          <div class="col-10">
+            <h5 class="font-weight-bold mb-3">Beloved</h5>
+            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
+              nam, aperiam minima assumenda deleniti hic.</p>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-2">
+            <i class="fas fa-2x fa-bolt deep-purple-text"></i>
+          </div>
+          <div class="col-10">
+            <h5 class="font-weight-bold mb-3">Rapid</h5>
+            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
+              nam, aperiam minima assumenda deleniti hic.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <i class="fas fa-2x fa-magic deep-purple-text"></i>
+          </div>
+          <div class="col-10">
+            <h5 class="font-weight-bold mb-3">Magical</h5>
+            <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+              maiores nam, aperiam minima assumenda deleniti hic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Discord -->
+  <section class="position-relative overflow-hidden p-3 p-md-5 text-center d-md-flex flex-md-equal w-100 bg-dark" id="discord">
+    <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden w-100 d-flex align-items-center">
+      <div class="my-3 py-3 row align-items-center">
+        <h2 class="display-5">JOIN THE DISCORD</h2>
+        <p class="lead">Looking for more? Join our Discord server! Whether you are new to modding / programming or an expert, we are
+            sure you'll find something there that interests you. If you ever need help with installing, running or developning programs,
+            we are here to help!</p>
+        <a class="btn btn-primary d-flex align-items-center justify-content-center" href="https://discord.gg/knpcNJTzpd"
+          target="_blank" rel="noopener">
+          <i class="fab fa-discord me-2 hover-white"></i>
+          <span class="fw-bold">DISCORD</span>
+        </a>
+      </div>
+    </div>
+    <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden w-100">
+      <iframe src="https://discord.com/widget?id=325688707300458496&amp;theme=dark" width="100%" height="500"
+        allowtransparency="true" frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+  </section>
+  <div id="footer-bg">
+    <!-- FAQ -->
+    <section class="position-relative overflow-hidden p-3 p-md-5 text-center d-md-flex flex-md-equal w-100 mb-5"
+      id="faq">
+      <div class="d-flex align-items-center justify-content-center flex-column">
+      <h2 class="display-5">FREQUENTLY ASKED QUESTIONS</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum similique dolores nulla animi quia. Voluptatum optio quisquam expedita officiis tempore debitis sapiente mollitia ullam, autem veniam, at consequatur, eius non!</p>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5">
+      <div class="container px-4 px-lg-5">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <a class="navbar-brand text-white" onclick='nav("top")'>Classpad Dev</a>
+          <a class="nav-link p-0 text-white" onclick='nav("get-started")'>Get Started</a>
+          <a class="nav-link p-0 text-white" onclick='nav("features")'>Features</a>
+          <a class="nav-link p-0 text-white" onclick='nav("discord")'>Discord</a>
+        </div>
+        <hr class="opacity-100 text-white" />
+        <div class="d-flex align-items-center">
+          <p class="m-0 text-white me-auto">Made with ❤&#xFE0E; by Sean McGinty</p>
+          <p class="m-0">Build 0.1.0</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Libraries-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/js/OverlayScrollbars.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <!-- Core JS-->
+  <script type="text/javascript">
+
+    $(function () {
+      gsap.to('#loader', {
+        opacity: 0,
+        duration: 0.5,
+        ease: 'Power3.easeInOut'
+      })
+      setTimeout(() => {
+        $('#loader').remove()
+      }, 250);
+      // GSAP
+      gsap.from('header', {
+        opacity: 0,
+        duration: 1.5,
+        delay: 0.25,
+        ease: 'Power3.easeInOut'
+      })
+      
+
+      scrollAnims();
+    });
+
+    // States
+    let states = [0, 0, 0, 0];
+    let loadState = [false, false, false, false];
+
+    // Direction Tracking
+    let lastScrollTop = 0;
+    let scrollingUp = false;
+
+    function scrollAnims() {
+      var st = $('.os-viewport')[0].scrollTop;
+      if (st > lastScrollTop){
+          // downscroll code
+          scrollingUp = false;
+      } else {
+          // upscroll code
+          scrollingUp = true;
+      }
+      lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+
+      const sections = document.querySelectorAll('section');
+      for (let i = 0; i < sections.length; i++) {
+        let dim = sections[i].getBoundingClientRect();
+        if (states[i] === 0 || !scrollingUp) {
+          if (dim.y - window.innerHeight < 0 && dim.y > -window.innerHeight && !scrollingUp) {
+            // console.log("Showing", sections[i].id)
+            // console.log(dim.y-window.innerHeight) 
+            sections[i].style.opacity = 1;
+            if (!loadState[i]) {
+              for (let j = 0; j < sections[i].children.length; j++) {
+                sections[i].children[j].style.opacity = 1;
+                gsap.from(sections[i].children[j], {
+                  opacity: 0,
+                  duration: 1.25,
+                  ease: 'Power3.easeInOut'
+                })
+              }
+              states[i] = 1;
+              loadState[i] = true;
+            }
+          }
+        } else {
+          if (dim.y - window.innerHeight > 0 && dim.y > -window.innerHeight) {
+            states[i] = 0;
+            // console.log("Reseting", sections[i].id)
+            // console.log(dim.y-window.innerHeight) 
+          } else if (dim.y - window.innerHeight > -200 && dim.y > -window.innerHeight && scrollingUp) {
+            loadState[i] = false;
+            if (states[i] !== 2) {
+              // console.log(dim.y - window.innerHeight, sections[i].id)
+              for (let j = 0; j < sections[i].children.length; j++) {
+                gsap.to(sections[i].children[j], {
+                  opacity: 0,
+                  duration: 1.25,
+                  ease: 'Power3.easeInOut'
+                })
+              }
+              states[i] = 2;
+              setTimeout(() => {
+                if (states[i] !== 0) states[i] = 1;
+              }, 1250);
+            }
+          }
+        }
+      }
+    }
+
+    // OverlayScroll
+    var instance = OverlayScrollbars(document.body, {
+      className: 'os-theme-light',
+      callbacks: {
+        onScroll: () => {
+          scrollAnims()
+        }
+      },
+      overflowBehavior: {
+        x: "hidden",
+        y: "scroll"
+      }
+    });
+
+    // Navigation
+    function nav(id) {
+      if (id === 'top') {
+        instance.scroll([0, 0], 500);
+      } else {
+        instance.scroll({
+          el: document.getElementById(id),
+          scroll: {
+            y: "begin",
+            x: "never"
+          }
+        }, 500);
+      }
+    }
+  </script>
+</body>
+</html>
