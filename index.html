@@ -1,399 +1,721 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
     <meta name="description" content="Explore the Classpad fx-CP400">
     <meta itemprop="name" content="Classpad Dev">
     <meta itemprop="description" content="Explore the Classpad fx-CP400">
-    <meta itemprop="image" content="https://res.cloudinary.com/s3ansh33p/image/upload/v1640786848/Classpad/classspad_2_grande_asfypp.webp">
+    <meta itemprop="image"
+        content="https://res.cloudinary.com/s3ansh33p/image/upload/v1640786848/Classpad/classspad_2_grande_asfypp.webp">
     <meta property="og:url" content="https://classpaddev.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Classpad Dev">
     <meta property="og:description" content="Explore the Classpad fx-CP400">
-    <meta property="og:image" content="https://res.cloudinary.com/s3ansh33p/image/upload/v1640786848/Classpad/classspad_2_grande_asfypp.webp">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/s3ansh33p/image/upload/v1640786848/Classpad/classspad_2_grande_asfypp.webp">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Classpad Dev">
     <meta name="twitter:description" content="Explore the Classpad fx-CP400">
-    <meta name="twitter:image" content="https://res.cloudinary.com/s3ansh33p/image/upload/v1640786848/Classpad/classspad_2_grande_asfypp.webp">
+    <meta name="twitter:image"
+        content="https://res.cloudinary.com/s3ansh33p/image/upload/v1640786848/Classpad/classspad_2_grande_asfypp.webp">
     <meta name="description" content="Explore the Classpad fx-CP400" />
     <meta name="author" content="Sean McGinty, Classpad Dev" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Classpad Dev</title>
     <!-- Favicon-->
     <link rel="icon" type="image/png"
-    href="https://res.cloudinary.com/s3ansh33p/image/upload/v1640786848/Classpad/classspad_2_grande_asfypp.webp" />
+        href="https://res.cloudinary.com/s3ansh33p/image/upload/v1640786848/Classpad/classspad_2_grande_asfypp.webp" />
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap"
-    as="style" onload="this.onload=null;this.rel='stylesheet'">
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap">
     </noscript>
     <!-- Font awesome-->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
+        onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </noscript>
     <!-- Overlay Scrollbars-->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.css"
-    as="style" onload="this.onload=null;this.rel='stylesheet'">
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.css"></noscript>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.css"></noscript>
     <!-- Bootstrap -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
+        onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"></noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    </noscript>
     <!-- Custom CSS -->
-    <link rel="preload" href="/index.css" as="style"
-    onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-    <link rel="stylesheet" href="/index.css"></noscript>
+        <link rel="stylesheet" href="/index.css"></noscript>
     <!-- Loader CSS -->
     <style>
-    #loader {
-        width: 100vw;
-        height: 100vh;
-        background: black;
-        position: fixed;
-        z-index: 1031;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .lds-dual-ring {
-        display: inline-block;
-        width: 80px;
-        height: 80px;
-    }
-
-    .lds-dual-ring:after {
-        content: " ";
-        display: block;
-        width: 64px;
-        height: 64px;
-        margin: 8px;
-        border-radius: 50%;
-        border: 6px solid #fff;
-        border-color: #fff transparent #fff transparent;
-        animation: lds-dual-ring 1.2s linear infinite;
-    }
-
-    @keyframes lds-dual-ring {
-        0% {
-        transform: rotate(0deg);
+        #loader {
+            width: 100vw;
+            height: 100vh;
+            background: black;
+            position: fixed;
+            z-index: 1031;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        100% {
-        transform: rotate(360deg);
+        .lds-dual-ring {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
         }
-    }
+
+        .lds-dual-ring:after {
+            content: " ";
+            display: block;
+            width: 64px;
+            height: 64px;
+            margin: 8px;
+            border-radius: 50%;
+            border: 6px solid #fff;
+            border-color: #fff transparent #fff transparent;
+            animation: lds-dual-ring 1.2s linear infinite;
+        }
+
+        @keyframes lds-dual-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
+
 <body>
     <!-- Loader -->
     <div id="loader">
         <div class="lds-dual-ring"></div>
     </div>
-      <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="top">
-    <div class="container px-4 px-lg-5">
-      <a class="navbar-brand" onclick='nav("top")'>Classpad Dev</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-          class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav me-auto mb-3 mb-lg-0 ms-lg-4"></div>
-        <div class="d-flex align-items-center">
-            <ul class="navbar-nav me-auto mb-3 mb-lg-0 ms-lg-4">
-                <li class="nav-item"><a class="nav-link text-white" onclick='nav("get-started")'>Get Started</a></li>
-                <li class="nav-item"><a class="nav-link text-white" onclick='nav("features")'>Features</a></li>
-                <li class="nav-item"><a class="nav-link text-white" onclick='nav("discord")'>Discord</a></li>
-            </ul>
-            
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="top">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" onclick='nav("top")'>Classpad Dev</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav me-auto mb-3 mb-lg-0 ms-lg-4"></div>
+                <div class="d-flex align-items-center">
+                    <ul class="navbar-nav me-auto mb-3 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link text-white" onclick='nav("get-started")'>Get Started</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white" onclick='nav("features")'>Features</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" onclick='nav("discord")'>Discord</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" onclick='nav("programs")'>Programs</a></li>
+                        <li class="nav-item"><a class="nav-link text-white"
+                                href="javascript:alert('To be added')">Wiki</a></li>
+                    </ul>
+
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
-  <!-- Background Header -->
-  <div class="bg-head"></div>
-  <!-- Header-->
-  <header class="position-absolute w-100 p-3 p-md-5 text-left">
-    <div class="d-flex flex-column align-items-center text-center">
-      <h1 class="display-4 font-weight-normal">CLASSPAD DEV</h1>
-      <h3 class="lead font-weight-normal">Explore the Classpad II fx-CP400 with various programs and blogs.</h3>
-      <a class="btn btn-primary mt-3" onclick='nav("get-started")'>Get Started</a>
-    </div>
-  </header>
-  <!-- Getting Started -->
-  <section class="position-relative overflow-hidden p-3 p-md-5 text-center d-md-flex flex-md-equal w-100 bg-dark"
-    id="get-started">
-    <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden w-100 d-flex align-items-center">
-      <div class="my-3 py-3 row align-items-center">
-        <h2 class="display-5">GET STARTED</h2>
-        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi odit consequatur tempore porro beatae. Eligendi exercitationem porro repudiandae hic quis eum rem quod adipisci dolores molestiae maxime, distinctio tempora vitae.</p>
-        <br>
-        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi odit consequatur tempore porro beatae. Eligendi exercitationem porro repudiandae hic quis eum rem quod adipisci dolores molestiae maxime, distinctio tempora vitae.</p>
-        <br>
-        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi odit consequatur tempore porro beatae. Eligendi exercitationem porro repudiandae hic quis eum rem quod adipisci dolores molestiae maxime, distinctio tempora vitae.</p>
-      </div>
-      </div>
-    </div>
-  </section>
-  <!-- Features -->
-  <section class="position-relative overflow-hidden p-3 p-md-5 text-center w-100" id="features">
-    <h2 class="display-5">FEATURES</h2>
-    <p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam.</p>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="row mb-3">
-          <div class="col-2">
-            <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
-          </div>
-          <div class="col-10">
-            <h5 class="font-weight-bold mb-3">International</h5>
-            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-              nam, aperiam minima assumenda deleniti hic.</p>
-          </div>
+    </nav>
+    <!-- Background Header -->
+    <div class="bg-head"></div>
+    <!-- Header-->
+    <header class="position-absolute w-100 p-3 p-md-5 text-left">
+        <div class="d-flex flex-column align-items-center text-center">
+            <h1 class="display-4 font-weight-normal">CLASSPAD DEV</h1>
+            <h3 class="lead font-weight-normal">Explore the Classpad II fx-CP400 using hollyhock-2!</h3>
+            <a class="btn btn-primary mt-3" onclick='nav("get-started")'>Get Started</a>
         </div>
-        <div class="row mb-3">
-          <div class="col-2">
-            <i class="fas fa-2x fa-flask deep-purple-text"></i>
-          </div>
-          <div class="col-10">
-            <h5 class="font-weight-bold mb-3">Experimental</h5>
-            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-              nam, aperiam minima assumenda deleniti hic.</p>
-          </div>
+    </header>
+    <!-- Getting Started -->
+    <section class="position-relative overflow-hidden p-3 p-md-5 text-center d-md-flex flex-md-equal w-100 bg-dark"
+        id="get-started">
+        <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden w-100 d-flex align-items-center">
+            <div class="my-3 py-3 row align-items-center">
+                <h2 class="display-5">GET STARTED</h2>
+                <p class="lead">First of all, Welcome! We look forward to you joining the community!</p>
+                <p class="lead">Before you can run programs on the Classpad, you need to install some software. The
+                    launcher used for our programs is hollyhock-2.</p>
+                <a class="my-2" href="https://github.com/SnailMath/hollyhock-2" target="_blank" rel="noreferrer"><img
+                        alt="GitHub Repo Preview" style="filter:invert(1); width: clamp(250px, 100%, 500px);"
+                        src="https://gh-card.dev/repos/SnailMath/hollyhock-2.svg?fullname="></a>
+                <p class="lead mt-2">If you have issues with installing the Launcher, you can join the Discord and ask
+                    for
+                    help, or watch the video below.</p>
+                <iframe width="100%" height="auto" style="aspect-ratio:16/9;"
+                    src="https://www.youtube.com/embed/Llibqwt7Jsg" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen=""></iframe>
+            </div>
         </div>
-        <div class="row mb-md-0 mb-3">
-          <div class="col-2">
-            <i class="fas fa-2x fa-glass-martini deep-purple-text"></i>
-          </div>
-          <div class="col-10">
-            <h5 class="font-weight-bold mb-3">Relaxing</h5>
-            <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-              maiores nam, aperiam minima assumenda deleniti hic.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <img class="img-fluid" src="https://res.cloudinary.com/s3ansh33p/image/upload/v1640786823/Classpad/classpadImg_shld8i.webp"
-          alt="Classpad II fx-CP400">
-      </div>
-      <div class="col-md-4">
-        <div class="row mb-3">
-          <div class="col-2">
-            <i class="far fa-2x fa-heart deep-purple-text"></i>
-          </div>
-          <div class="col-10">
-            <h5 class="font-weight-bold mb-3">Beloved</h5>
-            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-              nam, aperiam minima assumenda deleniti hic.</p>
-          </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col-2">
-            <i class="fas fa-2x fa-bolt deep-purple-text"></i>
-          </div>
-          <div class="col-10">
-            <h5 class="font-weight-bold mb-3">Rapid</h5>
-            <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
-              nam, aperiam minima assumenda deleniti hic.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-2">
-            <i class="fas fa-2x fa-magic deep-purple-text"></i>
-          </div>
-          <div class="col-10">
-            <h5 class="font-weight-bold mb-3">Magical</h5>
-            <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-              maiores nam, aperiam minima assumenda deleniti hic.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Discord -->
-  <section class="position-relative overflow-hidden p-3 p-md-5 text-center d-md-flex flex-md-equal w-100 bg-dark" id="discord">
-    <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden w-100 d-flex align-items-center">
-      <div class="my-3 py-3 row align-items-center">
-        <h2 class="display-5">JOIN THE DISCORD</h2>
-        <p class="lead">Looking for more? Join our Discord server! Whether you are new to modding / programming or an expert, we are
-            sure you'll find something there that interests you. If you ever need help with installing, running or developning programs,
-            we are here to help!</p>
-        <a class="btn btn-primary d-flex align-items-center justify-content-center" href="https://discord.gg/knpcNJTzpd"
-          target="_blank" rel="noopener">
-          <i class="fab fa-discord me-2 hover-white"></i>
-          <span class="fw-bold">DISCORD</span>
-        </a>
-      </div>
-    </div>
-    <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden w-100">
-      <iframe src="https://discord.com/widget?id=325688707300458496&amp;theme=dark" width="100%" height="500"
-        allowtransparency="true" frameborder="0"
-        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    </div>
-  </section>
-  <div id="footer-bg">
-    <!-- FAQ -->
-    <section class="position-relative overflow-hidden p-3 p-md-5 text-center d-md-flex flex-md-equal w-100 mb-5"
-      id="faq">
-      <div class="d-flex align-items-center justify-content-center flex-column">
-      <h2 class="display-5">FREQUENTLY ASKED QUESTIONS</h2>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum similique dolores nulla animi quia. Voluptatum optio quisquam expedita officiis tempore debitis sapiente mollitia ullam, autem veniam, at consequatur, eius non!</p>
-      </div>
     </section>
-    <!-- Footer-->
-    <footer class="py-5">
-      <div class="container px-4 px-lg-5">
-        <div class="d-flex align-items-center justify-content-between mb-3">
-          <a class="navbar-brand text-white" onclick='nav("top")'>Classpad Dev</a>
-          <a class="nav-link p-0 text-white" onclick='nav("get-started")'>Get Started</a>
-          <a class="nav-link p-0 text-white" onclick='nav("features")'>Features</a>
-          <a class="nav-link p-0 text-white" onclick='nav("discord")'>Discord</a>
+    <!-- Features -->
+    <section class="position-relative overflow-hidden p-3 p-md-5 text-center w-100" id="features">
+        <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 my-3">
+            <h2 class="display-5">FEATURES</h2>
+            <p class="lead grey-text text-center w-responsive mx-auto mb-5">Hollyhock-2 is a feature-rich launcher.
+                Here are a few.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            <i class="fas fa-2x fa-rocket"></i>
+                        </div>
+                        <div class="col-10">
+                            <h5 class="font-weight-bold mb-3">Something</h5>
+                            <p class="grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem
+                                voluptatibus
+                                aspernatur odit sapiente</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            <i class="fas fa-2x fa-flask"></i>
+                        </div>
+                        <div class="col-10">
+                            <h5 class="font-weight-bold mb-3">Experimental</h5>
+                            <p class="grey-text">You can write low level code, such as assembly if you wanted,
+                                giving you access to all the hardware in the Classpad.</p>
+                        </div>
+                    </div>
+                    <div class="row mb-md-0 mb-3">
+                        <div class="col-2">
+                            <i class="fas fa-2x fa-glass-martini"></i>
+                        </div>
+                        <div class="col-10">
+                            <h5 class="font-weight-bold mb-3">Something</h5>
+                            <p class="grey-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem
+                                voluptatibus
+                                aspernatur odit sapiente</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img class="img-fluid mb-5"
+                        src="https://res.cloudinary.com/s3ansh33p/image/upload/v1640786823/Classpad/classpadImg_shld8i.webp"
+                        alt="Classpad II fx-CP400">
+                </div>
+                <div class="col-md-4">
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            <i class="fas fa-2x fa-book"></i>
+                        </div>
+                        <div class="col-10">
+                            <h5 class="font-weight-bold mb-3">Documented</h5>
+                            <p class="grey-text">The launcher comes with example programs and documentation to get you
+                                started.</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            <i class="fas fa-2x fa-bolt"></i>
+                        </div>
+                        <div class="col-10">
+                            <h5 class="font-weight-bold mb-3">Fast</h5>
+                            <p class="grey-text">Programs are compiled to either binary or .hhk
+                                which allows for greater performance compared to programs in CASIO basic.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-2x fa-magic"></i>
+                        </div>
+                        <div class="col-10">
+                            <h5 class="font-weight-bold mb-3">Easy to Use</h5>
+                            <p class="grey-text mb-0">Once, installed, the launcher is intuitive and easy to navigate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <hr class="opacity-100 text-white" />
-        <div class="d-flex align-items-center">
-          <p class="m-0 text-white me-auto">Made with ❤&#xFE0E; by Sean McGinty</p>
-          <p class="m-0">Build 0.1.0</p>
+    </section>
+    <!-- Discord -->
+    <section class="position-relative overflow-hidden p-3 p-md-5 text-center d-md-flex flex-md-equal w-100 bg-dark"
+        id="discord">
+        <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden w-100 d-flex align-items-center">
+            <div class="my-3 py-3 row align-items-center">
+                <h2 class="display-5">JOIN THE DISCORD</h2>
+                <p class="lead">Looking for more? Join our Discord server! Whether you are new to modding / programming
+                    or an expert, we are
+                    sure you'll find something there that interests you. If you ever need help with installing, running
+                    or developning programs,
+                    we are here to help!</p>
+                <a class="btn btn-primary d-flex align-items-center justify-content-center"
+                    href="&#x68;&#x74;&#x74;&#x70;&#x73;&colon;&sol;&sol;&#x64;&#x69;&#x73;&#x63;&#x6f;&#x72;&#x64;&period;&#x67;&#x67;&sol;&#x6b;&#x6e;&#x70;&#x63;&#x4e;&#x4a;&#x54;&#x7a;&#x70;&#x64;"
+                    target="_blank" rel="noopener">
+                    <i class="fab fa-discord me-2 hover-white"></i>
+                    <span class="fw-bold">DISCORD</span>
+                </a>
+            </div>
         </div>
-      </div>
-    </footer>
-  </div>
-  <!-- Libraries-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/js/OverlayScrollbars.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-  <!-- Core JS-->
-  <script type="text/javascript">
+        <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden w-100">
+            <iframe
+                src="&#x68;&#x74;&#x74;&#x70;&#x73;&colon;&sol;&sol;&#x64;&#x69;&#x73;&#x63;&#x6f;&#x72;&#x64;&period;&#x63;&#x6f;&#x6d;&sol;&#x77;&#x69;&#x64;&#x67;&#x65;&#x74;&quest;&#x69;&#x64;&equals;&#x33;&#x32;&#x35;&#x36;&#x38;&#x38;&#x37;&#x30;&#x37;&#x33;&#x30;&#x30;&#x34;&#x35;&#x38;&#x34;&#x39;&#x36;&amp;&#x61;&#x6d;&#x70;&semi;&#x74;&#x68;&#x65;&#x6d;&#x65;&equals;&#x64;&#x61;&#x72;&#x6b;"
+                width="100%" height="500" allowtransparency="true" frameborder="0"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+    </section>
+    <div>
+        <!-- Programs -->
+        <section class="position-relative p-3 p-md-5 d-md-flex flex-md-equal w-100 mb-5"
+            id="programs">
+            <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 w-100 d-flex align-items-center text-center">
+                <div class="my-3 py-3 row align-items-center text-center">
+                    <h2 class="display-5">PROGRAMS</h2>
+                    <p class="lead">Below are some programs that have been developed for the Classpad II.</p>
+                    <!-- Will need to fix css -->
+                    <div class="d-flex align-items-center justify-content-center" style="max-width: 90vw;">
+                        <div id="table" style="max-width: 90vw;">
+                            <table class="table text-info w-100">
+                                <tbody>
+                                    <tr>
+                                        <th class="text-info"> Name </th>
+                                        <th> Description </th>
+                                        <th> Author </th>
+                                        <th> Release Date </th>
+                                        <th> Format </th>
+                                        <th> Installation / Loader </th>
+                                        <th> Download </th>
+                                    </tr>
+                                    <tr>
+                                        <th> hollyhock-2 </th>
+                                        <th> The actual launcher needed to run all other programs and games. </th>
+                                        <th> The6P4C (and SnailMath) </th>
+                                        <th> July 2020 </th>
+                                        <th> .bin </th>
+                                        <th> OS update </th>
+                                        <th><a href="https://github.com/SnailMath/hollyhock-2/releases" target="_blank" rel="noopener">download</a></th>
+                                    </tr>
 
-    $(function () {
-      gsap.to('#loader', {
-        opacity: 0,
-        duration: 0.5,
-        ease: 'Power3.easeInOut'
-      })
-      setTimeout(() => {
-        $('#loader').remove()
-      }, 250);
-      // GSAP
-      gsap.from('header', {
-        opacity: 0,
-        duration: 1.5,
-        delay: 0.25,
-        ease: 'Power3.easeInOut'
-      })
-      
 
-      scrollAnims();
-    });
+                                    <tr>
+                                        <th colspan="7" class="text-white"><i>Games using hollyhock-2</i></th>
+                                    </tr>
+                                    <tr>
+                                        <th>Tetris (CPoldTetris)</th>
+                                        <th>The very first game written by SnailMath</th>
+                                        <th>SnailMath</th>
+                                        <th>July 2020</th>
+                                        <th>.hhk / .bin</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/SnailMath/CPoldTetris/releases" target="_blank" rel="noopener">included</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>Minesweeper / MineSnail</th>
+                                        <th>Just a Minesweeper clone for the fx-cp 400 by SnailMath</th>
+                                        <th>SnailMath</th>
+                                        <th>March 2021</th>
+                                        <th>.hhk</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/SnailMath/CPMineSnail/releases" target="_blank" rel="noopener">included</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>Snake</th>
+                                        <th>Just a Snake clone.</th>
+                                        <th>The6P4C</th>
+                                        <th>Aug 2018</th>
+                                        <th>.hhk</th>
+                                        <th>hollyhock-2</th>
+                                        <th>included</th>
+                                    </tr>
+                                    <tr>
+                                        <th>CPsudoku</th>
+                                        <th>Just a Sudoku game for the fx-cp 400 by SnailMath. Want to solve sudokus? Use this
+                                            program. Want to get sudokus solved for you? This program will work as well. (The
+                                            solve function isn't completely working...)</th>
+                                        <th>SnailMath</th>
+                                        <th>Oct 2021</th>
+                                        <th>.bin / .elf</th>
+                                        <th>hollyhock-2 / Linux</th>
+                                        <th><a href="https://github.com/SnailMath/CPsudoku/releases" target="_blank" rel="noopener">download</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>ponggers2</th>
+                                        <th>A pong game for the fx-cp 400 by InterChan, with AI opponent and with highly
+                                            advanced graphics (This led to the development of the hhk game engine, see below.)
+                                        </th>
+                                        <th>InterChan374</th>
+                                        <th>Nov 2021</th>
+                                        <th>.hhk</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a
+                                                href="https://github.com/InterChan374/ponggers2/releases/tag/pongger" target="_blank" rel="noopener">download</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>CPpong</th>
+                                        <th>Just a simple 2 player Pong game for the fx-cp 400 by SnailMath</th>
+                                        <th>SnailMath</th>
+                                        <th>Sept 2021</th>
+                                        <th>.bin / .hhk / .elf</th>
+                                        <th>hollyhock-2 / Linux</th>
+                                        <th><a href="https://github.com/SnailMath/CPpong/releases" target="_blank" rel="noopener">download</a></th>
+                                    </tr>
 
-    // States
-    let states = [0, 0, 0, 0];
-    let loadState = [false, false, false, false];
 
-    // Direction Tracking
-    let lastScrollTop = 0;
-    let scrollingUp = false;
 
-    function scrollAnims() {
-      var st = $('.os-viewport')[0].scrollTop;
-      if (st > lastScrollTop){
-          // downscroll code
-          scrollingUp = false;
-      } else {
-          // upscroll code
-          scrollingUp = true;
-      }
-      lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 
-      const sections = document.querySelectorAll('section');
-      for (let i = 0; i < sections.length; i++) {
-        let dim = sections[i].getBoundingClientRect();
-        if (states[i] === 0 || !scrollingUp) {
-          if (dim.y - window.innerHeight < 0 && dim.y > -window.innerHeight && !scrollingUp) {
-            // console.log("Showing", sections[i].id)
-            // console.log(dim.y-window.innerHeight) 
-            sections[i].style.opacity = 1;
-            if (!loadState[i]) {
-              for (let j = 0; j < sections[i].children.length; j++) {
-                sections[i].children[j].style.opacity = 1;
-                gsap.from(sections[i].children[j], {
-                  opacity: 0,
-                  duration: 1.25,
-                  ease: 'Power3.easeInOut'
-                })
-              }
-              states[i] = 1;
-              loadState[i] = true;
+                                    <tr>
+                                        <th colspan="7" class="text-white"><i>Games and stuff WITHOUT hollyhock-2 - ON AN
+                                                UNMODIFIED CALCULATOR</i></th>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                    <tr>
+                                        <th>OldTicTacToe</th>
+                                        <th>Just a TicTacToe game for the fx-cp 400 by SnailMath. It runs in Casio Basic, so you
+                                            don't even need to install hollyhock, this works on the Classpad II and the old
+                                            classpad (with the monochrome screen.)</th>
+                                        <th>SnailMath</th>
+                                        <th>March 2021</th>
+                                        <th>.xcp</th>
+                                        <th>'Program' sub menu</th>
+                                        <th><a href="https://github.com/SnailMath/OldTicTacToe/releases" target="_blank" rel="noopener">download</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>Undertale</th>
+                                        <th>This is a port of the dungeon game Undertale for the calculator, it uses casio
+                                            basic, so hollyhock-2 is not needed. It uses images displayed as backgrounds for the
+                                            map, so only the player needs to be displayed, making it playable even though games
+                                            written in basic are slower than C games. Essentially a techincal preview as CASIO
+                                            basic files have a limit.</th>
+                                        <th>s3ansh33p aka mcgintygames</th>
+                                        <th>Dec 2011 / Oct 2019</th>
+                                        <th>.xcp</th>
+                                        <th>'Program' sub menu</th>
+                                        <th><a href="http://mcgintygames.epizy.com/undertale.html" target="_blank" rel="noopener">download</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>txt2xcp</th>
+                                        <th>Just a program to convert text files to the .xcp format, no hollyhock needed. Want
+                                            to read ebooks on your calculator?</th>
+                                        <th>SnailMath</th>
+                                        <th>Nov 2020</th>
+                                        <th>.elf / .exe</th>
+                                        <th>Linux / Windows</th>
+                                        <th><a href="https://github.com/SnailMath/txt2xcp/releases" target="_blank" rel="noopener">download</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>txt2xcp (WEB)</th>
+                                        <th>Same as txt2xcp but in a web interface.</th>
+                                        <th>s3ansh33p</th>
+                                        <th>Nov 2021</th>
+                                        <th>.html / .js</th>
+                                        <th>Browser</th>
+                                        <th><a href="https://share.seanmcginty.space" target="_blank" rel="noopener">view</a></th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th colspan="7" class="text-white"><i>Tools and stuff using hollyhock-2</i></th>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                    <tr>
+                                        <th>CPvid</th>
+                                        <th>Just a video player for the fx-cp 400 by SnailMath... <a
+                                                href="https://www.youtube.com/playlist?list=PLs6QtoJvhXNpAhjGeDxilkRxTDBIs4jdQ">Watch
+                                                short videos on your calculator.</a> Even with sound, if you connect an
+                                            amplifier to the serial port... (NOT RECOMMENDED!!!)</th>
+                                        <th>SnailMath</th>
+                                        <th>Dec 2020 / Nov 2021</th>
+                                        <th>.bin</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/SnailMath/CPvid/releases" target="_blank" rel="noopener">download</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>CPfilemgr</th>
+                                        <th>Just a file manager for the fx-cp 400 by SnailMath. View your .png and .jpg images
+                                            on your calculator or play .wav files...</th>
+                                        <th>SnailMath</th>
+                                        <th>May 2021</th>
+                                        <th>.bin</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/SnailMath/CPfilemgr/releases" target="_blank" rel="noopener">download</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>CPhexEditor</th>
+                                        <th>Just a hex editor for the fx-cp 400 by SnailMath. With this program, you can peek
+                                            and poke the ram of the running calculator. (This can't be used to circumvent exam
+                                            mode, because hollyhock-2 is disabled in exam mode.) You can use this to access
+                                            hardware like the RTC, but for that, you can also use CPclock. (Poke at your own
+                                            risk...)</th>
+                                        <th>SnailMath</th>
+                                        <th>Nov 2020</th>
+                                        <th>.hhk</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/SnailMath/CPhexEditor/releases" target="_blank" rel="noopener">download</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>CPclock</th>
+                                        <th>Just a simple clock using the internal RTC for the fx-cp 400 by SnailMath. You can
+                                            use this to set the time on the calc. (The clock is reset after the calc is on
+                                            standby for a few minutes, so it isn't very useful...)</th>
+                                        <th>SnailMath</th>
+                                        <th>Jun 2021</th>
+                                        <th>.hhk</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/SnailMath/CPclock/releases" target="_blank" rel="noopener">download</a></th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th colspan="7" class="text-white"><i>App templates and game engines for hollyhock-2</i>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                    <tr>
+                                        <th>app_template</th>
+                                        <th>An empty app as a base for your own creations</th>
+                                        <th>The6P4C and SnailMath</th>
+                                        <th>May 2021</th>
+                                        <th>.bin / .hhk</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a
+                                                href="https://github.com/SnailMath/hollyhock-2/tree/master/app_template" target="_blank" rel="noopener">download</a>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>CPappTemplate</th>
+                                        <th>An empty app as a base for your own creations, can also be compiled for a pc as a
+                                            quick way to test (Doesn't work currently, because I have problems with X11...)</th>
+                                        <th>SnailMath</th>
+                                        <th>March 2021</th>
+                                        <th>.hhk / .elf</th>
+                                        <th>hollyhock-2 / Linux</th>
+                                        <th><a href="https://github.com/SnailMath/CPappTemplate" target="_blank" rel="noopener">download</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>hhkEngine</th>
+                                        <th>Some kind of game engine for the Classpad, contains some kind of physics, particles,
+                                            texture loading stuff, and more, similar to app_template, but much more advanced.
+                                        </th>
+                                        <th>s3ansh33p (and InterChan374)</th>
+                                        <th>Dec 2021</th>
+                                        <th>.hhk</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/s3ansh33p/hhkEngine" target="_blank" rel="noopener">download</a></th>
+                                    </tr>
+
+
+                                    <tr>
+                                        <th colspan="7" class="text-white"><i>Unfinished games for hollyhock-2 (and games for
+                                                other non compatible launchers)</i></th>
+                                    </tr>
+                                    <tr>
+                                    </tr>
+                                    <tr>
+                                        <th>CPBoyHHK</th>
+                                        <th>A Gameboy emulator for hollyhock-2 forked from CPBoy. It's currently not finished
+                                            yet...</th>
+                                        <th>diddyholz, forked by SnailMath</th>
+                                        <th>Dec 2021</th>
+                                        <th>.bin / .hhk</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/SnailMath/CPBoyHHK" target="_blank" rel="noopener">not released</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>CPBoy</th>
+                                        <th>A Game Boy (DMG) emulator for the Classpad II (fx-CP400). (It can't be played
+                                            currently because some files are not public yet...)</th>
+                                        <th>diddyholz</th>
+                                        <th>Aug 2021</th>
+                                        <th>?</th>
+                                        <th>diddyholz sdk</th>
+                                        <th><a href="https://github.com/diddyholz/CPBoy" target="_blank" rel="noopener">not released</a></th>
+                                    </tr>
+
+
+                                    <!--
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Just a --- for the fx-cp 400 by SnailMath</th>
+                                    <th>SnailMath</th>
+                                    <th>March 2021</th>
+                                    <th>.hhk</th>
+                                    <th>hollyhock-2</th>
+                                    <th><a href="https://github.com/SnailMath/CPMineSnail/releases" target="_blank" rel="noopener">download</a></th>
+                                </tr>
+                                -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5">
+            <div class="container px-4 px-lg-5">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <a class="navbar-brand text-white" onclick='nav("top")'>Classpad Dev</a>
+                </div>
+                <hr class="opacity-100 text-white" />
+                <div class="d-flex align-items-center">
+                    <p class="m-0 text-white me-auto">Made with ❤&#xFE0E; by Sean McGinty</p>
+                    <p class="m-0" id="updated">Last Updated: Loading...</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Libraries-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/js/OverlayScrollbars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <!-- Core JS-->
+    <script type="text/javascript">
+        $(function () {
+            gsap.to('#loader', {
+                opacity: 0,
+                duration: 0.5,
+                ease: 'Power3.easeInOut'
+            })
+            setTimeout(() => {
+                $('#loader').remove()
+            }, 250);
+            // GSAP
+            gsap.from('header', {
+                opacity: 0,
+                duration: 1.5,
+                delay: 0.25,
+                ease: 'Power3.easeInOut'
+            })
+
+
+            scrollAnims();
+
+            $.ajax({
+                url: 'https://api.github.com/repos/classpaddev/classpaddev.github.io',
+                dataType: 'json',
+                success: function (data) {
+                    $('#updated').text(`Last updated: ${new Date(data.updated_at).toUTCString()}`);
+                }
+            });
+
+        });
+
+        // States
+        let states = [0, 0, 0, 0];
+        let loadState = [false, false, false, false];
+
+        // Direction Tracking
+        let lastScrollTop = 0;
+        let scrollingUp = false;
+
+        function scrollAnims() {
+            var st = $('.os-viewport')[0].scrollTop;
+            if (st > lastScrollTop) {
+                // downscroll code
+                scrollingUp = false;
+            } else {
+                // upscroll code
+                scrollingUp = true;
             }
-          }
-        } else {
-          if (dim.y - window.innerHeight > 0 && dim.y > -window.innerHeight) {
-            states[i] = 0;
-            // console.log("Reseting", sections[i].id)
-            // console.log(dim.y-window.innerHeight) 
-          } else if (dim.y - window.innerHeight > -200 && dim.y > -window.innerHeight && scrollingUp) {
-            loadState[i] = false;
-            if (states[i] !== 2) {
-              // console.log(dim.y - window.innerHeight, sections[i].id)
-              for (let j = 0; j < sections[i].children.length; j++) {
-                gsap.to(sections[i].children[j], {
-                  opacity: 0,
-                  duration: 1.25,
-                  ease: 'Power3.easeInOut'
-                })
-              }
-              states[i] = 2;
-              setTimeout(() => {
-                if (states[i] !== 0) states[i] = 1;
-              }, 1250);
+            lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+
+            const sections = document.querySelectorAll('section');
+            for (let i = 0; i < sections.length; i++) {
+                let dim = sections[i].getBoundingClientRect();
+                if (states[i] === 0 || !scrollingUp) {
+                    if (dim.y - window.innerHeight < 0 && dim.y > -window.innerHeight && !scrollingUp) {
+                        // console.log("Showing", sections[i].id)
+                        // console.log(dim.y-window.innerHeight) 
+                        sections[i].style.opacity = 1;
+                        if (!loadState[i]) {
+                            for (let j = 0; j < sections[i].children.length; j++) {
+                                sections[i].children[j].style.opacity = 1;
+                                gsap.from(sections[i].children[j], {
+                                    opacity: 0,
+                                    duration: 1.25,
+                                    ease: 'Power3.easeInOut'
+                                })
+                            }
+                            states[i] = 1;
+                            loadState[i] = true;
+                        }
+                    }
+                } else {
+                    if (dim.y - window.innerHeight > 0 && dim.y > -window.innerHeight) {
+                        states[i] = 0;
+                        // console.log("Reseting", sections[i].id)
+                        // console.log(dim.y-window.innerHeight) 
+                    } else if (dim.y - window.innerHeight > -200 && dim.y > -window.innerHeight && scrollingUp) {
+                        loadState[i] = false;
+                        if (states[i] !== 2) {
+                            // console.log(dim.y - window.innerHeight, sections[i].id)
+                            for (let j = 0; j < sections[i].children.length; j++) {
+                                gsap.to(sections[i].children[j], {
+                                    opacity: 0,
+                                    duration: 1.25,
+                                    ease: 'Power3.easeInOut'
+                                })
+                            }
+                            states[i] = 2;
+                            setTimeout(() => {
+                                if (states[i] !== 0) states[i] = 1;
+                            }, 1250);
+                        }
+                    }
+                }
             }
-          }
         }
-      }
-    }
 
-    // OverlayScroll
-    var instance = OverlayScrollbars(document.body, {
-      className: 'os-theme-light',
-      callbacks: {
-        onScroll: () => {
-          scrollAnims()
+        // OverlayScroll
+        var instance = OverlayScrollbars(document.body, {
+            className: 'os-theme-light',
+            callbacks: {
+                onScroll: () => {
+                    scrollAnims()
+                }
+            },
+            overflowBehavior: {
+                x: "scroll",
+                y: "scroll"
+            }
+        });
+
+        // Table
+        OverlayScrollbars(document.getElementById("table"), {
+            className: 'os-theme-light',
+            overflowBehavior: {
+                x: "scroll",
+                y: "scroll-visible"
+            }
+        });
+
+        // Navigation
+        function nav(id) {
+            if (id === 'top') {
+                instance.scroll([0, 0], 500);
+            } else {
+                instance.scroll({
+                    el: document.getElementById(id),
+                    scroll: {
+                        y: "begin",
+                        x: "never"
+                    }
+                }, 500);
+            }
         }
-      },
-      overflowBehavior: {
-        x: "hidden",
-        y: "scroll"
-      }
-    });
-
-    // Navigation
-    function nav(id) {
-      if (id === 'top') {
-        instance.scroll([0, 0], 500);
-      } else {
-        instance.scroll({
-          el: document.getElementById(id),
-          scroll: {
-            y: "begin",
-            x: "never"
-          }
-        }, 500);
-      }
-    }
-  </script>
+    </script>
 </body>
+
 </html>
