@@ -50,7 +50,8 @@ section {
     height: 100%;
     background-size: cover;
     background-position-x: center;
-    /* background-image: url(https://www.dreamsdk.org/img/bg-masthead.jpg); */
+    background-image: url(https://res.cloudinary.com/s3ansh33p/image/upload/v1640797745/Classpad/20211229_180653_vvwkat.webp);
+    opacity: 0.1;
 }
 
 #loading {
