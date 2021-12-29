@@ -104,6 +104,10 @@ th:nth-child(1) {
     color: var(--bs-warning);
 }
 
+th {
+    font-weight: normal;
+}
+
 .item {
     margin-top: 20px;
     margin-bottom: 20px;
