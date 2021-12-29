@@ -103,3 +103,40 @@ footer {
 th:nth-child(1) {
     color: var(--bs-warning);
 }
+
+.item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.item .pictogram {
+    float: left;
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
+.item .pictogram svg {
+    width: 35px;
+    height: 32px;
+}
+
+.svg-gray svg {
+    fill: #00daff;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.svg-gray svg .stroked {
+    stroke: #2196f3;
+}
+
+svg .stroked {
+    fill: none;
+}
+
+.item .data {
+    margin-left: 55px;
+    text-align: left;
+}
