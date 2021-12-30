@@ -144,3 +144,7 @@ svg .stroked {
     margin-left: 55px;
     text-align: left;
 }
+
+.table {
+    border-color: #3d3d3d;
+}
