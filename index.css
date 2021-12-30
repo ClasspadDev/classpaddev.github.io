@@ -92,8 +92,8 @@ footer {
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75));
 }
 
-::-webkit-scrollbar {
-    width: 0px;
+.text-muted {
+    text-transform: uppercase;
 }
 
 .cursor-pointer:hover {
