@@ -510,13 +510,13 @@
         </section>
 
         <!-- Programs -->
-        <section class="position-relative p-3 p-md-5 d-md-flex flex-md-equal w-100 mb-5" id="programs">
-            <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 w-100 d-flex align-items-center text-center">
-                <div class="my-3 py-3 row align-items-center text-center">
+        <section class="position-relative d-md-flex flex-md-equal w-100 mb-5" id="programs">
+            <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 w-100 d-flex align-items-center">
+                <div class="my-3 py-3 row align-items-center">
                     <h2 class="display-5">PROGRAMS</h2>
                     <p class="lead">Below are some programs that have been developed for the Classpad II.</p>
                     <!-- Will need to fix css -->
-                    <div class="d-flex align-items-center justify-content-center" style="max-width: 90vw;">
+                    <div class="d-flex align-items-center justify-content-center">
                         <div id="table" style="max-width: 90vw;">
                             <table class="table w-100 text-white">
                                 <tbody>
@@ -611,8 +611,28 @@
                                         <th><a href="https://github.com/SnailMath/CPpong/releases" target="_blank"
                                                 rel="noopener">download</a></th>
                                     </tr>
-
-
+                                    <tr>
+                                        <th>CPBoy</th>
+                                        <th>A Game Boy (DMG) emulator for the Classpad II (fx-CP400). Forked on <a
+                                            href="https://github.com/classpaddev/CPBoy" target="_blank" rel="noopener">ClasspadDev GitHub</a> to automatically recompile using GitHub actions if you just want the binary and don't want to build it yourself.</th>
+                                        <th>diddyholz (and s3ansh33p)</th>
+                                        <th>Aug 2021</th>
+                                        <th>.bin</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/diddyholz/CPBoy" target="_blank"
+                                                rel="noopener">download</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>CPFlappyBird</th>
+                                        <th>A port of the famous Flappy Bird game for the fx-cp 400 by s3ansh33p.
+                                            Runs at about 20 FPS.</th>
+                                        <th>s3ansh33p</th>
+                                        <th>Jan 2022</th>
+                                        <th>.hhk</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/s3ansh33p/CPFlappyBird/releases" target="_blank"
+                                                rel="noopener">download</a></th>
+                                    </tr>
 
 
                                     <tr>
@@ -740,6 +760,33 @@
                                         <th><a href="https://github.com/SnailMath/CPclock/releases" target="_blank"
                                                 rel="noopener">download</a></th>
                                     </tr>
+                                    <tr>
+                                        <th>TarrasK</th>
+                                        <th>Reverse Engineering Toolkit, with disassembly features planned, aiming to proivde a
+                                            native toolset with GUI. Inlcudes a software breakpoint manager, and register dumping when the breakpoint is hit.
+                                        </th>
+                                        <th>TheRainboxPhoenix</th>
+                                        <th>Jan 2022</th>
+                                        <th>.bin / .hhk</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/TheRainbowPhoenix/TarrasK" target="_blank"
+                                                rel="noopener">download</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>CPShell</th>
+                                        <th>A calculator shell for the fx-cp 400 by s3ansh33p.
+                                            Includes basic commands like ls, cd, cat, echo and history, with more to be added.
+                                            Also has a command to change date and time, config files, with plans for memory tools.
+                                            Note that I recommend changing the structure of the calculator, which is explained in the readme, though it is not required.
+                                            <a href="https://github.com/users/s3ansh33p/projects/3/views/9" target="_blank"
+                                                rel="noopener">More info</a></th>
+                                        <th>s3ansh33p</th>
+                                        <th>Jul 2022</th>
+                                        <th>.hhk</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/s3ansh33p/CPShell" target="_blank"
+                                                rel="noopener">download</a></th>
+                                    </tr>
 
 
                                     <tr>
@@ -786,39 +833,6 @@
                                         <th>hollyhock-2</th>
                                         <th><a href="https://github.com/s3ansh33p/hhkEngine" target="_blank"
                                                 rel="noopener">download</a></th>
-                                    </tr>
-
-
-                                    <tr>
-                                        <th colspan="7" class="text-white"><i>Unfinished games for hollyhock-2 (and
-                                                games for
-                                                other non compatible launchers)</i></th>
-                                    </tr>
-                                    <tr>
-                                    </tr>
-                                    <tr>
-                                        <th>CPBoyHHK</th>
-                                        <th>A Gameboy emulator for hollyhock-2 forked from CPBoy. It's currently not
-                                            finished
-                                            yet...</th>
-                                        <th>diddyholz, forked by SnailMath</th>
-                                        <th>Dec 2021</th>
-                                        <th>.bin / .hhk</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/SnailMath/CPBoyHHK" target="_blank"
-                                                rel="noopener">not released</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>CPBoy</th>
-                                        <th>A Game Boy (DMG) emulator for the Classpad II (fx-CP400). (It can't be
-                                            played
-                                            currently because some files are not public yet...)</th>
-                                        <th>diddyholz</th>
-                                        <th>Aug 2021</th>
-                                        <th>?</th>
-                                        <th>diddyholz sdk</th>
-                                        <th><a href="https://github.com/diddyholz/CPBoy" target="_blank"
-                                                rel="noopener">not released</a></th>
                                     </tr>
 
 
