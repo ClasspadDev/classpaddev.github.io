@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#00fc00"/>
+      <stop offset="1" stop-color="#2a60cd"/>
+    </linearGradient>
+    <linearGradient xlink:href="#a" id="c" x1="32" x2="39" y1="1023.36" y2="1036.36" gradientTransform="translate(-22)" gradientUnits="userSpaceOnUse"/>
+    <filter id="d" width="1.09" height="1.11" x="-.04" y="-.05" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".27"/>
+    </filter>
+    <filter id="b" width="1.16" height="1.07" x="-.08" y="-.03" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".46"/>
+    </filter>
+  </defs>
+  <g transform="translate(0 -1020.36)">
+    <rect width="14" height="32" x="7" y="1020.36" fill-opacity=".25" color="#000" enable-background="accumulate" filter="url(#b)" overflow="visible" rx="2" ry="2" style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/>
+    <rect width="14" height="31" x="7" y="1020.36" color="#000" enable-background="accumulate" overflow="visible" rx="2" ry="2" style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/>
+    <rect width="12" height="29" x="8" y="1021.36" fill="#dce4eb" color="#000" enable-background="accumulate" overflow="visible" rx="1" ry="1" style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/>
+    <rect width="10" height="13" x="9" y="1036.36" fill="#323232" color="#000" enable-background="accumulate" overflow="visible" rx="1" ry="1" style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/>
+    <path fill="#575757" fill-opacity=".51" d="M9 1041.36v7a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-7H9z" color="#000" enable-background="accumulate" overflow="visible" style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/>
+    <path fill="url(#c)" d="M9 1022.36h10v17H9z" color="#000" enable-background="accumulate" overflow="visible" style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/>
+    <rect width="4" height="3" x="12" y="1040.36" fill="#323232" stroke="#575757" stroke-linecap="round" color="#000" enable-background="accumulate" overflow="visible" rx="1.5" ry="1.48" style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/>
+    <path fill="#5989e8" d="M19 1047.36a1 1 0 0 0-1 1v1a1 1 0 0 0 1-1v-1z" color="#000" enable-background="accumulate" overflow="visible" style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/>
+    <rect width="6" height="5" x="11" y="1044.36" fill="#d4d4d4" color="#000" enable-background="accumulate" overflow="visible" rx="1" ry="1" style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/>
+    <path fill-opacity=".3" d="M12 1044.36v1h-1v1h1v1h-1v1h1v1h1v-1h1v1h1v-1h1v1a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1v1h-1v-1h-1v1h-1v-1h-1zm1 2h1v1h-1v-1zm2 0h1v1h-1v-1z" color="#000" enable-background="accumulate" overflow="visible" style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/>
+    <rect width="15" height="12" x="13" y="1025.36" fill="#232323" color="#000" enable-background="accumulate" overflow="visible" rx="1" ry="1" style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/>
+    <rect width="13" height="9" x="14" y="1027.36" fill="#323232" color="#000" enable-background="accumulate" overflow="visible" rx="0" ry="0" style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/>
+    <path fill="none" stroke="#00fc00" stroke-width="1.5" d="m17 1029.36 2 2-2 2m4 .5h3"/>
+    <rect width="15" height="12" x="13" y="1026.36" fill-opacity=".25" color="#000" enable-background="accumulate" filter="url(#d)" overflow="visible" rx="1" ry="1" style="isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/>
+  </g>
+</svg>

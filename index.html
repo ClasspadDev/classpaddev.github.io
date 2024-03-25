@@ -47,7 +47,8 @@
         as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.css"></noscript>
+            href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.css">
+    </noscript>
     <!-- Bootstrap -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
@@ -57,7 +58,8 @@
     <!-- Custom CSS -->
     <link rel="preload" href="/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="/index.css"></noscript>
+        <link rel="stylesheet" href="/index.css">
+    </noscript>
     <!-- Loader CSS -->
     <style>
         #loader {
@@ -123,26 +125,73 @@
                         </li>
                         <li class="nav-item"><a class="nav-link text-white" onclick='nav("features")'>Features</a></li>
                         <li class="nav-item"><a class="nav-link text-white" onclick='nav("discord")'>Discord</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" onclick='nav("specs")'>Specifications</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" onclick='nav("specs")'>Specifications</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link text-white" onclick='nav("programs")'>Programs</a></li>
-                        <li class="nav-item"><a class="nav-link text-white"
-                                href="https://classpaddev.github.io/wiki/" target="_blank" rel="noreferrer">Wiki</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="https://classpaddev.github.io/wiki/"
+                                target="_blank" rel="noreferrer">Wiki</a></li>
                     </ul>
 
                 </div>
             </div>
         </div>
     </nav>
-    <!-- Background Header -->
-    <div class="bg-head"></div>
-    <!-- Header-->
-    <header class="position-absolute w-100 p-3 p-md-5 text-left">
-        <div class="d-flex flex-column align-items-center text-center">
-            <h1 class="display-4 font-weight-normal">CLASSPAD DEV</h1>
-            <h3 class="lead font-weight-normal">Explore the Classpad II fx-CP400 using hollyhock-2!</h3>
-            <a class="btn btn-primary mt-3 btn-lg" onclick='nav("get-started")'>Get Started</a>
-        </div>
-    </header>
+    <div class="position-relative w-100 h-100 immersive">
+        <!-- Background Header -->
+        <div class="bg-head"></div>
+        <!-- Header-->
+
+        <header class="position-absolute w-100 h-100 p-3 p-md-5 text-left overflow-hidden">
+
+            <div class="pt-28 pb-28 position-relative">
+                <div class="row g-16">
+                    <div class="col-12 col-md-6 d-flex align-items-center">
+                        <div class="mw-md-lg">
+                            <span class="mb-4 badge rounded-pill bg-light text-dark text-uppercase shadow">Hollyhock-2
+                                for fx-CP400</span>
+                            <h1 class="mb-6 impact font-heading fs-1" style="letter-spacing: -1px;">Unlock Your Classpad
+                                II <span>Superpowers</span> ⚡</h1>
+                            <p class="mb-8 fs-9 fw-medium text-secondary">With one launcher, unlock a myriad of
+                                possibilities. From games to emulators, explore our ever-expanding library of
+                                programs... You can even create your own!</p>
+
+                            <div class="row g-4 mt-2">
+                                <div class="col-12 col-md-auto"><a class="btn btn-lg btn-xl btn-primary w-100 shadow"
+                                        href="#get-started" onclick='nav("get-started")'>Get Started</a></div>
+                                <div class="col-12 col-md-auto">
+                                    <div class="rounded"><a class="btn btn-lg btn-xl btn-outline-light w-100 text-light-dark"
+                                            href="#programs">View Programs</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mt-2">
+                        <div class="row justify-content-center">
+                            <div class="position-relative col-auto">
+                                <img class="position-absolute top-0 start-0 mt-n12 ms-n12" style="z-index: 1;"
+                                    src="img/cp.svg" alt="Classpad II">
+                                <img class="position-absolute bottom-0 end-0 me-n5 mb-n5" style="z-index: 1;"
+                                    src="flex-assets/elements/dots-blue.svg" alt="">
+                                <img class="position-relative img-fluid p-5 screenshot" id="screenshots" src="img/doom.png"
+                                    alt="Doom on the Classpad II">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--
+            <div class="d-flex flex-column align-items-center text-center">
+                <h1 class="display-4 font-weight-normal">CLASSPAD DEV</h1>
+                <h3 class="lead font-weight-normal">Explore the Classpad II fx-CP400 using hollyhock-2!</h3>
+                <a class="btn btn-primary mt-3 btn-lg" onclick='nav("get-started")'>Get Started</a>
+            </div>
+            -->
+        </header>
+    </div>
+
+
     <!-- Getting Started -->
     <section class="position-relative overflow-hidden p-3 p-md-5 text-center d-md-flex flex-md-equal w-100 bg-dark"
         id="get-started">
@@ -277,7 +326,8 @@
                 <h2 class="display-5">SPECIFICATIONS</h2>
                 <div>
                     <div class="container text-center dimensions d-flex align-items-center justify-content-center my-4">
-                        <img width="640" height="333" src="https://res.cloudinary.com/s3ansh33p/image/upload/v1640806035/Classpad/cp_iso_exp_1_w9smal.svg"
+                        <img width="640" height="333"
+                            src="https://res.cloudinary.com/s3ansh33p/image/upload/v1640806035/Classpad/cp_iso_exp_1_w9smal.svg"
                             alt="Diagram of Classpad" style="filter: brightness(1.5);">
                     </div>
 
@@ -481,14 +531,14 @@
                                 </div>
                                 <div class="item">
                                     <div class="pictogram"><svg xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="32"
-                                        viewBox="0 0 35 32">
-                                        <path
-                                            d="M17.5 4C23.8 4 29 9.2 29 15.5S23.8 27 17.5 27 6 21.8 6 15.5 11.2 4 17.5 4m0-1C10.6 3 5 8.6 5 15.5S10.6 28 17.5 28 30 22.4 30 15.5 24.4 3 17.5 3z">
-                                        </path>
-                                        <path d="M15 22l9-10h-5.9L24 6l-2.9-2.1-4.3-.7L13 15h5z"></path>
-                                    </svg>
-                                </div>
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="32"
+                                            viewBox="0 0 35 32">
+                                            <path
+                                                d="M17.5 4C23.8 4 29 9.2 29 15.5S23.8 27 17.5 27 6 21.8 6 15.5 11.2 4 17.5 4m0-1C10.6 3 5 8.6 5 15.5S10.6 28 17.5 28 30 22.4 30 15.5 24.4 3 17.5 3z">
+                                            </path>
+                                            <path d="M15 22l9-10h-5.9L24 6l-2.9-2.1-4.3-.7L13 15h5z"></path>
+                                        </svg>
+                                    </div>
                                     <div class="data">
                                         <h4>Power Consumption</h4>
                                         <p>1.0 W - 100 hours in use<sup>1</sup></p>
@@ -500,8 +550,10 @@
                     </div>
 
                     <div class="container">
-                        <h6>1. Computed based on typical classroom usage (repeat of 1,2,3 sequence below each hour):</h6>
-                        <h6>1) Application Menu display for 5 minutes, start of display at "Medium" display brightness, dimmed automatically after 30 seconds.</h6>
+                        <h6>1. Computed based on typical classroom usage (repeat of 1,2,3 sequence below each hour):
+                        </h6>
+                        <h6>1) Application Menu display for 5 minutes, start of display at "Medium" display brightness,
+                            dimmed automatically after 30 seconds.</h6>
                         <h6>2) Program application calculation for 5 minutes, "Medium" display brightness.</h6>
                         <h6>3) Program application display for 50 minutes, display brightness same as 1, above.</h6>
                     </div>
@@ -543,6 +595,30 @@
 
                                     <tr>
                                         <th colspan="7" class="text-white"><i>Games using hollyhock-2</i></th>
+                                    </tr>
+                                    <tr>
+                                        <th>Doom (CPDoom)</th>
+                                        <th>A Doom source port for the Classpad II (fx-CP400)</th>
+                                        <th>diddyholz</th>
+                                        <th>March 2024</th>
+                                        <th>.bin + assets</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/diddyholz/CPDoom" target="_blank"
+                                                rel="noopener">download</a></th>
+                                    </tr>
+                                    <tr>
+                                        <th>CPBoy</th>
+                                        <th>A Game Boy (DMG) emulator for the Classpad II (fx-CP400). Forked on <a
+                                                href="https://github.com/classpaddev/CPBoy" target="_blank"
+                                                rel="noopener">ClasspadDev GitHub</a> to automatically recompile using
+                                            GitHub actions if you just want the binary and don't want to build it
+                                            yourself.</th>
+                                        <th>diddyholz (and s3ansh33p)</th>
+                                        <th>Aug 2021</th>
+                                        <th>.bin</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/diddyholz/CPBoy" target="_blank"
+                                                rel="noopener">download</a></th>
                                     </tr>
                                     <tr>
                                         <th>Tetris (CPoldTetris)</th>
@@ -597,8 +673,8 @@
                                         <th>Nov 2021</th>
                                         <th>.hhk</th>
                                         <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/InterChan374/ponggers2/releases"
-                                                target="_blank" rel="noopener">download</a>
+                                        <th><a href="https://github.com/InterChan374/ponggers2/releases" target="_blank"
+                                                rel="noopener">download</a>
                                         </th>
                                     </tr>
                                     <tr>
@@ -612,16 +688,28 @@
                                                 rel="noopener">download</a></th>
                                     </tr>
                                     <tr>
-                                        <th>CPBoy</th>
-                                        <th>A Game Boy (DMG) emulator for the Classpad II (fx-CP400). Forked on <a
-                                            href="https://github.com/classpaddev/CPBoy" target="_blank" rel="noopener">ClasspadDev GitHub</a> to automatically recompile using GitHub actions if you just want the binary and don't want to build it yourself.</th>
-                                        <th>diddyholz (and s3ansh33p)</th>
-                                        <th>Aug 2021</th>
-                                        <th>.bin</th>
+                                        <th>CP 3D render</th>
+                                        <th>Transform your ClassPad II into a mini 3D playground</th>
+                                        <th>imHenry</th>
+                                        <th>November 2023</th>
+                                        <th>.bin + assets</th>
                                         <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/diddyholz/CPBoy" target="_blank"
+                                        <th><a href="https://github.com/im-henri/CP_3D_render#readme" target="_blank"
                                                 rel="noopener">download</a></th>
                                     </tr>
+                                    <tr>
+                                        <th>MineFX</th>
+                                        <th>MineFx is a Minecraft styled 3d isometric renderer</th>
+                                        <th>Adrian8115</th>
+                                        <th>February 2024</th>
+                                        <th>.bin + assets</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/Adrian8115/MineFX/" target="_blank"
+                                                rel="noopener">download</a></th>
+                                    </tr>
+
+                                
+                                    
                                     <tr>
                                         <th>CPFlappyBird</th>
                                         <th>A port of the famous Flappy Bird game for the fx-cp 400 by s3ansh33p.
@@ -762,8 +850,10 @@
                                     </tr>
                                     <tr>
                                         <th>TarrasK</th>
-                                        <th>Reverse Engineering Toolkit, with disassembly features planned, aiming to provide a
-                                            native toolset with GUI. Includes a software breakpoint manager, and register dumping when the breakpoint is hit.
+                                        <th>Reverse Engineering Toolkit, with disassembly features planned, aiming to
+                                            provide a
+                                            native toolset with GUI. Includes a software breakpoint manager, and
+                                            register dumping when the breakpoint is hit.
                                         </th>
                                         <th>TheRainboxPhoenix</th>
                                         <th>Jan 2022</th>
@@ -775,11 +865,15 @@
                                     <tr>
                                         <th>CPShell</th>
                                         <th>A calculator shell for the fx-cp 400 by s3ansh33p.
-                                            Includes basic commands like ls, cd, cat, echo and history, with more to be added.
-                                            Also has a command to change date and time, config files, with plans for memory tools.
-                                            Note that I recommend changing the structure of the calculator, which is explained in the readme, though it is not required.
-                                            <a href="https://github.com/users/s3ansh33p/projects/3/views/9" target="_blank"
-                                                rel="noopener">More info</a></th>
+                                            Includes basic commands like ls, cd, cat, echo and history, with more to be
+                                            added.
+                                            Also has a command to change date and time, config files, with plans for
+                                            memory tools.
+                                            Note that I recommend changing the structure of the calculator, which is
+                                            explained in the readme, though it is not required.
+                                            <a href="https://github.com/users/s3ansh33p/projects/3/views/9"
+                                                target="_blank" rel="noopener">More info</a>
+                                        </th>
                                         <th>s3ansh33p</th>
                                         <th>Jul 2022</th>
                                         <th>.hhk</th>
@@ -796,6 +890,20 @@
                                     </tr>
                                     <tr>
                                     </tr>
+
+                                    
+                                    <tr>
+                                        <th>Online templates</th>
+                                        <th>A complete guide to get started</th>
+                                        <th>ClassPadDev team</th>
+                                        <th>2024</th>
+                                        <th>.bin / .hhk</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://classpaddev.github.io/wiki/getting-started/introduction/"
+                                                target="_blank" rel="noopener">read</a>
+                                        </th>
+                                    </tr>
+
                                     <tr>
                                         <th>app_template</th>
                                         <th>An empty app as a base for your own creations</th>
@@ -834,7 +942,55 @@
                                         <th><a href="https://github.com/s3ansh33p/hhkEngine" target="_blank"
                                                 rel="noopener">download</a></th>
                                     </tr>
+                                    <tr>
+                                        <th>hhkEngine</th>
+                                        <th>Some kind of game engine for the Classpad, contains some kind of physics,
+                                            particles,
+                                            texture loading stuff, and more, similar to app_template, but much more
+                                            advanced.
+                                        </th>
+                                        <th>s3ansh33p (and InterChan374)</th>
+                                        <th>Dec 2021</th>
+                                        <th>.hhk</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/s3ansh33p/hhkEngine" target="_blank"
+                                                rel="noopener">download</a></th>
+                                    </tr>
 
+                                    <tr>
+                                        <th>Newlib CP2</th>
+                                        <th>A newlib port for the Classpad II. Use this for stdlib support</th>
+                                        <th>diddyholz</th>
+                                        <th>March 2024</th>
+                                        <th>.bin</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/diddyholz/newlib-cp2" target="_blank"
+                                                rel="noopener">download</a></th>
+                                    </tr>
+
+                                    <tr>
+                                        <th>CP_fixfloat_template</th>
+                                        <th>CP template with fixed point values (16.16)</th>
+                                        <th>imHenry</th>
+                                        <th>October 2023</th>
+                                        <th>.bin</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/im-henri/CP_fixfloat_template" target="_blank"
+                                                rel="noopener">download</a></th>
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                        <th>CP-Raycaster-Demo</th>
+                                        <th>About
+                                            A very simple demo of a fixed-point raycaster for the fx-CP400 with texture and sprite support.</th>
+                                        <th>diddyholz</th>
+                                        <th>December 2022</th>
+                                        <th>.bin</th>
+                                        <th>hollyhock-2</th>
+                                        <th><a href="https://github.com/diddyholz/CP-Raycaster-Demo" target="_blank"
+                                                rel="noopener">download</a></th>
+                                    </tr>
 
                                     <!--
                                 <tr>
@@ -866,9 +1022,11 @@
                     <p class="m-0" id="updated">Last Updated: Loading...</p>
                 </div>
                 <div class="d-flex align-items-center pt-3">
-                    <p class="m-0 text-muted me-auto small">Classpad-dev is a community project not affiliated with Casio. <br>
-The programs and other online content on Classpad-dev remain the property of their authors and may be subject to licenses or copyrights.<br>
-CASIO is a registered trademark of CASIO Computer Co., Ltd. in Japan.</p>
+                    <p class="m-0 text-muted me-auto small">Classpad-dev is a community project not affiliated with
+                        Casio. <br>
+                        The programs and other online content on Classpad-dev remain the property of their authors and
+                        may be subject to licenses or copyrights.<br>
+                        CASIO is a registered trademark of CASIO Computer Co., Ltd. in Japan.</p>
                 </div>
             </div>
         </footer>
@@ -1013,6 +1171,31 @@ CASIO is a registered trademark of CASIO Computer Co., Ltd. in Japan.</p>
                 }, 500);
             }
         }
+
+        // Scrolling images
+        // Image URLs
+        var images = ["img/gb.png", "img/doom.png", "img/term.png", "img/3drender.png"];
+        var currentIndex = 0;
+
+        // Preload images
+        var preloadedImages = [];
+        images.forEach(function(imageUrl) {
+            var img = new Image();
+            img.src = imageUrl;
+            preloadedImages.push(img);
+        });
+
+        // Function to change image
+        function changeImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            document.getElementById('screenshots').src = images[currentIndex];
+        }
+
+        // Initial call
+        changeImage();
+
+        // Start slideshow
+        setInterval(changeImage, 10000); // Change image every 10 seconds
     </script>
 </body>
 
