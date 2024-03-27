@@ -4,10 +4,20 @@
     --bs-dark-rgb: 20, 20, 90;
     --bs-light-rgb: 199, 201, 219;
     --bs-neon: #0c66e9;
+
+    --cp-white: #f4f4f5;
+    --cp-text: #a1a1aa;
+    --cp-bg: #1f2325;
+    --cp-accent: #00dc68;
+    --cp-accent-hover: #2bfd87;
+    --cp-disabled: #3f3f46;
+    --cp-text-black: #003719;
+
 }
 
 body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: var(--cp-bg);
 }
 
 h1,
@@ -25,6 +35,10 @@ section {
     opacity: 0;
     background-size: cover;
     background-position-y: bottom;
+}
+
+.immersive {
+    background-color: black;
 }
 
 .team-description {
@@ -148,3 +162,53 @@ svg .stroked {
 .table {
     border-color: #3d3d3d;
 }
+
+.screenshot {
+    image-rendering: pixelated;
+    margin-top: 2rem;
+    border-radius: 3rem 3rem;
+    background: black;
+}
+
+.btn-xl {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.5rem;
+    border-radius: 0.45rem;
+}
+
+/* Theme fixes */
+
+@media (min-width: 1200px) {
+    .impact  {
+        font-size: 3.25rem!important;
+    }
+}
+
+.immersive {
+    min-height: 200%;
+    overflow: hidden;
+}
+
+@media (min-width: 992px) {
+    .immersive {
+        min-height: 100%;
+    }
+}
+
+.impact span {
+    color: #00dc68ff;
+}
+
+.btn-primary {
+    color: var(--cp-text-black);
+    background-color: var(--cp-accent);
+    border-color: var(--cp-accent);
+}
+
+.btn-primary:hover, .btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: var(--cp-text-black);
+    background-color: var(--cp-accent-hover);
+    border-color: var(--cp-accent-hover);
+}
+
+
