@@ -103,6 +103,39 @@
                 transform: rotate(360deg);
             }
         }
+
+        .python-banner {
+            background: linear-gradient(135deg, #4B8BBE 0%, #306998 100%);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 2rem 0;
+        }
+
+        .python-banner:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .python-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 3rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .python-section h2 {
+            color: #306998;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .python-section p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #495057;
+        }
     </style>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="Kb2nywKkyR+dD+Av2GmerQ" async></script>
 </head>
@@ -132,6 +165,7 @@
                         <li class="nav-item"><a class="nav-link text-white" onclick='nav("programs")'>Programs</a></li>
                         <li class="nav-item"><a class="nav-link text-white" href="https://classpaddev.github.io/wiki/"
                                 target="_blank" rel="noreferrer">Wiki</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="/python">Python</a></li>
                     </ul>
 
                 </div>
@@ -156,6 +190,17 @@
                             <p class="mb-8 fs-9 fw-medium text-secondary">With one launcher, unlock a myriad of
                                 possibilities. From games to emulators, explore our ever-expanding library of
                                 programs... You can even create your own!</p>
+
+                            <!-- Python Banner -->
+                            <div class="python-banner p-4 text-white">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h4 class="mb-2">Python on the ClassPad is here!</h4>
+                                        <p class="mb-0">Learn more about this exciting new development</p>
+                                    </div>
+                                    <a href="/python" class="btn btn-light text-primary fw-bold">Learn more</a>
+                                </div>
+                            </div>
 
                             <div class="row g-4 mt-2">
                                 <div class="col-12 col-md-auto"><a class="btn btn-lg btn-xl btn-primary w-100 shadow"
@@ -458,7 +503,7 @@
                                             <path d="M30 3h1v9h-1z"></path>
                                             <path d="M22 3h9v1h-9zM5 20h1v9H5z"></path>
                                             <path
-                                                d="M5 28h9v1H5zM30.9 3.8l-10 10c-.2.2-.5.2-.7 0-.2-.2-.2-.5 0-.7l10-10c.2-.2.5-.2.7 0 .1.2.1.6 0 .7z">
+                                                d="M30.9 3.8l-10 10c-.2.2-.5.2-.7 0-.2-.2-.2-.5 0-.7l10-10c.2-.2.5-.2.7 0 .1.2.1.6 0 .7z">
                                             </path>
                                             <path
                                                 d="M15.9 18.8l-10 10c-.2.2-.5.2-.7 0-.2-.2-.2-.5 0-.7l10-10c.2-.2.5-.2.7 0 .1.2.1.6 0 .7z">
@@ -1009,6 +1054,14 @@
                 </div>
             </div>
         </section>
+
+        <!-- Python Section -->
+        <section class="python-section">
+            <h2>ClassPad with Python 🐍</h2>
+            <p class="lead">It's finally time to break free from BASIC! Learn Python and build what you need, from educational tools to games. Creating amazing experiences has never been easier thanks to Python.</p>
+            <a href="/python" class="btn btn-primary btn-lg mt-3">Learn More About Python on ClassPad</a>
+        </section>
+
         <!-- Footer-->
         <footer class="py-5">
             <div class="container px-4 px-lg-5">
