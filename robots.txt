@@ -1,0 +1,21 @@
+# Allow OpenAI bots
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+# Allow Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+
+# Allow Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Allow Perplexity
+User-agent: PerplexityBot
+Allow: /
