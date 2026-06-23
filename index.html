@@ -95,6 +95,12 @@
             z-index: 9999;
         }
 
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            aspect-ratio: 1;
+        }
+
         /* Navigation */
         header.navbar {
             padding: 1.5rem 0;
@@ -135,6 +141,8 @@
             font-weight: 500;
             transition: color 0.3s ease;
             font-size: 0.9rem;
+            display: flex;
+            gap: .9rem;
         }
 
         .nav-link:hover {
@@ -1213,6 +1221,10 @@
            MOBILE-ONLY TUNING (max-width: 768px)
            ============================================================ */
         @media (max-width: 768px) {
+            .md-hidden {
+                display: none;
+            }
+            
             /* Kill the expensive hero hex mask + ripple */
             .hero-hex-base,
             .hero-hex-ripple {
@@ -1280,6 +1292,9 @@
             .hero-layout .position-relative > img[alt="Classpad II"] {
                 /* max-width: 280px !important; */
                 width: 125% !important;
+            }
+            .hero-anim-elem.actions {
+                justify-content: center;
             }
 
             /* Sections: tighter padding + smaller titles */
@@ -1575,8 +1590,28 @@
                 <a href="#install" class="nav-link">Get Started</a>
                 <a href="#programs" class="nav-link">Programs</a>
                 <a href="/wiki/" class="nav-link">Wiki</a>
-                <a href="/python/" class="nav-link">Python</a>
-                <a href="#discord" class="nav-link">Discord</a>
+                <a href="/python/" class="nav-link">Python
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"  class="nav-icon md-hidden">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <g fill="none">
+                            <g fill="currentColor" clip-path="url(#SVGXv8lpc2Y)">
+                                <path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.9S0 5.789 0 11.969s3.403 5.96 3.403 5.96h2.03v-2.867s-.109-3.42 3.35-3.42h5.766s3.24.052 3.24-3.148V3.202S18.28 0 11.913 0M8.708 1.85c.578 0 1.046.47 1.046 1.052c0 .581-.468 1.051-1.046 1.051s-1.046-.47-1.046-1.051c0-.582.467-1.052 1.046-1.052" />
+                                <path d="M12.087 24c6.092 0 5.712-2.656 5.712-2.656l-.007-2.752h-5.814v-.826h8.123s3.9.445 3.9-5.735s-3.404-5.96-3.404-5.96h-2.03v2.867s.109 3.42-3.35 3.42H9.452s-3.24-.052-3.24 3.148v5.292S5.72 24 12.087 24m3.206-1.85c-.579 0-1.046-.47-1.046-1.052c0-.581.467-1.051 1.046-1.051c.578 0 1.046.47 1.046 1.051c0 .582-.468 1.052-1.046 1.052" />
+                            </g>
+                            <defs>
+                                <clipPath id="SVGXv8lpc2Y">
+                                    <path fill="#fff" d="M0 0h24v24H0z" />
+                                </clipPath>
+                            </defs>
+                        </g>
+                    </svg>
+                </a>
+                <a href="#discord" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="nav-icon" alt="Discord">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.1.1 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.1 16.1 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12" />
+                    </svg>
+                </a>
             </nav>
         </div>
     </header>
@@ -1589,7 +1624,7 @@
             <div>
                 <span class="badge hero-anim-elem" style="opacity: 0">Hollyhock-3 for fx-CP400</span>
                 <h1 class="hero-anim-elem" style="opacity: 0">
-                    Unlock Your Classpad II
+                    Unlock Your ClassPad II
                     <span class="accent-text">Superpowers</span> ⚡
                 </h1>
                 <p class="hero-anim-elem" style="opacity: 0">
@@ -1597,7 +1632,7 @@
                     emulators, explore our ever-expanding library of programs... You can
                     even create your own!
                 </p>
-                <div class="hero-anim-elem" style="display: flex; gap: 1rem; flex-wrap: wrap; opacity: 0">
+                <div class="hero-anim-elem actions" style="display: flex; gap: 1rem; flex-wrap: wrap; opacity: 0">
                     <a href="#install" class="btn btn-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1607,7 +1642,7 @@
                         </svg>
                         Install Hollyhock
                     </a>
-                    <a href="#programs" class="btn btn-secondary">View Programs</a>
+                    <a href="https://classpaddev.github.io/store/" class="btn btn-secondary">View Programs</a>
                 </div>
             </div>
 
@@ -1637,7 +1672,7 @@
                 <h2 class="section-title gs-slide-title">GET STARTED</h2>
                 <p class="section-subtitle gs-fade-text">
                     First of all, Welcome! We look forward to you joining the
-                    community.<br />Before you can run programs on the Classpad, install
+                    community.<br />Before you can run programs on the ClassPad, install
                     the Hollyhock-3 launcher.
                 </p>
             </div>
@@ -1789,7 +1824,7 @@
                             <h5>Experimental</h5>
                             <p>
                                 You can write low level code, such as assembly if you wanted,
-                                giving you access to all the hardware in the Classpad.
+                                giving you access to all the hardware in the ClassPad.
                             </p>
                         </div>
                     </div>
@@ -1799,7 +1834,7 @@
                             <h5>Utilities</h5>
                             <p>
                                 There a some utilities to take a low level look at the
-                                Classpad, such as a hex editor of the loaded memory - in real
+                                ClassPad, such as a hex editor of the loaded memory - in real
                                 time.
                             </p>
                         </div>
@@ -1875,7 +1910,7 @@
                         Download Python to unlock community-made games or write your own
                         custom programs and scripts directly on your ClassPad II.
                     </p>
-                    <a href="https://classpaddev.github.io/python/store/" class="btn btn-primary" target="_blank"
+                    <a href="https://classpaddev.github.io/store/?type=py" class="btn btn-primary" target="_blank"
                         style="align-self: flex-start">
                         Explore Store
                     </a>
@@ -1889,13 +1924,13 @@
                             <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                         </svg>
                     </div>
-                    <h3 style="font-size: 1.5rem">Learn to Code</h3>
+                    <h3 style="font-size: 1.5rem">Learn Python Code</h3>
                     <p style="color: var(--cp-text); flex: 1">
                         Want to make your own apps? Check out our extensive Wiki
                         documentation containing templates, APIs, and guides for
-                        developing Python for Hollyhock.
+                        developing Python on ClassPad.
                     </p>
-                    <a href="https://classpaddev.github.io/wiki/" class="btn btn-secondary" target="_blank"
+                    <a href="https://classpaddev.github.io/wiki/python/introduction/" class="btn btn-secondary" target="_blank"
                         style="align-self: flex-start">
                         Read the Wiki
                     </a>
@@ -1906,17 +1941,17 @@
             <div class="python-small-grid scroll-anim-fade" style="margin-top: -1rem">
                 <div class="python-card python-card-small">
                     <div>
-                        <h4 style="margin-bottom: 0.2rem">Python Landing Page</h4>
+                        <h4 style="margin-bottom: 0.2rem">Install Python</h4>
                         <p style="color: var(--cp-text); font-size: 0.85rem; margin: 0">
-                            Everything about Python on CP
+                            Getting starter with Python for ClassPad
                         </p>
                     </div>
                     <a href="https://classpaddev.github.io/python/" class="btn btn-secondary"
-                        style="padding: 0.5rem 1rem; font-size: 0.85rem" target="_blank">Visit</a>
+                        style="padding: 0.5rem 1rem; font-size: 0.85rem" target="_blank">Download</a>
                 </div>
                 <div class="python-card python-card-small">
                     <div>
-                        <h4 style="margin-bottom: 0.2rem">Browser Emulator</h4>
+                        <h4 style="margin-bottom: 0.2rem">ClassPad Emulator</h4>
                         <p style="color: var(--cp-text); font-size: 0.85rem; margin: 0">
                             Test drawing code instantly
                         </p>
@@ -2303,7 +2338,7 @@
         <div class="container">
             <div class="footer-links" style="margin-bottom: 2rem">
                 <a href="#">Home</a>
-                <a href="#install">Install</a>
+                <a href="https://classpaddev.github.io/store/">Store</a>
                 <a href="https://discord.gg/knpcNJTzpd" target="_blank">Discord</a>
                 <a href="https://github.com/classpaddev" target="_blank">GitHub</a>
                 <a href="https://classpaddev.github.io/wiki/" target="_blank">Wiki</a>
