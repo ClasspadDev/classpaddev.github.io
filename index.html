@@ -710,6 +710,7 @@
                 flex: 0 0 auto;
                 margin-bottom: 1rem;
                 position: static;
+                align-self: center;
             }
 
             .htu-left img {
@@ -1049,6 +1050,7 @@
             }
 
             .app-slide {
+                width: auto;
                 padding: 0 1.5rem;
             }
         }
@@ -1206,6 +1208,358 @@
             color: #666;
             font-size: 0.8rem;
         }
+
+        /* ============================================================
+           MOBILE-ONLY TUNING (max-width: 768px)
+           ============================================================ */
+        @media (max-width: 768px) {
+            /* Kill the expensive hero hex mask + ripple */
+            .hero-hex-base,
+            .hero-hex-ripple {
+                display: none !important;
+            }
+
+            .anim-mobile-push {
+                margin-top: 64px;
+            }
+
+            /* Drop navbar backdrop blur (GPU cost) */
+            header.navbar {
+                backdrop-filter: none !important;
+                -webkit-backdrop-filter: none !important;
+                background: rgba(31, 35, 37, 0.98) !important;
+                padding: 0.85rem 0 !important;
+            }
+
+            /* Restore navigation: stack logo + nav links */
+            .navbar .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.6rem;
+            }
+            .nav-links {
+                display: flex !important;
+                flex-wrap: wrap;
+                gap: 0.5rem 1rem;
+            }
+            .nav-link {
+                font-size: 0.8rem;
+            }
+
+            /* Hero: smaller type, less padding */
+            .hero {
+                padding: 2.5rem 0 !important;
+                min-height: auto !important;
+            }
+            .hero-layout {
+                gap: 2rem !important;
+            }
+            .hero h1 {
+                font-size: 2.1rem !important;
+                letter-spacing: -0.5px !important;
+                margin-bottom: 1rem !important;
+            }
+            .hero p {
+                font-size: 1rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+            .badge {
+                font-size: 0.65rem;
+                padding: 0.3rem 0.7rem;
+                margin-bottom: 1rem;
+            }
+            /* Hero screenshot + svg: shrink so they don't overflow */
+            .screenshot-container {
+                padding-right: 16px;
+                padding-left: 2px;
+                padding-top: 14px;
+            }
+            .screenshot-container img {
+                max-width: 240px !important;
+            }
+            .hero-layout .position-relative > img[alt="Classpad II"] {
+                /* max-width: 280px !important; */
+                width: 125% !important;
+            }
+
+            /* Sections: tighter padding + smaller titles */
+            .section {
+                padding: 2.75rem 0 !important;
+            }
+            .section-header {
+                margin: 0 auto 2rem !important;
+            }
+            .section-title {
+                font-size: 1.65rem !important;
+            }
+            .section-subtitle {
+                font-size: 0.95rem !important;
+            }
+
+            /* Installer box */
+            .installer-container {
+                padding: 1.5rem !important;
+                animation: none !important; /* ripple box-shadow animation */
+            }
+            .installer-steps {
+                font-size: 0.85rem;
+                gap: 0.5rem;
+            }
+            .code-box {
+                font-size: 0.85rem !important;
+                padding: 0.8rem !important;
+            }
+            .mini-code {
+                padding: 0.3rem 0.6rem !important;
+            }
+            .key-btn {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.85rem;
+            }
+
+            /* How-to-use: kill 140vh min-height, shrink device */
+            .htu-container {
+                padding: 2rem 0 !important;
+            }
+            .htu-split {
+                min-height: auto !important;
+                gap: 1.5rem !important;
+            }
+            .htu-left {
+                margin-bottom: 0.5rem !important;
+            }
+            .htu-device-wrapper {
+                width: 220px !important;
+                margin-top: 1rem !important;
+            }
+            .htu-left img {
+                width: 220px !important;
+            }
+            .step {
+                padding: 1rem 1.2rem !important;
+                gap: 1rem !important;
+            }
+            .step-title {
+                font-size: 1.1rem !important;
+            }
+            .step-subtitle {
+                font-size: 0.9rem !important;
+            }
+            .step-number {
+                width: 32px;
+                height: 32px;
+                font-size: 1rem;
+            }
+
+            /* app galleries: replace scroll-jacking with native swipe */
+            .app-group-container {
+                height: auto !important;
+            }
+            .app-sticky-wrapper {
+                position: relative !important;
+                height: auto !important;
+                padding: 1rem 0 2rem;
+            }
+            .app-group {
+                overflow-x: auto;
+                overflow-y: hidden;
+                -webkit-overflow-scrolling: touch;
+                scroll-snap-type: x mandatory;
+                width: 100%;
+                /* padding: 0 1rem !important; */
+                padding: 0;
+                gap: 1rem !important;
+                scrollbar-width: thin;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .app-slide {
+                scroll-snap-align: center;
+                padding: 0 0.5rem !important;
+            }
+            .app-card {
+                width: 88vw !important;
+                max-width: 360px !important;
+            }
+            .app-body {
+                padding: 1rem !important;
+                gap: 1rem !important;
+            }
+            /* .app-image {
+                width: 160px !important;
+                height: 264px !important;
+            } */
+            .app-title {
+                font-size: 1.15rem !important;
+            }
+            .app-description {
+                font-size: 0.88rem !important;
+                margin-top: 0.5rem !important;
+            }
+            .app-actions {
+                gap: 0.6rem !important;
+                margin-top: 1rem !important;
+            }
+            .app-actions .btn {
+                padding: 0.55rem !important;
+                font-size: 0.85rem !important;
+            }
+
+            /* Features grid: trim padding */
+            .feature-item {
+                padding: 1rem !important;
+                gap: 0.75rem !important;
+            }
+            .feature-item h5 {
+                font-size: 1.05rem !important;
+            }
+            .feature-item p {
+                font-size: 0.85rem !important;
+            }
+            .features-center-img img {
+                width: 200px !important;
+            }
+
+            /* Python cards */
+            .python-card {
+                padding: 1.5rem !important;
+            }
+            .python-card h3 {
+                font-size: 1.25rem !important;
+            }
+            .python-card-small {
+                padding: 1rem !important;
+            }
+
+            /* Discord section */
+            .discord-container {
+                padding: 1.5rem !important;
+                gap: 1.5rem !important;
+            }
+            .discord-content h2 {
+                font-size: 1.6rem !important;
+            }
+            .discord-content p {
+                font-size: 1rem !important;
+                margin-bottom: 1.25rem !important;
+            }
+            .discord-iframe iframe {
+                height: 320px !important;
+            }
+
+            /* Specs section */
+            .specs-grid {
+                gap: 2rem !important;
+                margin-top: 2rem !important;
+            }
+            .spec-category h2 {
+                font-size: 1.25rem !important;
+            }
+            .spec-item {
+                gap: 1rem !important;
+                margin-bottom: 1.1rem !important;
+            }
+            .spec-data h4 {
+                font-size: 1rem !important;
+            }
+            .spec-data p {
+                font-size: 0.85rem !important;
+            }
+            /* Specs background image: drop the heavy neon-startup drop-shadow filter */
+            #specs-img {
+                opacity: 0.25 !important;
+                filter: none !important;
+            }
+            .neon-active {
+                animation: none !important;
+            }
+
+            /* 13. Wiki catch banner */
+            .wiki-catch {
+                padding: 2rem 1rem !important;
+                margin-top: 2rem !important;
+            }
+            .wiki-catch h2 {
+                font-size: 1.5rem !important;
+            }
+            .wiki-catch p {
+                font-size: 1rem !important;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 2rem 0 !important;
+            }
+            .footer-links {
+                display: flex !important;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.4rem 0.75rem;
+            }
+            .footer-links a {
+                margin: 0 !important;
+                font-size: 0.85rem;
+            }
+
+            /* Disable hover transforms on touch (avoids sticky hover + repaints) */
+            .btn:hover,
+            .btn-primary:hover,
+            .btn-secondary:hover,
+            .feature-item:hover,
+            .app-card:hover,
+            .step:hover,
+            .python-card:hover,
+            .copy-btn:hover {
+                transform: none !important;
+                box-shadow: none !important;
+            }
+
+            /* InView one-shot animation elements: ensure visible if JS skipped */
+            .gs-anim-target,
+            .gs-anim-fade,
+            .scroll-anim-slide,
+            .scroll-anim-fade {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+
+            /* Container: tighter side gutters */
+            .container {
+                padding: 0 1rem !important;
+            }
+        }
+
+        /* ============================================================
+           Very small phones (<=380px) : extra tightening
+           ============================================================ */
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 1.75rem !important;
+            }
+            .section-title {
+                font-size: 1.4rem !important;
+            }
+            .app-card {
+                width: 92vw !important;
+            }
+            /* .app-image {
+                width: 140px !important;
+                height: 231px !important;
+            } */
+        }
+
+        /* Respect users who prefer reduced motion (any screen size) */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
     </style>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="Kb2nywKkyR+dD+Av2GmerQ" async></script>
 </head>
@@ -1257,8 +1611,7 @@
                 </div>
             </div>
 
-            <!-- User's Original Exact Structure Snippet preserved -->
-            <div class="row justify-content-center hero-anim-elem" style="opacity: 0">
+            <div class="row justify-content-center hero-anim-elem anim-mobile-push" style="opacity: 0">
                 <div class="position-relative col-auto">
                     <img class="position-absolute top-0 start-0 mt-n12 ms-n12"
                         style="z-index: 1; max-width: 450px; width: 120%; opacity: 0.7"
@@ -1976,19 +2329,26 @@
             stagger,
         } from "https://cdn.jsdelivr.net/npm/motion@12.34.0/+esm";
 
-        // 1. Progress Bar Scroll Animation
+        // Mobile detection — used to skip heavy scroll-linked animations on small screens.
+        // Mobile already gets native overflow-x swipe carousels via CSS, so the
+        // scroll-jacking transform animations would just fight the user's swipe.
+        // The elements targeted by skipped animations have no inline opacity:0,
+        // so they remain visible by default.
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+        // 1. Progress Bar Scroll Animation (cheap, keep on mobile)
         scroll(animate("#progress", { scaleX: [0, 1] }), {
             offset: ["start start", "end end"],
         });
 
-        // 2. Hero Sequential animations
+        // 2. Hero Sequential animations (one-time, keep on mobile)
         animate(
             ".hero-anim-elem",
             { opacity: [0, 1], y: [30, 0] },
             { duration: 0.8, delay: stagger(0.15) },
         );
 
-        // 3. Get Started InView (Horizontal Sliding texts)
+        // 3. Get Started InView (one-shot triggers, keep on mobile)
         inView(".gs-anim-target", (element) => {
             animate(
                 element,
@@ -2004,84 +2364,97 @@
         });
 
         // 4. Feature Cards sliding out from center (reversible)
-        document.querySelectorAll(".feature-slide-left").forEach((card) => {
-            scroll(
-                animate(card, {
-                    opacity: [0, 1],
-                    scale: [0.6, 1],
-                    x: [100, 0],
-                    y: [50, 0],
-                }),
-                { target: card, offset: ["start 90%", "start 40%"] },
-            );
-        });
-        document.querySelectorAll(".feature-slide-right").forEach((card) => {
-            scroll(
-                animate(card, {
-                    opacity: [0, 1],
-                    scale: [0.6, 1],
-                    x: [-100, 0],
-                    y: [50, 0],
-                }),
-                { target: card, offset: ["start 90%", "start 40%"] },
-            );
-        });
+        //    Scroll-linked transform animation — skip on mobile for perf.
+        if (!isMobile) {
+            document.querySelectorAll(".feature-slide-left").forEach((card) => {
+                scroll(
+                    animate(card, {
+                        opacity: [0, 1],
+                        scale: [0.6, 1],
+                        x: [100, 0],
+                        y: [50, 0],
+                    }),
+                    { target: card, offset: ["start 90%", "start 40%"] },
+                );
+            });
+            document.querySelectorAll(".feature-slide-right").forEach((card) => {
+                scroll(
+                    animate(card, {
+                        opacity: [0, 1],
+                        scale: [0.6, 1],
+                        x: [-100, 0],
+                        y: [50, 0],
+                    }),
+                    { target: card, offset: ["start 90%", "start 40%"] },
+                );
+            });
+        }
 
         // 5. Discord Animation Sequencing (White-space safe)
-        const heading = document.getElementById("discord-heading");
-        const headingText = heading.textContent;
-        heading.innerHTML = "";
-        headingText.split("").forEach((char, i) => {
-            const span = document.createElement("span");
-            span.innerHTML = char === " " ? "&nbsp;" : char;
-            span.style.opacity = 0;
-            span.style.display = "inline-block";
-            heading.appendChild(span);
+        //    Char-by-char scroll animation creates ~16 spans each with their own
+        //    scroll-linked animation — skip on mobile for perf.
+        if (!isMobile) {
+            const heading = document.getElementById("discord-heading");
+            const headingText = heading.textContent;
+            heading.innerHTML = "";
+            headingText.split("").forEach((char, i) => {
+                const span = document.createElement("span");
+                span.innerHTML = char === " " ? "&nbsp;" : char;
+                span.style.opacity = 0;
+                span.style.display = "inline-block";
+                heading.appendChild(span);
 
-            scroll(animate(span, { opacity: [0, 1], y: [20, 0] }), {
-                target: heading,
-                offset: [`start ${80 - i * 1}%`, `start ${70 - i * 1}%`],
+                scroll(animate(span, { opacity: [0, 1], y: [20, 0] }), {
+                    target: heading,
+                    offset: [`start ${80 - i * 1}%`, `start ${70 - i * 1}%`],
+                });
             });
-        });
-        scroll(animate("#discord-text", { opacity: [0, 1], x: [-50, 0] }), {
-            target: document.querySelector(".discord-container"),
-            offset: ["start 65%", "start 40%"],
-        });
-        scroll(animate(".discord-iframe", { opacity: [0, 1], scale: [0.8, 1] }), {
-            target: document.querySelector(".discord-container"),
-            offset: ["start 45%", "start 25%"],
-        });
+            scroll(animate("#discord-text", { opacity: [0, 1], x: [-50, 0] }), {
+                target: document.querySelector(".discord-container"),
+                offset: ["start 65%", "start 40%"],
+            });
+            scroll(animate(".discord-iframe", { opacity: [0, 1], scale: [0.8, 1] }), {
+                target: document.querySelector(".discord-container"),
+                offset: ["start 45%", "start 25%"],
+            });
+        }
 
         // 6. Specs icons & Neon Startup
-        document.querySelectorAll(".spec-anim-target").forEach((item) => {
-            scroll(animate(item, { opacity: [0, 1], x: [-30, 0] }), {
-                target: item,
-                offset: ["start 85%", "start 60%"],
+        //    Scroll-linked animations on every spec row — skip on mobile.
+        //    Neon-startup uses drop-shadow filter animation — heavy, skip on mobile.
+        if (!isMobile) {
+            document.querySelectorAll(".spec-anim-target").forEach((item) => {
+                scroll(animate(item, { opacity: [0, 1], x: [-30, 0] }), {
+                    target: item,
+                    offset: ["start 85%", "start 60%"],
+                });
             });
-        });
-        document.querySelectorAll(".spec-title").forEach((item) => {
-            scroll(animate(item, { opacity: [0, 1] }), {
-                target: item,
-                offset: ["start 90%", "start 70%"],
+            document.querySelectorAll(".spec-title").forEach((item) => {
+                scroll(animate(item, { opacity: [0, 1] }), {
+                    target: item,
+                    offset: ["start 90%", "start 70%"],
+                });
             });
-        });
+        }
         inView("#specs-footer", (el) => {
             animate(el, { opacity: [0, 1] }, { duration: 1, delay: 0.5 });
             return () => animate(el, { opacity: 0 });
         });
 
-        // Re-playable Neon Blink
-        inView("#specs-img", (info) => {
-            const img = document.getElementById("specs-img");
-            // Force reflow to restart animation
-            img.classList.remove("neon-active");
-            void img.offsetWidth;
-            img.classList.add("neon-active");
+        // Re-playable Neon Blink — skip on mobile (filter animation is GPU-heavy)
+        if (!isMobile) {
+            inView("#specs-img", (info) => {
+                const img = document.getElementById("specs-img");
+                // Force reflow to restart animation
+                img.classList.remove("neon-active");
+                void img.offsetWidth;
+                img.classList.add("neon-active");
 
-            return () => img.classList.remove("neon-active");
-        });
+                return () => img.classList.remove("neon-active");
+            });
+        }
 
-        // 7. General slide up and fades
+        // 7. General slide up and fades (one-shot InView, keep on mobile)
         document.querySelectorAll(".scroll-anim-slide").forEach((element) => {
             element.style.opacity = 0;
             inView(element, () => {
@@ -2163,29 +2536,35 @@
 
             startAutoSlide();
 
-            const appGroup = document.getElementById("apps-container");
-            // Translate by the total width of the content, subtracting 100vw so the very end aligns perfectly with the right edge.
-            // This is completely decoupled from card numbers or sizes, and is fully responsive!
-            scroll(
-                animate(appGroup, {
-                    transform: ["none", "translateX(calc(-100% + 100vw))"],
-                }),
-                { target: document.querySelector("#programs") },
-            );
+            // App gallery horizontal scroll-jacking — desktop only.
+            // On mobile, CSS converts .app-group into a native overflow-x swipe
+            // carousel with scroll-snap, so the Motion One transform animation
+            // would conflict with the user's swipe and cause jank.
+            if (!isMobile) {
+                const appGroup = document.getElementById("apps-container");
+                // Translate by the total width of the content, subtracting 100vw so the very end aligns perfectly with the right edge.
+                // This is completely decoupled from card numbers or sizes, and is fully responsive!
+                scroll(
+                    animate(appGroup, {
+                        transform: ["none", "translateX(calc(-100% + 100vw))"],
+                    }),
+                    { target: document.querySelector("#programs") },
+                );
 
-            // Python Games Scroll
-            const pyAppGroup = document.getElementById("python-apps-container");
-            scroll(
-                animate(pyAppGroup, {
-                    transform: ["none", "translateX(calc(-100% + 100vw))"],
-                }),
-                { target: document.getElementById("python-games") },
-            );
+                // Python Games Scroll
+                const pyAppGroup = document.getElementById("python-apps-container");
+                scroll(
+                    animate(pyAppGroup, {
+                        transform: ["none", "translateX(calc(-100% + 100vw))"],
+                    }),
+                    { target: document.getElementById("python-games") },
+                );
+            }
         }, 300);
     </script>
 
     <script>
-        // --- Wave Matrix Hex Ripple Background Effect ---
+        // Wave Matrix Hex Ripple Background Effect ---
         /* const canvas = document.getElementById('hero-canvas');
           const ctx = canvas.getContext('2d');
   
@@ -2245,7 +2624,7 @@
           drawWave();
           */
 
-        // --- High Performance CSS Mask Hex Background Generator ---
+        // High Performance CSS Mask Hex Background Generator ---
         function initHexBackground() {
             // Text to map into hex
             const hexText = " ClassPad.Dev - Unlock Your Classpad II Superpowers ";
@@ -2284,9 +2663,13 @@
                 dataUrl;
         }
 
-        initHexBackground();
+        // initHexBackground builds a 2000x1500 SVG with 60 text lines and base64-encodes it
+        // as a CSS mask. Skip on mobile — the masked elements are display:none anyway.
+        if (!window.matchMedia("(max-width: 768px)").matches) {
+            initHexBackground();
+        }
 
-        // --- Hero Image Carousel Logic ---
+        // Hero Image Carousel Logic ---
         const images = [
             "https://classpaddev.github.io/img/term.png",
             "https://classpaddev.github.io/img/doom.png",
@@ -2313,7 +2696,7 @@
             }
         }, 6000);
 
-        // --- Copy Install Command Logic ---
+        // Copy Install Command Logic ---
         function copyCommand() {
             const cmd = "irm https://get.classpad.dev/ | iex";
 
@@ -2335,7 +2718,7 @@
             document.body.removeChild(textArea);
         }
 
-        // --- Store Data Definitions ---
+        // Store Data Definitions ---
         const noHhkData = [
             {
                 name: "OldTicTacToe",
