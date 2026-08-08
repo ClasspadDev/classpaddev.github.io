@@ -1,0 +1,104 @@
+[
+    {
+        "id": 4,
+        "name": "CP Doom",
+        "author": "QBos07",
+        "description": "A Doom source port for the Classpad II. You also need the WAD. Check the details",
+        "image": "https://classpaddev.github.io/img/doom.png",
+        "downloadUrl": "https://github.com/QBos07/CPDoom/releases/download/v1.1.0/CPDoom.hh3",
+        "detailsUrl": "https://github.com/QBos07/CPDoom/",
+        "position": "0 19%",
+        "format": ".hh3",
+        "tags": [
+            "Game",
+            "FPS"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "CPBoy",
+        "author": "QBos07",
+        "description": "A Game Boy (DMG) emulator for the Classpad II. You need roms. Check the details",
+        "image": "https://classpaddev.github.io/img/gb.png",
+        "downloadUrl": "https://classpaddev.github.io/first-run/apps/CPBoy.hh3",
+        "detailsUrl": "https://github.com/QBos07/CPBoy/",
+        "position": "0 28%",
+        "format": ".hh3",
+        "tags": [
+            "Emulator",
+            "Classic"
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Snake Game",
+        "author": "Hollyhock Team",
+        "description": "Classic snake game",
+        "image": "https://classpaddev.github.io/first-run/apps/snake.png",
+        "downloadUrl": "https://classpaddev.github.io/first-run/apps/snake.hh3",
+        "detailsUrl": "https://github.com/ClasspadDev/hollyhock-3/blob/master/demos/snake/",
+        "format": ".hh3",
+        "tags": [
+            "Game",
+            "Classic"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Python",
+        "author": "Hollyhock Team",
+        "description": "The REAL snake game. Python interpreter for the Classpad II, create apps and games.",
+        "image": "https://classpaddev.github.io/python/demo1.png",
+        "downloadUrl": "https://classpaddev.github.io/python/PythonExtra.hh3",
+        "detailsUrl": "https://classpaddev.github.io/python/",
+        "format": ".hh3",
+        "tags": [
+            "Programming",
+            "Python",
+            "Game"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "CP Pong",
+        "author": "PyCSharp",
+        "description": "A simple Ping Pong Game for the Casio FX-CP400.",
+        "image": "https://raw.githubusercontent.com/PyCSharp/CPPong-For-HHK3/refs/heads/main/image.jpg",
+        "downloadUrl": "https://github.com/PyCSharp/CPPong-For-HHK3/releases/latest/download/CPPong.hh3",
+        "detailsUrl": "https://github.com/PyCSharp/CPPong-For-HHK3",
+        "format": ".hh3",
+        "tags": [
+            "Game",
+            "Sports"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Hex Editor",
+        "author": "PyCSharp",
+        "description": "A hex editor that can modify values in the RAM of the calculator.",
+        "image": "https://raw.githubusercontent.com/PyCSharp/HexEditor-For-HHK3/refs/heads/main/image.png",
+        "downloadUrl": "https://github.com/PyCSharp/CPHexEditor-For-HHK3/releases/latest/download/CPHexEditor.hh3",
+        "detailsUrl": "https://github.com/PyCSharp/CPHexEditor-For-HHK3",
+        "position": "top",
+        "format": ".hh3",
+        "tags": [
+            "Utility",
+            "System"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Tetris",
+        "author": "Hollyhock Team",
+        "description": "Simple Tetris game.",
+        "image": "https://classpaddev.github.io/first-run/apps/tetris.png",
+        "downloadUrl": "https://classpaddev.github.io/first-run/apps/tetris.hh3",
+        "detailsUrl": "https://github.com/ClasspadDev/hollyhock-3/tree/master/demos/tetris",
+        "format": ".hh3",
+        "tags": [
+            "Game",
+            "Puzzle"
+        ]
+    }
+]

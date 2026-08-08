@@ -1,172 +1,2088 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
-    <meta name="description" content="Explore the Classpad fx-CP400">
-    <meta itemprop="name" content="Classpad Dev">
-    <meta itemprop="description" content="Explore the Classpad fx-CP400">
+    <meta name="description" content="Explore the Classpad fx-CP400" />
+    <meta itemprop="name" content="Classpad Dev" />
+    <meta itemprop="description" content="Explore the Classpad fx-CP400" />
     <meta itemprop="image"
-        content="https://res.cloudinary.com/s3ansh33p/image/upload/fl_lossy,f_auto/v1640786848/Classpad/classspad_2_grande_asfypp.webp">
-    <meta property="og:url" content="https://classpaddev.github.io/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Classpad Dev">
-    <meta property="og:description" content="Explore the Classpad fx-CP400">
+        content="https://res.cloudinary.com/s3ansh33p/image/upload/fl_lossy,f_auto/v1640786848/Classpad/classspad_2_grande_asfypp.webp" />
+    <meta property="og:url" content="https://classpaddev.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Classpad Dev" />
+    <meta property="og:description" content="Explore the Classpad fx-CP400" />
     <meta property="og:image"
-        content="https://res.cloudinary.com/s3ansh33p/image/upload/fl_lossy,f_auto/v1640786848/Classpad/classspad_2_grande_asfypp.webp">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Classpad Dev">
-    <meta name="twitter:description" content="Explore the Classpad fx-CP400">
+        content="https://res.cloudinary.com/s3ansh33p/image/upload/fl_lossy,f_auto/v1640786848/Classpad/classspad_2_grande_asfypp.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Classpad Dev" />
+    <meta name="twitter:description" content="Explore the Classpad fx-CP400" />
     <meta name="twitter:image"
-        content="https://res.cloudinary.com/s3ansh33p/image/upload/fl_lossy,f_auto/v1640786848/Classpad/classspad_2_grande_asfypp.webp">
+        content="https://res.cloudinary.com/s3ansh33p/image/upload/fl_lossy,f_auto/v1640786848/Classpad/classspad_2_grande_asfypp.webp" />
     <meta name="description" content="Explore the Classpad fx-CP400" />
     <meta name="author" content="Sean McGinty" />
     <meta name="google-site-verification" content="XZl64GJFi9Ga4ctg3f_tQwNCwTmpFj70GKCxNVgqOk4" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
     <title>Classpad Dev</title>
     <!-- Favicon-->
     <link rel="icon" type="image/png"
         href="https://res.cloudinary.com/s3ansh33p/image/upload/fl_lossy,f_auto/v1640786848/Classpad/classspad_2_grande_asfypp.webp" />
-    <!-- Google Fonts-->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap"
-        as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=Poppins:wght@100;200;300;400;500;600;700&amp;display=swap">
-    </noscript>
-    <!-- Font awesome-->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    </noscript>
-    <!-- Overlay Scrollbars-->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.css"
-        as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/css/OverlayScrollbars.css">
-    </noscript>
-    <!-- Bootstrap -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
-    </noscript>
-    <!-- Custom CSS -->
-    <link rel="preload" href="index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="index.css">
-    </noscript>
-    <!-- Loader CSS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
     <style>
-        #loader {
-            width: 100vw;
-            height: 100vh;
-            background: black;
+        :root {
+            --cp-white: #f4f4f5;
+            --cp-text: #a1a1aa;
+            --cp-bg: #1f2325;
+            --cp-accent: #00dc68;
+            --cp-accent-hover: #2bfd87;
+            --cp-disabled: #3f3f46;
+            --cp-text-black: #003719;
+            --cp-dark: #18181b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Poppins", Arial, Helvetica, sans-serif;
+            background-color: var(--cp-bg);
+            color: var(--cp-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Archivo Black", Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            line-height: 1.2;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Scroll Progress Bar */
+        .progress-bar {
             position: fixed;
-            z-index: 1031;
             top: 0;
             left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--cp-accent);
+            transform-origin: 0%;
+            z-index: 9999;
+        }
+
+        .nav-icon {
+            width: 24px;
+            height: 24px;
+            aspect-ratio: 1;
+        }
+
+        /* Navigation */
+        header.navbar {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            position: sticky;
+            top: 0;
+            background: rgba(31, 35, 37, 0.9);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .navbar .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: var(--cp-white);
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        }
+
+        .logo span {
+            color: var(--cp-accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-link {
+            color: var(--cp-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 0.9rem;
+            display: flex;
+            gap: .9rem;
+        }
+
+        .nav-link:hover {
+            color: var(--cp-white);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center;
+            padding: 4rem 0;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(0, 220, 104, 0.1);
+            background-color: #121415;
         }
 
-        .lds-dual-ring {
-            display: inline-block;
-            width: 80px;
-            height: 80px;
+        /* High Performance CSS/SVG background layers */
+        .hero-hex-base {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(161, 161, 170, 0.04);
+            z-index: 0;
         }
 
-        .lds-dual-ring:after {
-            content: " ";
-            display: block;
-            width: 64px;
-            height: 64px;
-            margin: 8px;
+        .hero-hex-ripple {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .hero-hex-ripple::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 75%;
+            width: 150vw;
+            height: 150vw;
+            transform: translate(-50%, -50%);
+            /* Stepped radial gradient for sharp concentric rings */
+            background: radial-gradient(circle,
+                    transparent 0%,
+                    transparent 45%,
+                    var(--cp-accent) 45.1%,
+                    var(--cp-accent) 55%,
+                    transparent 55.1%,
+                    transparent 100%);
             border-radius: 50%;
-            border: 6px solid #fff;
-            border-color: #fff transparent #fff transparent;
-            animation: lds-dual-ring 1.2s linear infinite;
+            opacity: 0;
+            animation: hexRippleAnim 5s ease-out infinite;
         }
 
-        @keyframes lds-dual-ring {
+        @keyframes hexRippleAnim {
             0% {
-                transform: rotate(0deg);
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 0.8;
             }
 
             100% {
-                transform: rotate(360deg);
+                transform: translate(-50%, -50%) scale(1.5);
+                opacity: 0;
             }
         }
 
-        .python-banner {
-            background: linear-gradient(135deg, #4B8BBE 0%, #306998 100%);
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            margin: 2rem 0;
+        .hero-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: #121415;
         }
 
-        .python-banner:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right,
+                    var(--cp-bg) 0%,
+                    rgba(31, 35, 37, 0.4) 50%,
+                    var(--cp-bg) 100%);
+            z-index: -1;
+            pointer-events: none;
         }
 
-        .python-section {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            border-radius: 15px;
+        .hero-layout {
+            position: relative;
+            z-index: 10;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        @media (max-width: 900px) {
+            .hero-layout {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            background: rgba(0, 220, 104, 0.15);
+            color: var(--cp-accent);
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(0, 220, 104, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1.5px;
+        }
+
+        .hero h1 .accent-text {
+            color: var(--cp-accent);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--cp-text);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        /* Utility Classes for the Original Carousel HTML Snippet */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .position-relative {
+            position: relative;
+        }
+
+        .position-absolute {
+            position: absolute;
+        }
+
+        .col-auto {
+            flex: 0 0 auto;
+            width: auto;
+            max-width: 100%;
+        }
+
+        .top-0 {
+            top: 0;
+        }
+
+        .start-0 {
+            left: 0;
+        }
+
+        .bottom-0 {
+            bottom: 0;
+        }
+
+        .end-0 {
+            right: 0;
+        }
+
+        .mt-n12 {
+            margin-top: -3rem;
+        }
+
+        .ms-n12 {
+            margin-left: -3rem;
+        }
+
+        .mb-n5 {
+            margin-bottom: -1.25rem;
+        }
+
+        .me-n5 {
+            margin-right: -1.25rem;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .p-5 {
             padding: 3rem;
-            margin: 3rem 0;
-            text-align: center;
         }
 
-        .python-section h2 {
-            color: #306998;
+        .screenshot {
+            transition: opacity 0.5s ease-in-out;
+            border-radius: 4px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .screenshot-container {
+            position: relative;
+            /* padding: 16px 32px 0px 2px; */
+            aspect-ratio: 320 / 528;
+            padding-right: 32px;
+            padding-left: 4px;
+            padding-top: 22px;
+            padding-bottom: 0px;
+        }
+
+        .screenshot-container div.static {
+            background-color: #000;
+            position: absolute;
+            inset: 0;
+            margin-right: 30px;
+            margin-top: 16px;
+            border-radius: 6px;
+        }
+
+        .screenshot-container img {
+            width: 100%;
+            max-width: 320px;
+            aspect-ratio: 320 / 528;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            padding: 0.8rem 1.8rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .btn-primary {
+            background: var(--cp-accent);
+            color: var(--cp-text-black);
+        }
+
+        .btn-primary:hover {
+            background: var(--cp-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 220, 104, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--cp-white);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        .section {
+            padding: 5rem 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3.5rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--cp-text);
+        }
+
+        /* Dynamic Title Sliding Wrappers */
+        .gs-anim-wrap {
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .gs-anim-wrap.overflow {
+            overflow: visible;
+        }
+
+        .gs-anim-target {
+            display: inline-block;
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        /* Installer Box with Ripple */
+        @keyframes ripple {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 220, 104, 0.3);
+            }
+
+            70% {
+                box-shadow: 0 0 0 25px rgba(0, 220, 104, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 220, 104, 0);
+            }
+        }
+
+        .installer-container {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(0, 220, 104, 0.4);
+            border-radius: 1rem;
+            padding: 2.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            animation: ripple 3s infinite ease-out;
+            position: relative;
+        }
+
+        .installer-steps {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            color: var(--cp-white);
+            flex-wrap: wrap;
+        }
+
+        .key-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.4rem 0.8rem;
+            border-radius: 0.4rem;
+            font-family: inherit;
+            font-weight: 600;
+            box-shadow: 0 4px 0 rgba(0, 0, 0, 0.4);
+            transform: translateY(-2px);
+            margin: 0 0.2rem;
+        }
+
+        .code-box {
+            background: #091910;
+            border: 1px solid rgba(0, 220, 104, 0.3);
+            padding: 1.2rem;
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: monospace;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            overflow-x: auto;
+        }
+
+        .mini-code {
+            padding: .4rem .8rem;
+            margin: 0;
+        }
+
+        .copy-btn {
+            background: rgba(0, 220, 104, 0.15);
+            border: 1px solid rgba(0, 220, 104, 0.4);
+            color: var(--cp-accent);
+            padding: 0.5rem 1rem;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            transition: all 0.15s ease-out;
+            /* Snappy transition */
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            outline: none;
+        }
+
+        .copy-btn:hover {
+            background: var(--cp-accent);
+            color: var(--cp-text-black);
+        }
+
+        /* Snappy Copy Button Effect */
+        .copy-btn:active {
+            transform: scale(0.97);
+            filter: blur(2px);
+        }
+
+        /* How To Use Steps Layout */
+        .htu-container {
+            padding: 5rem 0;
+            background: var(--cp-bg);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .htu-split {
+            display: flex;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 1200px;
+            align-items: center;
+            gap: 4rem;
+            min-height: 140vh;
+        }
+
+        .htu-left {
+            flex: 0 0 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 2rem;
+            align-self: flex-start;
+        }
+
+        .htu-device-wrapper {
+            position: relative;
+            width: 350px;
+            max-width: 100%;
+            margin-top: 18%;
+        }
+
+        .htu-device-wrapper>img#htu-img {
+            width: 100%;
+            height: auto;
+            filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
+            border-radius: 12px;
+            display: block;
+        }
+
+        .htu-overlay {
+            position: absolute;
+            top: 7.25%;
+            left: 12.5%;
+            width: 75%;
+            aspect-ratio: 320 / 528;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .htu-overlay img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .htu-overlay img.active {
+            opacity: 1;
+        }
+
+        .htu-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.5rem 2rem;
+            transition:
+                transform 0.3s ease,
+                border-color 0.3s ease;
+        }
+
+        .step:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0, 220, 104, 0.3);
+        }
+
+        .step-number {
+            background: rgba(0, 220, 104, 0.1);
+            color: var(--cp-accent);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .step-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .step-title {
+            color: var(--cp-accent);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .step-subtitle {
+            color: var(--cp-text);
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .step-arrow {
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+            opacity: 0.5;
+            rotate: 90deg;
+        }
+
+        @media (max-width: 768px) {
+            .htu-split {
+                flex-direction: column;
+                padding-top: 2rem;
+                width: 100%;
+                gap: 2rem;
+            }
+
+            .htu-left {
+                flex: 0 0 auto;
+                margin-bottom: 1rem;
+                position: static;
+                align-self: center;
+            }
+
+            .htu-left img {
+                width: 250px;
+            }
+
+            .htu-right {
+                width: 100%;
+            }
+
+            .step {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        /* Features Modern Layout */
+        .features-layout {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        @media (max-width: 992px) {
+            .features-layout {
+                grid-template-columns: 1fr;
+                text-align: left;
+            }
+
+            .features-center-img {
+                order: -1;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .feature-column {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            z-index: 2;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background: rgba(20, 24, 25, 0.95);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition:
+                transform 0.3s ease,
+                border-color 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-4px) !important;
+            border-color: rgba(0, 220, 104, 0.4);
+        }
+
+        .feature-item i {
+            color: var(--cp-accent);
+            margin-top: 0.3rem;
+        }
+
+        .feature-item h5 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-family: "Poppins", sans-serif;
             font-weight: 700;
+        }
+
+        .feature-item p {
+            color: var(--cp-text);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .features-center-img {
+            display: flex;
+            justify-content: center;
+            z-index: 3;
+            position: relative;
+        }
+
+        .features-center-img img {
+            max-width: 100%;
+            height: auto;
+            width: 250px;
+            filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
+        }
+
+        /* Python Section */
+        .python-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: stretch;
+            margin-bottom: 2rem;
+        }
+
+        .python-small-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+
+            .python-grid,
+            .python-small-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .python-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1rem;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .python-card:hover {
+            border-color: rgba(0, 220, 104, 0.3);
+        }
+
+        .python-card-small {
+            padding: 1.5rem;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Discord Modern Layout */
+        .discord-container {
+            background: linear-gradient(135deg,
+                    rgba(88, 101, 242, 0.1) 0%,
+                    rgba(31, 35, 37, 1) 100%);
+            border: 1px solid rgba(88, 101, 242, 0.2);
+            border-radius: 1rem;
+            padding: 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .discord-container {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+        }
+
+        .discord-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: #5865f2;
+            /* Discord Blurple */
+        }
+
+        .discord-content p {
+            color: var(--cp-text);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Specs Section Layout */
+        .specs-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            text-align: left;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .specs-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .spec-category h2 {
+            font-size: 1.5rem;
+            color: var(--cp-text);
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        .spec-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
             margin-bottom: 1.5rem;
         }
 
-        .python-section p {
+        .spec-pictogram {
+            flex-shrink: 0;
+            width: 35px;
+        }
+
+        .spec-pictogram svg path,
+        .spec-pictogram svg circle:not(.stroked) {
+            fill: var(--cp-accent);
+        }
+
+        .spec-pictogram svg circle.stroked {
+            fill: none;
+            stroke: var(--cp-accent);
+            stroke-width: 2;
+        }
+
+        .spec-data h4 {
             font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+            color: var(--cp-white);
+            font-family: "Poppins", sans-serif;
+        }
+
+        .spec-data p {
+            font-size: 0.9rem;
+            color: var(--cp-text);
+            margin: 0;
+        }
+
+        /* Neon Blink Animation for Specs Diagram */
+        @keyframes neon-startup {
+            0% {
+                opacity: 0.2;
+                filter: drop-shadow(0 0 10px var(--cp-accent)) hue-rotate(90deg) brightness(1.5);
+            }
+
+            10% {
+                opacity: 0.8;
+                filter: drop-shadow(0 0 20px var(--cp-accent)) brightness(1.5);
+            }
+
+            20% {
+                opacity: 0.2;
+                filter: drop-shadow(0 0 5px var(--cp-accent)) hue-rotate(90deg) brightness(1.5);
+            }
+
+            30% {
+                opacity: 1;
+                filter: drop-shadow(0 0 30px var(--cp-accent)) brightness(1.5);
+            }
+
+            40% {
+                opacity: 0.5;
+                filter: drop-shadow(0 0 10px var(--cp-accent)) brightness(1.5);
+            }
+
+            100% {
+                opacity: 1;
+                filter: brightness(1.5) drop-shadow(0 0 5px rgba(0, 220, 104, 0.3));
+            }
+        }
+
+        .neon-active {
+            animation: neon-startup 1.5s ease-out forwards;
+        }
+
+        /* App Gallery Horizontal Scroll Layout */
+        .app-group-container {
+            height: 400vh;
+            /* scroll length */
+            position: relative;
+        }
+
+        .app-sticky-wrapper {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            background: var(--cp-bg);
+            /* avoid transparency stacking issues */
+        }
+
+        #python-games {
+            height: 600vh;
+        }
+
+        .app-group {
+            display: flex;
+            gap: 2rem;
+            padding: 0 4rem;
+            width: max-content;
+        }
+
+        /* 100vw Snap wrappers */
+        .app-slide {
+            width: 800px;
+            flex: 0 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        /* Card Design */
+        .app-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 1rem;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            transition:
+                border-color 0.3s ease,
+                background 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .app-card {
+                width: 90vw;
+            }
+
+            .app-card .app-body {
+                flex-direction: column;
+            }
+
+            .app-card .app-image {
+                width: 100%;
+                height: 250px;
+            }
+
+            .app-slide {
+                width: auto;
+                padding: 0 1.5rem;
+            }
+        }
+
+        .app-card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .app-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .app-title {
+            font-weight: bold;
+            font-size: 1.4rem;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .app-author {
+            font-size: 0.9rem;
+            color: var(--cp-text);
+        }
+
+        .app-body {
+            display: flex;
+            padding: 1.5rem;
+            gap: 2rem;
+        }
+
+        /* Exact 240x396px aspect ratio requested */
+        .app-image {
+            width: 240px;
+            height: 396px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            flex-shrink: 0;
+            background-color: #333;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .app-details {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .app-description {
+            color: var(--cp-text);
+            font-size: 0.95rem;
             line-height: 1.6;
-            color: #495057;
+            flex: 1;
+            margin-top: 1rem;
+        }
+
+        .app-tag {
+            background: #333;
+            color: var(--cp-accent);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.7em;
+            margin-right: 4px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+
+        .app-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .app-actions .btn {
+            flex: 1;
+            padding: 0.7rem;
+            font-size: 0.9rem;
+        }
+
+        /* Unmodified Section Grid */
+        .grid-no-hhk {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .no-hhk-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 0.8rem;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .no-hhk-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .no-hhk-card .meta {
+            font-size: 0.8rem;
+            color: var(--cp-text);
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .no-hhk-card p {
+            font-size: 0.9rem;
+            color: var(--cp-text);
+            flex: 1;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Wiki Catch Banner */
+        .wiki-catch {
+            background: linear-gradient(135deg,
+                    rgba(0, 220, 104, 0.1) 0%,
+                    rgba(31, 35, 37, 1) 100%);
+            border: 1px solid rgba(0, 220, 104, 0.3);
+            border-radius: 1rem;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--cp-dark);
+        }
+
+        .footer-links a {
+            color: var(--cp-text);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--cp-accent);
+        }
+
+        .copyright {
+            margin-top: 2rem;
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        /* ============================================================
+           MOBILE-ONLY TUNING (max-width: 768px)
+           ============================================================ */
+        @media (max-width: 768px) {
+            .md-hidden {
+                display: none;
+            }
+            
+            /* Kill the expensive hero hex mask + ripple */
+            .hero-hex-base,
+            .hero-hex-ripple {
+                display: none !important;
+            }
+
+            .anim-mobile-push {
+                margin-top: 64px;
+            }
+
+            /* Drop navbar backdrop blur (GPU cost) */
+            header.navbar {
+                backdrop-filter: none !important;
+                -webkit-backdrop-filter: none !important;
+                background: rgba(31, 35, 37, 0.98) !important;
+                padding: 0.85rem 0 !important;
+            }
+
+            /* Restore navigation: stack logo + nav links */
+            .navbar .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.6rem;
+            }
+            .nav-links {
+                display: flex !important;
+                flex-wrap: wrap;
+                gap: 0.5rem 1rem;
+            }
+            .nav-link {
+                font-size: 0.8rem;
+            }
+
+            /* Hero: smaller type, less padding */
+            .hero {
+                padding: 2.5rem 0 !important;
+                min-height: auto !important;
+            }
+            .hero-layout {
+                gap: 2rem !important;
+            }
+            .hero h1 {
+                font-size: 2.1rem !important;
+                letter-spacing: -0.5px !important;
+                margin-bottom: 1rem !important;
+            }
+            .hero p {
+                font-size: 1rem !important;
+                margin-bottom: 1.5rem !important;
+            }
+            .badge {
+                font-size: 0.65rem;
+                padding: 0.3rem 0.7rem;
+                margin-bottom: 1rem;
+            }
+            /* Hero screenshot + svg: shrink so they don't overflow */
+            .screenshot-container {
+                padding-right: 16px;
+                padding-left: 2px;
+                padding-top: 14px;
+            }
+            .screenshot-container img {
+                max-width: 240px !important;
+            }
+            .hero-layout .position-relative > img[alt="Classpad II"] {
+                /* max-width: 280px !important; */
+                width: 125% !important;
+            }
+            .hero-anim-elem.actions {
+                justify-content: center;
+            }
+
+            /* Sections: tighter padding + smaller titles */
+            .section {
+                padding: 2.75rem 0 !important;
+            }
+            .section-header {
+                margin: 0 auto 2rem !important;
+            }
+            .section-title {
+                font-size: 1.65rem !important;
+            }
+            .section-subtitle {
+                font-size: 0.95rem !important;
+            }
+
+            /* Installer box */
+            .installer-container {
+                padding: 1.5rem !important;
+                animation: none !important; /* ripple box-shadow animation */
+            }
+            .installer-steps {
+                font-size: 0.85rem;
+                gap: 0.5rem;
+            }
+            .code-box {
+                font-size: 0.85rem !important;
+                padding: 0.8rem !important;
+            }
+            .mini-code {
+                padding: 0.3rem 0.6rem !important;
+            }
+            .key-btn {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.85rem;
+            }
+
+            /* How-to-use: kill 140vh min-height, shrink device */
+            .htu-container {
+                padding: 2rem 0 !important;
+            }
+            .htu-split {
+                min-height: auto !important;
+                gap: 1.5rem !important;
+            }
+            .htu-left {
+                margin-bottom: 0.5rem !important;
+            }
+            .htu-device-wrapper {
+                width: 220px !important;
+                margin-top: 1rem !important;
+            }
+            .htu-left img {
+                width: 220px !important;
+            }
+            .step {
+                padding: 1rem 1.2rem !important;
+                gap: 1rem !important;
+            }
+            .step-title {
+                font-size: 1.1rem !important;
+            }
+            .step-subtitle {
+                font-size: 0.9rem !important;
+            }
+            .step-number {
+                width: 32px;
+                height: 32px;
+                font-size: 1rem;
+            }
+
+            /* app galleries: replace scroll-jacking with native swipe */
+            .app-group-container {
+                height: auto !important;
+            }
+            .app-sticky-wrapper {
+                position: relative !important;
+                height: auto !important;
+                padding: 1rem 0 2rem;
+            }
+            .app-group {
+                overflow-x: auto;
+                overflow-y: hidden;
+                -webkit-overflow-scrolling: touch;
+                scroll-snap-type: x mandatory;
+                width: 100%;
+                /* padding: 0 1rem !important; */
+                padding: 0;
+                gap: 1rem !important;
+                scrollbar-width: thin;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .app-slide {
+                scroll-snap-align: center;
+                padding: 0 0.5rem !important;
+            }
+            .app-card {
+                width: 88vw !important;
+                max-width: 360px !important;
+            }
+            .app-body {
+                padding: 1rem !important;
+                gap: 1rem !important;
+            }
+            /* .app-image {
+                width: 160px !important;
+                height: 264px !important;
+            } */
+            .app-title {
+                font-size: 1.15rem !important;
+            }
+            .app-description {
+                font-size: 0.88rem !important;
+                margin-top: 0.5rem !important;
+            }
+            .app-actions {
+                gap: 0.6rem !important;
+                margin-top: 1rem !important;
+            }
+            .app-actions .btn {
+                padding: 0.55rem !important;
+                font-size: 0.85rem !important;
+            }
+
+            /* Features grid: trim padding */
+            .feature-item {
+                padding: 1rem !important;
+                gap: 0.75rem !important;
+            }
+            .feature-item h5 {
+                font-size: 1.05rem !important;
+            }
+            .feature-item p {
+                font-size: 0.85rem !important;
+            }
+            .features-center-img img {
+                width: 200px !important;
+            }
+
+            /* Python cards */
+            .python-card {
+                padding: 1.5rem !important;
+            }
+            .python-card h3 {
+                font-size: 1.25rem !important;
+            }
+            .python-card-small {
+                padding: 1rem !important;
+            }
+
+            /* Discord section */
+            .discord-container {
+                padding: 1.5rem !important;
+                gap: 1.5rem !important;
+            }
+            .discord-content h2 {
+                font-size: 1.6rem !important;
+            }
+            .discord-content p {
+                font-size: 1rem !important;
+                margin-bottom: 1.25rem !important;
+            }
+            .discord-iframe iframe {
+                height: 320px !important;
+            }
+
+            /* Specs section */
+            .specs-grid {
+                gap: 2rem !important;
+                margin-top: 2rem !important;
+            }
+            .spec-category h2 {
+                font-size: 1.25rem !important;
+            }
+            .spec-item {
+                gap: 1rem !important;
+                margin-bottom: 1.1rem !important;
+            }
+            .spec-data h4 {
+                font-size: 1rem !important;
+            }
+            .spec-data p {
+                font-size: 0.85rem !important;
+            }
+            /* Specs background image: drop the heavy neon-startup drop-shadow filter */
+            #specs-img {
+                opacity: 0.25 !important;
+                filter: none !important;
+            }
+            .neon-active {
+                animation: none !important;
+            }
+
+            /* 13. Wiki catch banner */
+            .wiki-catch {
+                padding: 2rem 1rem !important;
+                margin-top: 2rem !important;
+            }
+            .wiki-catch h2 {
+                font-size: 1.5rem !important;
+            }
+            .wiki-catch p {
+                font-size: 1rem !important;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 2rem 0 !important;
+            }
+            .footer-links {
+                display: flex !important;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.4rem 0.75rem;
+            }
+            .footer-links a {
+                margin: 0 !important;
+                font-size: 0.85rem;
+            }
+
+            /* Disable hover transforms on touch (avoids sticky hover + repaints) */
+            .btn:hover,
+            .btn-primary:hover,
+            .btn-secondary:hover,
+            .feature-item:hover,
+            .app-card:hover,
+            .step:hover,
+            .python-card:hover,
+            .copy-btn:hover {
+                transform: none !important;
+                box-shadow: none !important;
+            }
+
+            /* InView one-shot animation elements: ensure visible if JS skipped */
+            .gs-anim-target,
+            .gs-anim-fade,
+            .scroll-anim-slide,
+            .scroll-anim-fade {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+
+            /* Container: tighter side gutters */
+            .container {
+                padding: 0 1rem !important;
+            }
+        }
+
+        /* ============================================================
+           Very small phones (<=380px) : extra tightening
+           ============================================================ */
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 1.75rem !important;
+            }
+            .section-title {
+                font-size: 1.4rem !important;
+            }
+            .app-card {
+                width: 92vw !important;
+            }
+            /* .app-image {
+                width: 140px !important;
+                height: 231px !important;
+            } */
+        }
+
+        /* Respect users who prefer reduced motion (any screen size) */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
         }
     </style>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="Kb2nywKkyR+dD+Av2GmerQ" async></script>
 </head>
 
 <body>
-    <!-- Loader -->
-    <div id="loader">
-        <div class="lds-dual-ring"></div>
-    </div>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="top">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" onclick='nav("top")'>Classpad Dev</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="navbar-nav me-auto mb-3 mb-lg-0 ms-lg-4"></div>
-                <div class="d-flex align-items-center">
-                    <ul class="navbar-nav me-auto mb-3 mb-lg-0 ms-lg-4">
-                        <li class="nav-item"><a class="nav-link text-white" onclick='nav("get-started")'>Get Started</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link text-white" onclick='nav("features")'>Features</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" onclick='nav("discord")'>Discord</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" onclick='nav("specs")'>Specifications</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link text-white" onclick='nav("programs")'>Programs</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="https://classpaddev.github.io/wiki/"
-                                target="_blank" rel="noreferrer">Wiki</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="/python">Python</a></li>
-                    </ul>
+    <!-- Motion Progress Bar -->
+    <div class="progress-bar" id="progress"></div>
+
+    <header class="navbar">
+        <div class="container header-content">
+            <a href="#" class="logo">ClassPad<span>.Dev</span></a>
+            <nav class="nav-links">
+                <a href="#install" class="nav-link">Get Started</a>
+                <a href="#programs" class="nav-link">Programs</a>
+                <a href="/wiki/" class="nav-link">Wiki</a>
+                <a href="/python/" class="nav-link">Python
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"  class="nav-icon md-hidden">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <g fill="none">
+                            <g fill="currentColor" clip-path="url(#SVGXv8lpc2Y)">
+                                <path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.9S0 5.789 0 11.969s3.403 5.96 3.403 5.96h2.03v-2.867s-.109-3.42 3.35-3.42h5.766s3.24.052 3.24-3.148V3.202S18.28 0 11.913 0M8.708 1.85c.578 0 1.046.47 1.046 1.052c0 .581-.468 1.051-1.046 1.051s-1.046-.47-1.046-1.051c0-.582.467-1.052 1.046-1.052" />
+                                <path d="M12.087 24c6.092 0 5.712-2.656 5.712-2.656l-.007-2.752h-5.814v-.826h8.123s3.9.445 3.9-5.735s-3.404-5.96-3.404-5.96h-2.03v2.867s.109 3.42-3.35 3.42H9.452s-3.24-.052-3.24 3.148v5.292S5.72 24 12.087 24m3.206-1.85c-.579 0-1.046-.47-1.046-1.052c0-.581.467-1.051 1.046-1.051c.578 0 1.046.47 1.046 1.051c0 .582-.468 1.052-1.046 1.052" />
+                            </g>
+                            <defs>
+                                <clipPath id="SVGXv8lpc2Y">
+                                    <path fill="#fff" d="M0 0h24v24H0z" />
+                                </clipPath>
+                            </defs>
+                        </g>
+                    </svg>
+                </a>
+                <a href="#discord" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" class="nav-icon" alt="Discord">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.1.1 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.1 16.1 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12" />
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <!-- High-perf CSS Mask Hex Background setup via JS -->
+        <div id="hero-hex-base" class="hero-hex-base"></div>
+        <div id="hero-hex-ripple" class="hero-hex-ripple"></div>
+        <div class="container hero-layout">
+            <div>
+                <span class="badge hero-anim-elem" style="opacity: 0">Hollyhock-3 for fx-CP400</span>
+                <h1 class="hero-anim-elem" style="opacity: 0">
+                    Unlock Your ClassPad II
+                    <span class="accent-text">Superpowers</span> ⚡
+                </h1>
+                <p class="hero-anim-elem" style="opacity: 0">
+                    With one launcher, unlock a myriad of possibilities. From games to
+                    emulators, explore our ever-expanding library of programs... You can
+                    even create your own!
+                </p>
+                <div class="hero-anim-elem actions" style="display: flex; gap: 1rem; flex-wrap: wrap; opacity: 0">
+                    <a href="#install" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Install Hollyhock
+                    </a>
+                    <a href="https://classpaddev.github.io/store/" class="btn btn-secondary">View Programs</a>
+                </div>
+            </div>
+
+            <div class="row justify-content-center hero-anim-elem anim-mobile-push" style="opacity: 0">
+                <div class="position-relative col-auto">
+                    <img class="position-absolute top-0 start-0 mt-n12 ms-n12"
+                        style="z-index: 1; max-width: 450px; width: 120%; opacity: 0.7"
+                        src="https://classpaddev.github.io/img/cp.svg" alt="Classpad II"
+                        onerror="this.style.display = 'none'" />
+                    <div class="screenshot-container">
+                        <div class="static"></div>
+                        <img class="position-absolute bottom-0 end-0 me-n5 mb-n5" style="z-index: 1; opacity: 0.4"
+                            src="flex-assets/elements/dots-blue.svg" alt="" onerror="this.style.display = 'none'" />
+                        <img class="position-relative img-fluid screenshot" id="screenshots"
+                            src="https://classpaddev.github.io/img/term.png" alt="Term on the Classpad II"
+                            style="width: 100%; max-width: 330px" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installer Section -->
+    <section id="install" class="section">
+        <div class="container" id="get-started-trigger">
+            <div class="section-header">
+                <h2 class="section-title gs-slide-title">GET STARTED</h2>
+                <p class="section-subtitle gs-fade-text">
+                    First of all, Welcome! We look forward to you joining the
+                    community.<br />Before you can run programs on the ClassPad, install
+                    the Hollyhock-3 launcher.
+                </p>
+            </div>
+
+            <div class="installer-container gs-anim-fade">
+                <div class="installer-steps">
+                    <span>1. Press</span>
+                    <span class="key-btn">
+                        <svg viewBox="0 0 88 88" width="16" height="16" fill="currentColor" style="margin-right: 4px">
+                            <path
+                                d="M0 12.402l35.687-4.86.016 34.423-35.67.203zm35.67 33.529l.026 34.453L0 75.48V46.12zm4.326-39.02L87.314 0v41.527l-47.318.376zm47.329 39.349L87.314 88 40.01 80.013V46.54z" />
+                        </svg>
+                        Win
+                    </span>
+                    <span>+</span>
+                    <span class="key-btn">X</span>
+                    <span>and choose</span>
+                    <span class="code-box mini-code">Windows PowerShell</span>
+                </div>
+
+                <div class="installer-steps">
+                    <span>2. Copy and paste the command below, then press Enter</span>
+                </div>
+
+                <div class="code-box">
+                    <span id="install-cmd" style="color: #00dc68">irm
+                        <span style="color: #a1a1aa">https://get.classpad.dev/</span> |
+                        iex</span>
+                    <button class="copy-btn" onclick="copyCommand()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        <span id="copy-text">Copy</span>
+                    </button>
+                </div>
+
+                <p style="color: var(--cp-text); font-size: 0.9rem; margin-top: 1.5rem">
+                    Not on Windows or having issues? Join our
+                    <a href="https://discord.gg/knpcNJTzpd" style="color: var(--cp-accent); text-decoration: none"
+                        target="_blank">Discord server</a>
+                    for help!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How To Use (Vertical Carousel) -- TODO: FIX SCROLL !! -->
+    <section id="how-to-use" class="htu-container">
+        <div class="htu-split container">
+            <div class="htu-left">
+                <div class="htu-device-wrapper">
+                    <img id="htu-img" src="https://classpaddev.github.io/img/cp.svg"
+                        alt="Classpad Instruction Graphic" />
+                    <div class="htu-overlay">
+                        <img id="htu-step1" class="active" src="/img/step1_system.png" alt="Step 1 System" />
+                        <img id="htu-step2" src="/img/step2_launcher.png" alt="Step 2 Launcher" />
+                        <img id="htu-step3" src="/img/step3_yal.png" alt="Step 3 App" />
+                        <img id="htu-step4" src="/img/step4_run.png" alt="Step 4 Run"
+                            onerror="this.src='/img/step3_yal.png'" />
+                    </div>
+                </div>
+            </div>
+            <div class="htu-right">
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 class="step-title">
+                                Copy run.bin an .hh3 to your calculator
+                            </h3>
+                            <p class="step-subtitle">
+                                Copy the run.bin file to the root of your calculator's
+                                storage. Also copy any hh3 games and python
+                                apps you want to run.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="step-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="30" viewBox="0 0 41 30" fill="none">
+                            <path
+                                d="M8.25 19C7.69772 19 7.25 19.4477 7.25 20C7.25 20.5523 7.69772 21 8.25 21V19ZM32.9571 20.7071C33.3476 20.3166 33.3476 19.6834 32.9571 19.2929L26.5931 12.9289C26.2026 12.5384 25.5695 12.5384 25.1789 12.9289C24.7884 13.3195 24.7884 13.9526 25.1789 14.3431L30.8358 20L25.1789 25.6569C24.7884 26.0474 24.7884 26.6805 25.1789 27.0711C25.5695 27.4616 26.2026 27.4616 26.5931 27.0711L32.9571 20.7071ZM8.25 21H32.25V19H8.25V21Z"
+                                fill="#D0DBE3"></path>
+                        </svg>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Launch Hollyhock</h3>
+                            <p class="step-subtitle">
+                                Go to the Main menu, select "System", open top left "System" menu, then "Hollyhock
+                                Launcher"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="step-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="30" viewBox="0 0 41 30" fill="none">
+                            <path
+                                d="M8.25 19C7.69772 19 7.25 19.4477 7.25 20C7.25 20.5523 7.69772 21 8.25 21V19ZM32.9571 20.7071C33.3476 20.3166 33.3476 19.6834 32.9571 19.2929L26.5931 12.9289C26.2026 12.5384 25.5695 12.5384 25.1789 12.9289C24.7884 13.3195 24.7884 13.9526 25.1789 14.3431L30.8358 20L25.1789 25.6569C24.7884 26.0474 24.7884 26.6805 25.1789 27.0711C25.5695 27.4616 26.2026 27.4616 26.5931 27.0711L32.9571 20.7071ZM8.25 21H32.25V19H8.25V21Z"
+                                fill="#D0DBE3"></path>
+                        </svg>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 class="step-title">Run your App</h3>
+                            <p class="step-subtitle">
+                                In the launcher, pick the app you want to run from the list
+                                and click "Run".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section" style="background: rgba(0, 0, 0, 0.2)">
+        <div class="container">
+            <div class="section-header scroll-anim-slide">
+                <h2 class="section-title">FEATURES</h2>
+                <p class="section-subtitle">
+                    Hollyhock-3 is a feature-rich launcher. Here are a few features.
+                </p>
+            </div>
+
+            <div class="features-layout">
+                <!-- Left Column -->
+                <div class="feature-column">
+                    <div class="feature-item feature-slide-left">
+                        <i class="fas fa-2x fa-rocket"></i>
+                        <div>
+                            <h5>Premade Apps</h5>
+                            <p>
+                                There are already some programs/games that you can just use
+                                without programming knowledge.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item feature-slide-left">
+                        <i class="fas fa-2x fa-flask"></i>
+                        <div>
+                            <h5>Experimental</h5>
+                            <p>
+                                You can write low level code, such as assembly if you wanted,
+                                giving you access to all the hardware in the ClassPad.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item feature-slide-left">
+                        <i class="fas fa-2x fa-tools"></i>
+                        <div>
+                            <h5>Utilities</h5>
+                            <p>
+                                There a some utilities to take a low level look at the
+                                ClassPad, such as a hex editor of the loaded memory - in real
+                                time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Image -->
+                <div class="features-center-img">
+                    <img src="https://res.cloudinary.com/s3ansh33p/image/upload/fl_lossy,f_auto/v1640786823/Classpad/classpadImg_shld8i.webp"
+                        alt="Classpad II fx-CP400" />
+                </div>
+
+                <!-- Right Column -->
+                <div class="feature-column">
+                    <div class="feature-item feature-slide-right">
+                        <i class="fas fa-2x fa-book"></i>
+                        <div>
+                            <h5>Documented</h5>
+                            <p>
+                                The launcher comes with example programs and documentation to
+                                get you started.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item feature-slide-right">
+                        <i class="fas fa-2x fa-bolt"></i>
+                        <div>
+                            <h5>Fast</h5>
+                            <p>
+                                Programs are compiled to either binary or .hhk which allows
+                                for greater performance compared to programs in CASIO basic.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-item feature-slide-right">
+                        <i class="fas fa-2x fa-magic"></i>
+                        <div>
+                            <h5>Easy to Use</h5>
+                            <p>
+                                Once installed, the launcher is intuitive and easy to
+                                navigate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Python Section -->
+    <section id="python" class="section">
+        <div class="container">
+            <div class="section-header scroll-anim-slide">
+                <h2 class="section-title">PYTHON ON CLASSPAD</h2>
+                <p class="section-subtitle">
+                    Unlock community-made games or write your own custom scripts.
+                </p>
+            </div>
+
+            <!-- Primary Big Cards -->
+            <div class="python-grid scroll-anim-slide">
+                <div class="python-card">
+                    <div style="color: var(--cp-accent); margin-bottom: 0.5rem">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" />
+                            <path d="M2 17L12 22L22 17" />
+                            <path d="M2 12L12 17L22 12" />
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.5rem">Explore Python Apps</h3>
+                    <p style="color: var(--cp-text); flex: 1">
+                        Download Python to unlock community-made games or write your own
+                        custom programs and scripts directly on your ClassPad II.
+                    </p>
+                    <a href="https://classpaddev.github.io/store/?type=py" class="btn btn-primary" target="_blank"
+                        style="align-self: flex-start">
+                        Explore Store
+                    </a>
+                </div>
+
+                <div class="python-card">
+                    <div style="color: var(--cp-accent); margin-bottom: 0.5rem">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        </svg>
+                    </div>
+                    <h3 style="font-size: 1.5rem">Learn Python Code</h3>
+                    <p style="color: var(--cp-text); flex: 1">
+                        Want to make your own apps? Check out our extensive Wiki
+                        documentation containing templates, APIs, and guides for
+                        developing Python on ClassPad.
+                    </p>
+                    <a href="https://classpaddev.github.io/wiki/python/introduction/" class="btn btn-secondary" target="_blank"
+                        style="align-self: flex-start">
+                        Read the Wiki
+                    </a>
+                </div>
+            </div>
+
+            <!-- Secondary Small Cards -->
+            <div class="python-small-grid scroll-anim-fade" style="margin-top: -1rem">
+                <div class="python-card python-card-small">
+                    <div>
+                        <h4 style="margin-bottom: 0.2rem">Install Python</h4>
+                        <p style="color: var(--cp-text); font-size: 0.85rem; margin: 0">
+                            Getting starter with Python for ClassPad
+                        </p>
+                    </div>
+                    <a href="https://classpaddev.github.io/python/" class="btn btn-secondary"
+                        style="padding: 0.5rem 1rem; font-size: 0.85rem" target="_blank">Download</a>
+                </div>
+                <div class="python-card python-card-small">
+                    <div>
+                        <h4 style="margin-bottom: 0.2rem">ClassPad Emulator</h4>
+                        <p style="color: var(--cp-text); font-size: 0.85rem; margin: 0">
+                            Test drawing code instantly
+                        </p>
+                    </div>
+                    <a href="https://classpaddev.github.io/python/classpad-emulator/" class="btn btn-secondary"
+                        style="padding: 0.5rem 1rem; font-size: 0.85rem" target="_blank">Try REPL</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord Section -->
+    <section id="discord" class="section" style="background: rgba(0, 0, 0, 0.2)">
+        <div class="container">
+            <div class="discord-container">
+                <div class="discord-content">
+                    <h2 id="discord-heading">JOIN THE DISCORD</h2>
+                    <div id="discord-text">
+                        <p>
+                            Looking for more? Join our Discord server! Whether you are new
+                            to modding / programming or an expert, we are sure you'll find
+                            something there that interests you. If you ever need help with
+                            installing, running or developing programs, we are here to help!
+                        </p>
+                        <a class="btn btn-primary" style="
+                  background: #5865f2;
+                  color: white;
+                  border: none;
+                  box-shadow: none;
+                " href="https://discord.gg/knpcNJTzpd" target="_blank" rel="noopener">
+                            <i class="fab fa-discord" style="margin-right: 0.5rem; font-size: 1.2rem"></i>
+                            DISCORD
+                        </a>
+                    </div>
+                </div>
+                <div class="discord-iframe">
+                    <iframe src="https://discord.com/widget?id=325688707300458496&theme=dark" width="100%" height="400"
+                        allowtransparency="true" frameborder="0"
+                        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" style="
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+              "></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section id="specs" class="section">
+        <div class="container">
+            <div class="section-header scroll-anim-slide">
+                <h2 class="section-title">SPECIFICATIONS</h2>
+                <p class="section-subtitle">
+                    Deep dive into the hardware details of the ClassPad fx-CP400.
+                </p>
+            </div>
+
+            <div class="text-center" style="margin-bottom: 3rem; text-align: center">
+                <img id="specs-img" style="max-width: 100%; height: auto; opacity: 0.2"
+                    src="https://res.cloudinary.com/s3ansh33p/image/upload/v1640806035/Classpad/cp_iso_exp_1_w9smal.svg"
+                    alt="Diagram of Classpad" />
+            </div>
+
+            <div class="specs-grid">
+                <!-- General Column -->
+                <div class="spec-category">
+                    <h2 class="spec-title">General</h2>
+
+                    <div class="spec-item spec-anim-target">
+                        <div class="spec-pictogram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 32">
+                                <path
+                                    d="M8 29h17v1H8zm8-25l10 10-10 10L6 14 16 4m0-1c-.3 0-.5.1-.7.3l-10 10c-.4.4-.4 1 0 1.4l10 10c.2.2.4.3.7.3s.5-.1.7-.3l10-10c.4-.4.4-1 0-1.4l-10-10c-.2-.2-.4-.3-.7-.3z">
+                                </path>
+                                <path
+                                    d="M5 14h22L16 24.8zm24 5s2.1 3 2.1 4.1c0 1-1 1.9-1.9 1.9-1.1 0-2.1-1-2.1-2s1.9-4 1.9-4z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="spec-data">
+                            <h4>Color</h4>
+                            <p>White</p>
+                        </div>
+                    </div>
+
+                    <div class="spec-item spec-anim-target">
+                        <div class="spec-pictogram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 32">
+                                <path d="M6 5.5L28.7 29H6V5.5M5 3v27h26L5 3z"></path>
+                                <path
+                                    d="M10 16.4l8.5 8.5H10v-8.5M9 14v12h12L9 14zM6 8h1v1H6zm0 2h1v1H6zm0 2h1v1H6zm0 2h1v1H6zm0 2h1v1H6zm0 2h1v1H6zm0 2h1v1H6zm0 2h1v1H6zm0 2h1v1H6zm12 2h1v1h-1zm-2 0h1v1h-1zm-2 0h1v1h-1zm-2 0h1v1h-1zm-2 0h1v1h-1zm-2 0h1v1H8zm16 0h1v1h-1zm-2 0h1v1h-1zm-2 0h1v1h-1z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="spec-data">
+                            <h4>Dimensions</h4>
+                            <p>20.6 × 8.9 × 2.11 cm</p>
+                        </div>
+                    </div>
+
+                    <div class="spec-item spec-anim-target">
+                        <div class="spec-pictogram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 32">
+                                <path d="M5 30h25l-4-16H9z"></path>
+                                <circle cx="17.5" cy="12.6" r="2.2"></circle>
+                                <circle class="stroked" cx="17.5" cy="8" r="5"></circle>
+                            </svg>
+                        </div>
+                        <div class="spec-data">
+                            <h4>Weight</h4>
+                            <p>315 grams</p>
+                        </div>
+                    </div>
+
+                    <div class="spec-item spec-anim-target">
+                        <div class="spec-pictogram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 32">
+                                <path
+                                    d="M17.5 4C23.8 4 29 9.2 29 15.5S23.8 27 17.5 27 6 21.8 6 15.5 11.2 4 17.5 4m0-1C10.6 3 5 8.6 5 15.5S10.6 28 17.5 28 30 22.4 30 15.5 24.4 3 17.5 3z">
+                                </path>
+                                <path
+                                    d="M20.9 18c-.2 1.7-1.7 3-3.4 3s-3.2-1.3-3.4-3H5.9s2.4 9.6 11.6 9.6S29.1 18 29.1 18h-8.2zm3.1-7l-4.8 3.6 1.2 1.2z">
+                                </path>
+                                <circle class="stroked" cx="17.5" cy="17.5" r="3.5"></circle>
+                            </svg>
+                        </div>
+                        <div class="spec-data">
+                            <h4>CPU</h4>
+                            <p>SuperH 4 (SH7305) processor</p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -204,31 +2120,38 @@
                                 </div>
                             </div>
 
-                            <div class="row g-4 mt-2">
-                                <div class="col-12 col-md-auto"><a class="btn btn-lg btn-xl btn-primary w-100 shadow"
-                                        href="#get-started" onclick='nav("get-started")'>Get Started</a></div>
-                                <div class="col-12 col-md-auto">
-                                    <div class="rounded"><a class="btn btn-lg btn-xl btn-outline-light w-100 text-light-dark"
-                                            href="#programs">View Programs</a></div>
-                                </div>
-                            </div>
+                    <div class="spec-item spec-anim-target">
+                        <div class="spec-pictogram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 32">
+                                <path
+                                    d="M25.8 7c.1 0 .2.1.2.2v17.5c0 .2-.1.3-.3.3H8.2c-.1 0-.2-.1-.2-.2V7.2c0-.1.1-.2.2-.2h17.6m0-1H8.2C7.6 6 7 6.6 7 7.2v17.5c0 .7.6 1.3 1.2 1.3h17.5c.7 0 1.2-.6 1.2-1.2V7.2c.1-.6-.5-1.2-1.1-1.2zM9 2h1v4H9zm3 0h1v4h-1zm3 0h1v4h-1zm3 0h1v4h-1zm3 0h1v4h-1zm3 0h1v4h-1zM9 26h1v4H9zm3 0h1v4h-1zm3 0h1v4h-1zm3 0h1v4h-1zm3 0h1v4h-1zm3 0h1v4h-1zm3-3h4v1h-4zm0-3h4v1h-4zm0-3h4v1h-4zm0-3h4v1h-4zm0-3h4v1h-4zm0-3h4v1h-4zM3 23h4v1H3zm0-3h4v1H3zm0-3h4v1H3zm0-3h4v1H3zm0-3h4v1H3zm0-3h4v1H3z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="spec-data">
+                            <h4>User Memory</h4>
+                            <p>512 KB</p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 mt-2">
-                        <div class="row justify-content-center">
-                            <div class="position-relative col-auto">
-                                <img class="position-absolute top-0 start-0 mt-n12 ms-n12" style="z-index: 1;"
-                                    src="img/cp.svg" alt="Classpad II">
-                                <img class="position-absolute bottom-0 end-0 me-n5 mb-n5" style="z-index: 1;"
-                                    src="flex-assets/elements/dots-blue.svg" alt="">
-                                <img class="position-relative img-fluid p-5 screenshot" id="screenshots" src="img/doom.png"
-                                    alt="Doom on the Classpad II">
-                            </div>
+
+                    <div class="spec-item spec-anim-target">
+                        <div class="spec-pictogram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 32">
+                                <path d="M25 11v11H15l-5-3v-5l5-3zM9 15h1v3H9zm-2 0h1v3H7zm-3 0h2v3H4zm21 1h6.2v1H25z">
+                                </path>
+                                <path d="M30.9 14.1V19H25v-4.9h5.9M32 13h-8v7h8v-7z"></path>
+                            </svg>
+                        </div>
+                        <div class="spec-data">
+                            <h4>Connector</h4>
+                            <p>USB Mini-B / 3pin cable (up to 115.2 kilobits/s)</p>
                         </div>
                     </div>
                 </div>
-            </div>
 
+                <!-- Screen & Battery Column -->
+                <div class="spec-category">
+                    <h2 class="spec-title">Screen</h2>
 
             <!--
             <div class="d-flex flex-column align-items-center text-center">
@@ -283,110 +2206,132 @@
                         <div class="col-2">
                             <i class="fas fa-2x fa-rocket"></i>
                         </div>
-                        <div class="col-10">
-                            <h5 class="font-weight-bold mb-3">Premade Apps</h5>
-                            <p class="grey-text">There are already some programs/games that you can just use without
-                                programming knowledge.</p>
+                        <div class="spec-data">
+                            <h4>Size</h4>
+                            <p>4.8-inch diagonal</p>
                         </div>
                     </div>
-                    <div class="row mb-3">
-                        <div class="col-2">
-                            <i class="fas fa-2x fa-flask"></i>
+
+                    <div class="spec-item spec-anim-target">
+                        <div class="spec-pictogram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 32">
+                                <path
+                                    d="M5 7h4v3H5zM10 7h4v3h-4zM15 7h4v3h-4zM20 7h4v3h-4zM25 7h4v3h-4zM5 11h4v3H5zM10 11h4v3h-4zM15 11h4v3h-4zM20 11h4v3h-4zM25 11h4v3h-4zM5 15h4v3H5zM10 15h4v3h-4zM15 15h4v3h-4zM20 15h4v3h-4zM25 15h4v3h-4zM5 19h4v3H5zM10 19h4v3h-4zM15 19h4v3h-4zM20 19h4v3h-4zM25 19h4v3h-4z">
+                                </path>
+                            </svg>
                         </div>
-                        <div class="col-10">
-                            <h5 class="font-weight-bold mb-3">Experimental</h5>
-                            <p class="grey-text">You can write low level code, such as assembly if you wanted,
-                                giving you access to all the hardware in the Classpad.</p>
-                        </div>
-                    </div>
-                    <div class="row mb-md-0 mb-3">
-                        <div class="col-2">
-                            <i class="fas fa-2x fa-tools"></i>
-                        </div>
-                        <div class="col-10">
-                            <h5 class="font-weight-bold mb-3">Utilities</h5>
-                            <p class="grey-text">There a some utilities to take a low level look at the Classpad, such
-                                as a hex editor of the loaded memory - in real time.</p>
+                        <div class="spec-data">
+                            <h4>Resolution</h4>
+                            <p>320 × 528</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <img class="img-fluid mb-5"
-                        src="https://res.cloudinary.com/s3ansh33p/image/upload/fl_lossy,f_auto/v1640786823/Classpad/classpadImg_shld8i.webp"
-                        alt="Classpad II fx-CP400">
-                </div>
-                <div class="col-md-4">
-                    <div class="row mb-3">
-                        <div class="col-2">
-                            <i class="fas fa-2x fa-book"></i>
+
+                    <div class="spec-item spec-anim-target">
+                        <div class="spec-pictogram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 32">
+                                <path d="M31 8v14H4V8h27m1-1H3v16h29V7zM9 25h17v1H9z"></path>
+                            </svg>
                         </div>
-                        <div class="col-10">
-                            <h5 class="font-weight-bold mb-3">Documented</h5>
-                            <p class="grey-text">The launcher comes with example programs and documentation to get you
-                                started.</p>
+                        <div class="spec-data">
+                            <h4>Type</h4>
+                            <p>TFT LCD</p>
                         </div>
                     </div>
-                    <div class="row mb-3">
-                        <div class="col-2">
-                            <i class="fas fa-2x fa-bolt"></i>
+
+                    <div class="spec-item spec-anim-target">
+                        <div class="spec-pictogram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 32">
+                                <path
+                                    d="M8 29h17v1H8zm8-25l10 10-10 10L6 14 16 4m0-1c-.3 0-.5.1-.7.3l-10 10c-.4.4-.4 1 0 1.4l10 10c.2.2.4.3.7.3s.5-.1.7-.3l10-10c.4-.4.4-1 0-1.4l-10-10c-.2-.2-.4-.3-.7-.3z">
+                                </path>
+                                <path
+                                    d="M5 14h22L16 24.8zm24 5s2.1 3 2.1 4.1c0 1-1 1.9-1.9 1.9-1.1 0-2.1-1-2.1-2s1.9-4 1.9-4z">
+                                </path>
+                            </svg>
                         </div>
-                        <div class="col-10">
-                            <h5 class="font-weight-bold mb-3">Fast</h5>
-                            <p class="grey-text">Programs are compiled to either binary or .hhk
-                                which allows for greater performance compared to programs in CASIO basic.</p>
+                        <div class="spec-data">
+                            <h4>Colors</h4>
+                            <p>65 536</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-2">
-                            <i class="fas fa-2x fa-magic"></i>
+
+                    <br />
+                    <h2 class="spec-title">Battery</h2>
+
+                    <div class="spec-item spec-anim-target">
+                        <div class="spec-pictogram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 32">
+                                <path
+                                    d="M6 8v15H4V8h2m1-1H3v17h4V7zm17 1v15H9V8h15m1-1H8v17h17V7zm4 1v4h2v7h-2v4h-2V8h2m1-1h-4v17h4v-4h2v-9h-2V7z">
+                                </path>
+                            </svg>
                         </div>
-                        <div class="col-10">
-                            <h5 class="font-weight-bold mb-3">Easy to Use</h5>
-                            <p class="grey-text mb-0">Once installed, the launcher is intuitive and easy to navigate.
-                            </p>
+                        <div class="spec-data">
+                            <h4>Power</h4>
+                            <p>4 AAA alkaline or nickel-metal hydride batteries</p>
+                        </div>
+                    </div>
+
+                    <div class="spec-item spec-anim-target">
+                        <div class="spec-pictogram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 32">
+                                <path
+                                    d="M17.5 4C23.8 4 29 9.2 29 15.5S23.8 27 17.5 27 6 21.8 6 15.5 11.2 4 17.5 4m0-1C10.6 3 5 8.6 5 15.5S10.6 28 17.5 28 30 22.4 30 15.5 24.4 3 17.5 3z">
+                                </path>
+                                <path d="M15 22l9-10h-5.9L24 6l-2.9-2.1-4.3-.7L13 15h5z"></path>
+                            </svg>
+                        </div>
+                        <div class="spec-data">
+                            <h4>Power Consumption</h4>
+                            <p>1.0 W - 100 hours in use<sup>1</sup></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Discord -->
-    <section class="position-relative overflow-hidden p-3 p-md-5 text-center d-md-flex flex-md-equal w-100 bg-dark"
-        id="discord">
-        <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden w-100 d-flex align-items-center">
-            <div class="my-3 py-3 row align-items-center">
-                <h2 class="display-5">JOIN THE DISCORD</h2>
-                <p class="lead">Looking for more? Join our Discord server! Whether you are new to modding / programming
-                    or an expert, we are
-                    sure you'll find something there that interests you. If you ever need help with installing, running
-                    or developing programs,
-                    we are here to help!</p>
-                <a class="btn btn-primary d-flex align-items-center justify-content-center"
-                    href="&#x68;&#x74;&#x74;&#x70;&#x73;&colon;&sol;&sol;&#x64;&#x69;&#x73;&#x63;&#x6f;&#x72;&#x64;&period;&#x67;&#x67;&sol;&#x6b;&#x6e;&#x70;&#x63;&#x4e;&#x4a;&#x54;&#x7a;&#x70;&#x64;"
-                    target="_blank" rel="noopener">
-                    <i class="fab fa-discord me-2 hover-white"></i>
-                    <span class="fw-bold">DISCORD</span>
-                </a>
+
+            <!-- Delayed fade for bottom text -->
+            <div id="specs-footer" style="
+            margin-top: 3rem;
+            color: var(--cp-text);
+            font-size: 0.8rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1rem;
+            opacity: 0;
+          ">
+                <p>
+                    1. Computed based on typical classroom usage (repeat of 1,2,3
+                    sequence below each hour):
+                </p>
+                <p style="padding-left: 1rem">
+                    1) Application Menu display for 5 minutes, start of display at
+                    "Medium" display brightness, dimmed automatically after 30 seconds.
+                </p>
+                <p style="padding-left: 1rem">
+                    2) Program application calculation for 5 minutes, "Medium" display
+                    brightness.
+                </p>
+                <p style="padding-left: 1rem">
+                    3) Program application display for 50 minutes, display brightness
+                    same as 1, above.
+                </p>
             </div>
         </div>
-        <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 text-center overflow-hidden w-100">
-            <iframe
-                src="&#x68;&#x74;&#x74;&#x70;&#x73;&colon;&sol;&sol;&#x64;&#x69;&#x73;&#x63;&#x6f;&#x72;&#x64;&period;&#x63;&#x6f;&#x6d;&sol;&#x77;&#x69;&#x64;&#x67;&#x65;&#x74;&quest;&#x69;&#x64;&equals;&#x33;&#x32;&#x35;&#x36;&#x38;&#x38;&#x37;&#x30;&#x37;&#x33;&#x30;&#x30;&#x34;&#x35;&#x38;&#x34;&#x39;&#x36;&amp;&#x61;&#x6d;&#x70;&semi;&#x74;&#x68;&#x65;&#x6d;&#x65;&equals;&#x64;&#x61;&#x72;&#x6b;"
-                width="100%" height="500" allowtransparency="true" frameborder="0"
-                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </section>
+
+    <!-- Programs Store Horizontal Scroll -->
+    <section id="programs" class="app-group-container">
+        <div class="app-sticky-wrapper">
+            <div class="section-header" style="margin-bottom: 2rem">
+                <h2 class="section-title">PROGRAMS</h2>
+                <p class="section-subtitle">
+                    Discover community-made programs and games for Hollyhock-3.
+                </p>
+            </div>
+            <div class="app-group" id="apps-container">
+                <!-- Apps rendered via JS -->
+            </div>
         </div>
     </section>
-    <div>
-        <!-- Specs -->
-        <section class="position-relative overflow-hidden p-3 p-md-5 text-center w-100" id="specs">
-            <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 my-3">
-                <h2 class="display-5">SPECIFICATIONS</h2>
-                <div>
-                    <div class="container text-center dimensions d-flex align-items-center justify-content-center my-4">
-                        <img width="640" height="333"
-                            src="https://res.cloudinary.com/s3ansh33p/image/upload/v1640806035/Classpad/cp_iso_exp_1_w9smal.svg"
-                            alt="Diagram of Classpad" style="filter: brightness(1.5);">
-                    </div>
 
                     <div class="features container svg-gray">
                         <div class="row">
@@ -606,662 +2551,717 @@
                         <hr>
                     </div>
 
-                    <div class="container">
-                        <h6>1. Computed based on typical classroom usage (repeat of 1,2,3 sequence below each hour):
-                        </h6>
-                        <h6>1) Application Menu display for 5 minutes, start of display at "Medium" display brightness,
-                            dimmed automatically after 30 seconds.</h6>
-                        <h6>2) Program application calculation for 5 minutes, "Medium" display brightness.</h6>
-                        <h6>3) Program application display for 50 minutes, display brightness same as 1, above.</h6>
-                    </div>
-                </div>
+            <div class="grid-no-hhk scroll-anim-fade" id="no-hhk-container">
+                <!-- rendered via JS -->
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Programs -->
-        <section class="position-relative d-md-flex flex-md-equal w-100 mb-5" id="programs">
-            <div class="mr-md-3 py-3 px-3 py-md-5 px-md-5 w-100 d-flex align-items-center">
-                <div class="my-3 py-3 row align-items-center">
-                    <h2 class="display-5">PROGRAMS</h2>
-                    <p class="lead">Below are some programs that have been developed for the Classpad II.</p>
-                    <!-- Will need to fix css -->
-                    <div class="d-flex align-items-center justify-content-center">
-                        <div id="table" style="max-width: 90vw;">
-                            <table class="table w-100 text-white">
-                                <tbody>
-                                    <tr>
-                                        <th class="text-white"> Name </th>
-                                        <th> Description </th>
-                                        <th> Author </th>
-                                        <th> Release Date </th>
-                                        <th> Format </th>
-                                        <th> Installation / Loader </th>
-                                        <th> Download </th>
-                                    </tr>
-                                    <tr>
-                                        <th> hollyhock-2 </th>
-                                        <th> The actual launcher needed to run all other programs and games. </th>
-                                        <th> The6P4C (and SnailMath) </th>
-                                        <th> July 2020 </th>
-                                        <th> .bin </th>
-                                        <th> OS update </th>
-                                        <th><a href="https://github.com/SnailMath/hollyhock-2/releases" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-
-
-                                    <tr>
-                                        <th colspan="7" class="text-white"><i>Games using hollyhock-2</i></th>
-                                    </tr>
-                                    <tr>
-                                        <th>Doom (CPDoom)</th>
-                                        <th>A Doom source port for the Classpad II (fx-CP400)</th>
-                                        <th>diddyholz</th>
-                                        <th>March 2024</th>
-                                        <th>.bin + assets</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/diddyholz/CPDoom" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>CPBoy</th>
-                                        <th>A Game Boy (DMG) emulator for the Classpad II (fx-CP400). Forked on <a
-                                                href="https://github.com/classpaddev/CPBoy" target="_blank"
-                                                rel="noopener">ClasspadDev GitHub</a> to automatically recompile using
-                                            GitHub actions if you just want the binary and don't want to build it
-                                            yourself.</th>
-                                        <th>diddyholz (and s3ansh33p)</th>
-                                        <th>Aug 2021</th>
-                                        <th>.bin</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/diddyholz/CPBoy" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <th>CP 3D CarGoWroom</th>
-                                        <th>3D racing game experiment using fixed point math</th>
-                                        <th>imHenry + community</th>
-                                        <th>2024</th>
-                                        <th>.bin + assets</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/ClasspadDev/CP-3D-CarGoWroom#readme" target="_blank"
-                                                rel="noopener">included</a></th>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <th>Tetris (CPoldTetris)</th>
-                                        <th>The very first game written by SnailMath</th>
-                                        <th>SnailMath</th>
-                                        <th>July 2020</th>
-                                        <th>.hhk / .bin</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/SnailMath/CPoldTetris/releases" target="_blank"
-                                                rel="noopener">included</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>Minesweeper / MineSnail</th>
-                                        <th>Just a Minesweeper clone for the fx-cp 400 by SnailMath</th>
-                                        <th>SnailMath</th>
-                                        <th>March 2021</th>
-                                        <th>.hhk</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/SnailMath/CPMineSnail/releases" target="_blank"
-                                                rel="noopener">included</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>Snake</th>
-                                        <th>Just a Snake clone.</th>
-                                        <th>The6P4C</th>
-                                        <th>Aug 2018</th>
-                                        <th>.hhk</th>
-                                        <th>hollyhock-2</th>
-                                        <th>included</th>
-                                    </tr>
-                                    <tr>
-                                        <th>CPsudoku</th>
-                                        <th>Just a Sudoku game for the fx-cp 400 by SnailMath. Want to solve sudokus?
-                                            Use this
-                                            program. Want to get sudokus solved for you? This program will work as well.
-                                            (The
-                                            solve function isn't completely working...)</th>
-                                        <th>SnailMath</th>
-                                        <th>Oct 2021</th>
-                                        <th>.bin / .elf</th>
-                                        <th>hollyhock-2 / Linux</th>
-                                        <th><a href="https://github.com/SnailMath/CPsudoku/releases" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>ponggers2</th>
-                                        <th>A pong game for the fx-cp 400 by InterChan, with AI opponent and with highly
-                                            advanced graphics (This led to the development of the hhk game engine, see
-                                            below.)
-                                        </th>
-                                        <th>InterChan374</th>
-                                        <th>Nov 2021</th>
-                                        <th>.bin / .hhk</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/InterChan374/ponggers2/releases" target="_blank"
-                                                rel="noopener">download</a>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th>CPpong</th>
-                                        <th>Just a simple 2 player Pong game for the fx-cp 400 by SnailMath</th>
-                                        <th>SnailMath</th>
-                                        <th>Sept 2021</th>
-                                        <th>.bin / .hhk / .elf</th>
-                                        <th>hollyhock-2 / Linux</th>
-                                        <th><a href="https://github.com/SnailMath/CPpong/releases" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>CP 3D render</th>
-                                        <th>Transform your ClassPad II into a mini 3D playground</th>
-                                        <th>imHenry</th>
-                                        <th>November 2023</th>
-                                        <th>.bin + assets</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/im-henri/CP_3D_render#readme" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>MineFX</th>
-                                        <th>MineFx is a Minecraft styled 3d isometric renderer</th>
-                                        <th>Adrian8115</th>
-                                        <th>February 2024</th>
-                                        <th>.bin + assets</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/Adrian8115/MineFX/" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-
-                                
-                                    
-                                    <tr>
-                                        <th>CPFlappyBird</th>
-                                        <th>A port of the famous Flappy Bird game for the fx-cp 400 by s3ansh33p.
-                                            Runs at about 20 FPS.</th>
-                                        <th>s3ansh33p</th>
-                                        <th>Jan 2022</th>
-                                        <th>.hhk</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/s3ansh33p/CPFlappyBird/releases" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-
-
-                                    <tr>
-                                        <th colspan="7" class="text-white"><i>Games and stuff WITHOUT hollyhock-2 - ON
-                                                AN
-                                                UNMODIFIED CALCULATOR</i></th>
-                                    </tr>
-                                    <tr>
-                                    </tr>
-                                    <tr>
-                                        <th>OldTicTacToe</th>
-                                        <th>Just a TicTacToe game for the fx-cp 400 by SnailMath. It runs in Casio
-                                            Basic, so you
-                                            don't even need to install hollyhock, this works on the Classpad II and the
-                                            old
-                                            classpad (with the monochrome screen.)</th>
-                                        <th>SnailMath</th>
-                                        <th>March 2021</th>
-                                        <th>.xcp</th>
-                                        <th>'Program' sub menu</th>
-                                        <th><a href="https://github.com/SnailMath/OldTicTacToe/releases" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>Undertale</th>
-                                        <th>This is a port of the dungeon game Undertale for the calculator, it uses
-                                            casio
-                                            basic, so hollyhock-2 is not needed. It uses images displayed as backgrounds
-                                            for the
-                                            map, so only the player needs to be displayed, making it playable even
-                                            though games
-                                            written in basic are slower than C games. Essentially a technical preview as
-                                            CASIO
-                                            basic files have a limit.</th>
-                                        <th>s3ansh33p aka mcgintygames</th>
-                                        <th>Dec 2011 / Oct 2019</th>
-                                        <th>.xcp</th>
-                                        <th>'Program' sub menu</th>
-                                        <th><a href="http://mcgintygames.epizy.com/undertale.html" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>txt2xcp</th>
-                                        <th>Just a program to convert text files to the .xcp format, no hollyhock
-                                            needed. Want
-                                            to read ebooks on your calculator?</th>
-                                        <th>SnailMath</th>
-                                        <th>Nov 2020</th>
-                                        <th>.elf / .exe</th>
-                                        <th>Linux / Windows</th>
-                                        <th><a href="https://github.com/SnailMath/txt2xcp/releases" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>txt2xcp (WEB)</th>
-                                        <th>Same as txt2xcp but in a web interface.</th>
-                                        <th>s3ansh33p</th>
-                                        <th>Nov 2021</th>
-                                        <th>.html / .js</th>
-                                        <th>Browser</th>
-                                        <th><a href="https://share.seanmcginty.space" target="_blank"
-                                                rel="noopener">view</a></th>
-                                    </tr>
-
-
-                                    <tr>
-                                        <th colspan="7" class="text-white"><i>Tools and stuff using hollyhock-2</i></th>
-                                    </tr>
-                                    <tr>
-                                    </tr>
-                                    <tr>
-                                        <th>CPvid</th>
-                                        <th>Just a video player for the fx-cp 400 by SnailMath... <a
-                                                href="https://www.youtube.com/playlist?list=PLs6QtoJvhXNpAhjGeDxilkRxTDBIs4jdQ">Watch
-                                                short videos on your calculator.</a> Even with sound, if you connect an
-                                            amplifier to the serial port... (NOT RECOMMENDED!!!)</th>
-                                        <th>SnailMath</th>
-                                        <th>Dec 2020 / Nov 2021</th>
-                                        <th>.bin</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/SnailMath/CPvid/releases" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>CPfilemgr</th>
-                                        <th>Just a file manager for the fx-cp 400 by SnailMath. View your .png and .jpg
-                                            images
-                                            on your calculator or play .wav files...</th>
-                                        <th>SnailMath</th>
-                                        <th>May 2021</th>
-                                        <th>.bin</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/SnailMath/CPfilemgr/releases" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>CPhexEditor</th>
-                                        <th>Just a hex editor for the fx-cp 400 by SnailMath. With this program, you can
-                                            peek
-                                            and poke the ram of the running calculator. (This can't be used to
-                                            circumvent exam
-                                            mode, because hollyhock-2 is disabled in exam mode.) You can use this to
-                                            access
-                                            hardware like the RTC, but for that, you can also use CPclock. (Poke at your
-                                            own
-                                            risk...)</th>
-                                        <th>SnailMath</th>
-                                        <th>Nov 2020</th>
-                                        <th>.hhk</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/SnailMath/CPhexEditor/releases" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>CPclock</th>
-                                        <th>Just a simple clock using the internal RTC for the fx-cp 400 by SnailMath.
-                                            You can
-                                            use this to set the time on the calc. (The clock is reset after the calc is
-                                            on
-                                            standby for a few minutes, so it isn't very useful...)</th>
-                                        <th>SnailMath</th>
-                                        <th>Jun 2021</th>
-                                        <th>.hhk</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/SnailMath/CPclock/releases" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>TarrasK</th>
-                                        <th>Reverse Engineering Toolkit, with disassembly features planned, aiming to
-                                            provide a
-                                            native toolset with GUI. Includes a software breakpoint manager, and
-                                            register dumping when the breakpoint is hit.
-                                        </th>
-                                        <th>TheRainboxPhoenix</th>
-                                        <th>Jan 2022</th>
-                                        <th>.bin / .hhk</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/TheRainbowPhoenix/TarrasK" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>CPShell</th>
-                                        <th>A calculator shell for the fx-cp 400 by s3ansh33p.
-                                            Includes basic commands like ls, cd, cat, echo and history, with more to be
-                                            added.
-                                            Also has a command to change date and time, config files, with plans for
-                                            memory tools.
-                                            Note that I recommend changing the structure of the calculator, which is
-                                            explained in the readme, though it is not required.
-                                            <a href="https://github.com/users/s3ansh33p/projects/3/views/9"
-                                                target="_blank" rel="noopener">More info</a>
-                                        </th>
-                                        <th>s3ansh33p</th>
-                                        <th>Jul 2022</th>
-                                        <th>.hhk</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/s3ansh33p/CPShell" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-
-
-                                    <tr>
-                                        <th colspan="7" class="text-white"><i>App templates and game engines for
-                                                hollyhock-2</i>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                    </tr>
-
-                                    
-                                    <tr>
-                                        <th>Online templates</th>
-                                        <th>A complete guide to get started</th>
-                                        <th>ClassPadDev team</th>
-                                        <th>2024</th>
-                                        <th>.bin / .hhk</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://classpaddev.github.io/wiki/getting-started/introduction/"
-                                                target="_blank" rel="noopener">read</a>
-                                        </th>
-                                    </tr>
-
-                                    <tr>
-                                        <th>app_template</th>
-                                        <th>An empty app as a base for your own creations</th>
-                                        <th>The6P4C and SnailMath</th>
-                                        <th>May 2021</th>
-                                        <th>.bin / .hhk</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/SnailMath/hollyhock-2/tree/master/app_template"
-                                                target="_blank" rel="noopener">download</a>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th>CPappTemplate</th>
-                                        <th>An empty app as a base for your own creations, can also be compiled for a pc
-                                            as a
-                                            quick way to test (Doesn't work currently, because I have problems with
-                                            X11...)</th>
-                                        <th>SnailMath</th>
-                                        <th>March 2021</th>
-                                        <th>.hhk / .elf</th>
-                                        <th>hollyhock-2 / Linux</th>
-                                        <th><a href="https://github.com/SnailMath/CPappTemplate" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    <tr>
-                                        <th>hhkEngine</th>
-                                        <th>Some kind of game engine for the Classpad, contains some kind of physics,
-                                            particles,
-                                            texture loading stuff, and more, similar to app_template, but much more
-                                            advanced.
-                                        </th>
-                                        <th>s3ansh33p (and InterChan374)</th>
-                                        <th>Dec 2021</th>
-                                        <th>.hhk</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/s3ansh33p/hhkEngine" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-
-                                    <tr>
-                                        <th>Newlib CP2</th>
-                                        <th>A newlib port for the Classpad II. Use this for stdlib support</th>
-                                        <th>diddyholz</th>
-                                        <th>March 2024</th>
-                                        <th>.bin</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/diddyholz/newlib-cp2" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-
-                                    <tr>
-                                        <th>CP_fixfloat_template</th>
-                                        <th>CP template with fixed point values (16.16)</th>
-                                        <th>imHenry</th>
-                                        <th>October 2023</th>
-                                        <th>.bin</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/im-henri/CP_fixfloat_template" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <th>CP-Raycaster-Demo</th>
-                                        <th>About
-                                            A very simple demo of a fixed-point raycaster for the fx-CP400 with texture and sprite support.</th>
-                                        <th>diddyholz</th>
-                                        <th>December 2022</th>
-                                        <th>.bin</th>
-                                        <th>hollyhock-2</th>
-                                        <th><a href="https://github.com/diddyholz/CP-Raycaster-Demo" target="_blank"
-                                                rel="noopener">download</a></th>
-                                    </tr>
-
-                                    <!--
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Just a --- for the fx-cp 400 by SnailMath</th>
-                                    <th>SnailMath</th>
-                                    <th>March 2021</th>
-                                    <th>.hhk</th>
-                                    <th>hollyhock-2</th>
-                                    <th><a href="https://github.com/SnailMath/CPMineSnail/releases" target="_blank" rel="noopener">download</a></th>
-                                </tr>
-                                -->
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+    <!-- Python Games Store Horizontal Scroll -->
+    <section id="python-games" class="app-group-container" style="background: rgba(0, 0, 0, 0.1)">
+        <div class="app-sticky-wrapper">
+            <div class="section-header" style="margin-bottom: 2rem">
+                <h2 class="section-title">PYTHON GAMES</h2>
+                <p class="section-subtitle">
+                    Games written entirely in Python, ready to play natively.
+                </p>
             </div>
-        </section>
-
-        <!-- Python Section -->
-        <section class="python-section">
-            <h2>ClassPad with Python 🐍</h2>
-            <p class="lead">It's finally time to break free from BASIC! Learn Python and build what you need, from educational tools to games. Creating amazing experiences has never been easier thanks to Python.</p>
-            <a href="/python" class="btn btn-primary btn-lg mt-3">Learn More About Python on ClassPad</a>
-        </section>
-
-        <!-- Footer-->
-        <footer class="py-5">
-            <div class="container px-4 px-lg-5">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                    <a class="navbar-brand text-white" onclick='nav("top")'>Classpad Dev</a>
-                </div>
-                <hr class="opacity-100 text-white" />
-                <div class="d-flex align-items-center">
-                    <p class="m-0 text-white me-auto">Made with ❤&#xFE0E; by Sean McGinty</p>
-                    <p class="m-0" id="updated">Last Updated: Loading...</p>
-                    <p>
-                        Content licensed 
-                        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
-                    </p>
-                </div>
-                <div class="d-flex align-items-center pt-3">
-                    <p class="m-0 text-muted me-auto small">Classpad-dev is a community project not affiliated with
-                        Casio. <br>
-                        The programs and other online content on Classpad-dev remain the property of their authors and
-                        may be subject to licenses or copyrights.<br>
-                        CASIO is a registered trademark of CASIO Computer Co., Ltd. in Japan.</p>
-                </div>
+            <div class="app-group" id="python-apps-container">
+                <!-- Apps rendered via JS -->
             </div>
-        </footer>
-    </div>
-    <!-- Libraries-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.1/js/OverlayScrollbars.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <!-- Core JS-->
-    <script type="text/javascript">
-        $(function () {
-            gsap.to('#loader', {
-                opacity: 0,
-                duration: 0.5,
-                ease: 'Power3.easeInOut'
-            })
-            setTimeout(() => {
-                $('#loader').remove()
-            }, 250);
-            // GSAP
-            gsap.from('header', {
-                opacity: 0,
-                duration: 1.5,
-                delay: 0.25,
-                ease: 'Power3.easeInOut'
-            })
+        </div>
+    </section>
 
+    <!-- Wiki Catch Banner -->
+    <section class="section">
+        <div class="container">
+            <div class="wiki-catch scroll-anim-slide">
+                <h2 style="
+              font-size: 2.5rem;
+              margin-bottom: 1rem;
+              text-transform: uppercase;
+            ">
+                    Want to make your own apps?
+                </h2>
+                <p style="
+              font-size: 1.2rem;
+              color: var(--cp-text);
+              margin-bottom: 2rem;
+              max-width: 600px;
+              margin-left: auto;
+              margin-right: auto;
+            ">
+                    We have extensive documentation, templates, and tools ready to help
+                    you write your first C/C++ or Python program for the ClassPad.
+                </p>
+                <a href="https://classpaddev.github.io/wiki/" class="btn btn-primary" target="_blank"
+                    style="padding: 1rem 2.5rem; font-size: 1.1rem">
+                    Check out the Wiki
+                </a>
+            </div>
+        </div>
+    </section>
 
-            scrollAnims();
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links" style="margin-bottom: 2rem">
+                <a href="#">Home</a>
+                <a href="https://classpaddev.github.io/store/">Store</a>
+                <a href="https://discord.gg/knpcNJTzpd" target="_blank">Discord</a>
+                <a href="https://github.com/classpaddev" target="_blank">GitHub</a>
+                <a href="https://classpaddev.github.io/wiki/" target="_blank">Wiki</a>
+            </div>
 
-            $.ajax({
-                url: 'https://api.github.com/repos/classpaddev/classpaddev.github.io',
-                dataType: 'json',
-                success: function (data) {
-                    $('#updated').text(`Last updated: ${new Date(data.updated_at).toUTCString()}`);
+            <p style="color: var(--cp-white); font-weight: bold">
+                ClassPad.Dev - Hollyhock for fx-CP400
+            </p>
+            <p class="copyright">
+                ClassPad.Dev is a community project not affiliated with Casio.<br />
+                Programs and content remain the property of their authors.<br />
+                CASIO is a registered trademark of CASIO Computer Co., Ltd. in Japan.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Motion One Animations & Logic -->
+    <script type="module">
+        import {
+            animate,
+            scroll,
+            inView,
+            stagger,
+        } from "https://cdn.jsdelivr.net/npm/motion@12.34.0/+esm";
+
+        // Mobile detection — used to skip heavy scroll-linked animations on small screens.
+        // Mobile already gets native overflow-x swipe carousels via CSS, so the
+        // scroll-jacking transform animations would just fight the user's swipe.
+        // The elements targeted by skipped animations have no inline opacity:0,
+        // so they remain visible by default.
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+        // 1. Progress Bar Scroll Animation (cheap, keep on mobile)
+        scroll(animate("#progress", { scaleX: [0, 1] }), {
+            offset: ["start start", "end end"],
+        });
+
+        // 2. Hero Sequential animations (one-time, keep on mobile)
+        animate(
+            ".hero-anim-elem",
+            { opacity: [0, 1], y: [30, 0] },
+            { duration: 0.8, delay: stagger(0.15) },
+        );
+
+        // 3. Get Started InView (one-shot triggers, keep on mobile)
+        inView(".gs-anim-target", (element) => {
+            animate(
+                element,
+                { opacity: [0, 1], x: [-100, 0] },
+                { duration: 0.9, easing: [0.17, 0.55, 0.55, 1] },
+            );
+            return () => animate(element, { opacity: 0, x: -100 });
+        });
+
+        inView(".gs-anim-fade", (element) => {
+            animate(element, { opacity: [0, 1] }, { duration: 1, delay: 0.3 });
+            return () => animate(element, { opacity: 0 });
+        });
+
+        // 4. Feature Cards sliding out from center (reversible)
+        //    Scroll-linked transform animation — skip on mobile for perf.
+        if (!isMobile) {
+            document.querySelectorAll(".feature-slide-left").forEach((card) => {
+                scroll(
+                    animate(card, {
+                        opacity: [0, 1],
+                        scale: [0.6, 1],
+                        x: [100, 0],
+                        y: [50, 0],
+                    }),
+                    { target: card, offset: ["start 90%", "start 40%"] },
+                );
+            });
+            document.querySelectorAll(".feature-slide-right").forEach((card) => {
+                scroll(
+                    animate(card, {
+                        opacity: [0, 1],
+                        scale: [0.6, 1],
+                        x: [-100, 0],
+                        y: [50, 0],
+                    }),
+                    { target: card, offset: ["start 90%", "start 40%"] },
+                );
+            });
+        }
+
+        // 5. Discord Animation Sequencing (White-space safe)
+        //    Char-by-char scroll animation creates ~16 spans each with their own
+        //    scroll-linked animation — skip on mobile for perf.
+        if (!isMobile) {
+            const heading = document.getElementById("discord-heading");
+            const headingText = heading.textContent;
+            heading.innerHTML = "";
+            headingText.split("").forEach((char, i) => {
+                const span = document.createElement("span");
+                span.innerHTML = char === " " ? "&nbsp;" : char;
+                span.style.opacity = 0;
+                span.style.display = "inline-block";
+                heading.appendChild(span);
+
+                scroll(animate(span, { opacity: [0, 1], y: [20, 0] }), {
+                    target: heading,
+                    offset: [`start ${80 - i * 1}%`, `start ${70 - i * 1}%`],
+                });
+            });
+            scroll(animate("#discord-text", { opacity: [0, 1], x: [-50, 0] }), {
+                target: document.querySelector(".discord-container"),
+                offset: ["start 65%", "start 40%"],
+            });
+            scroll(animate(".discord-iframe", { opacity: [0, 1], scale: [0.8, 1] }), {
+                target: document.querySelector(".discord-container"),
+                offset: ["start 45%", "start 25%"],
+            });
+        }
+
+        // 6. Specs icons & Neon Startup
+        //    Scroll-linked animations on every spec row — skip on mobile.
+        //    Neon-startup uses drop-shadow filter animation — heavy, skip on mobile.
+        if (!isMobile) {
+            document.querySelectorAll(".spec-anim-target").forEach((item) => {
+                scroll(animate(item, { opacity: [0, 1], x: [-30, 0] }), {
+                    target: item,
+                    offset: ["start 85%", "start 60%"],
+                });
+            });
+            document.querySelectorAll(".spec-title").forEach((item) => {
+                scroll(animate(item, { opacity: [0, 1] }), {
+                    target: item,
+                    offset: ["start 90%", "start 70%"],
+                });
+            });
+        }
+        inView("#specs-footer", (el) => {
+            animate(el, { opacity: [0, 1] }, { duration: 1, delay: 0.5 });
+            return () => animate(el, { opacity: 0 });
+        });
+
+        // Re-playable Neon Blink — skip on mobile (filter animation is GPU-heavy)
+        if (!isMobile) {
+            inView("#specs-img", (info) => {
+                const img = document.getElementById("specs-img");
+                // Force reflow to restart animation
+                img.classList.remove("neon-active");
+                void img.offsetWidth;
+                img.classList.add("neon-active");
+
+                return () => img.classList.remove("neon-active");
+            });
+        }
+
+        // 7. General slide up and fades (one-shot InView, keep on mobile)
+        document.querySelectorAll(".scroll-anim-slide").forEach((element) => {
+            element.style.opacity = 0;
+            inView(element, () => {
+                animate(
+                    element,
+                    { opacity: [0, 1], y: [50, 0] },
+                    { duration: 0.7, easing: "ease-out" },
+                );
+            });
+        });
+
+        document.querySelectorAll(".scroll-anim-fade").forEach((element) => {
+            element.style.opacity = 0;
+            inView(element, () => {
+                animate(
+                    element,
+                    { opacity: [0, 1] },
+                    { duration: 1, easing: "ease-in-out" },
+                );
+            });
+        });
+
+        // 8. Horizontal Scroll for App Gallery
+        setTimeout(() => {
+            // "How To Use" Image entrance
+            const htuImg = document.getElementById("htu-img");
+            if (htuImg) {
+                inView(htuImg, () => {
+                    htuImg.style.transform = "scale(1)";
+                });
+            }
+
+            // Slideshow logic for How To Use based on scroll
+            const htuSteps = document.querySelectorAll('#how-to-use .step');
+            const overlayImgs = document.querySelectorAll('.htu-overlay img');
+            let slideIndex = 0;
+            let autoSlideInterval = null;
+            let isUserScrolling = false;
+            let scrollTimeout = null;
+
+            const showSlide = (index) => {
+                overlayImgs.forEach(img => img.classList.remove('active'));
+                const targetImg = overlayImgs[index % overlayImgs.length];
+                if (targetImg) {
+                    targetImg.classList.add('active');
                 }
+            };
+
+            const startAutoSlide = () => {
+                if (autoSlideInterval) clearInterval(autoSlideInterval);
+                autoSlideInterval = setInterval(() => {
+                    if (!isUserScrolling) {
+                        slideIndex++;
+                        showSlide(slideIndex);
+
+                        // Check if we just showed the last slide in the set
+                        if ((slideIndex + 1) % overlayImgs.length === 0) {
+                            clearInterval(autoSlideInterval);
+                            setTimeout(startAutoSlide, 5000); // 5s pause after full loop
+                        }
+                    }
+                }, 4000); // 4s per slide
+            };
+
+            htuSteps.forEach((step, index) => {
+                inView(step, () => {
+                    isUserScrolling = true;
+                    if (scrollTimeout) clearTimeout(scrollTimeout);
+
+                    slideIndex = index;
+                    showSlide(slideIndex);
+
+                    // Resume auto-slideshow if no scroll-triggered changes for 4 seconds
+                    scrollTimeout = setTimeout(() => {
+                        isUserScrolling = false;
+                    }, 4000);
+                }, { amount: 0.5 });
             });
 
-        });
+            startAutoSlide();
 
-        // States
-        let states = [0, 0, 0, 0];
-        let loadState = [false, false, false, false];
+            // App gallery horizontal scroll-jacking — desktop only.
+            // On mobile, CSS converts .app-group into a native overflow-x swipe
+            // carousel with scroll-snap, so the Motion One transform animation
+            // would conflict with the user's swipe and cause jank.
+            if (!isMobile) {
+                const appGroup = document.getElementById("apps-container");
+                // Translate by the total width of the content, subtracting 100vw so the very end aligns perfectly with the right edge.
+                // This is completely decoupled from card numbers or sizes, and is fully responsive!
+                scroll(
+                    animate(appGroup, {
+                        transform: ["none", "translateX(calc(-100% + 100vw))"],
+                    }),
+                    { target: document.querySelector("#programs") },
+                );
 
-        // Direction Tracking
-        let lastScrollTop = 0;
-        let scrollingUp = false;
-
-        function scrollAnims() {
-            var st = $('.os-viewport')[0].scrollTop;
-            if (st > lastScrollTop) {
-                // downscroll code
-                scrollingUp = false;
-            } else {
-                // upscroll code
-                scrollingUp = true;
+                // Python Games Scroll
+                const pyAppGroup = document.getElementById("python-apps-container");
+                scroll(
+                    animate(pyAppGroup, {
+                        transform: ["none", "translateX(calc(-100% + 100vw))"],
+                    }),
+                    { target: document.getElementById("python-games") },
+                );
             }
-            lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+        }, 300);
+    </script>
 
-            const sections = document.querySelectorAll('section');
-            for (let i = 0; i < sections.length; i++) {
-                let dim = sections[i].getBoundingClientRect();
-                if (states[i] === 0 || !scrollingUp) {
-                    if (dim.y - window.innerHeight < 0 && dim.y > -window.innerHeight && !scrollingUp) {
-                        // console.log("Showing", sections[i].id)
-                        // console.log(dim.y-window.innerHeight) 
-                        sections[i].style.opacity = 1;
-                        if (!loadState[i]) {
-                            for (let j = 0; j < sections[i].children.length; j++) {
-                                sections[i].children[j].style.opacity = 1;
-                                gsap.from(sections[i].children[j], {
-                                    opacity: 0,
-                                    duration: 1.25,
-                                    ease: 'Power3.easeInOut'
-                                })
-                            }
-                            states[i] = 1;
-                            loadState[i] = true;
-                        }
-                    }
-                } else {
-                    if (dim.y - window.innerHeight > 0 && dim.y > -window.innerHeight) {
-                        states[i] = 0;
-                        // console.log("Reseting", sections[i].id)
-                        // console.log(dim.y-window.innerHeight) 
-                    } else if (dim.y - window.innerHeight > -200 && dim.y > -window.innerHeight && scrollingUp) {
-                        loadState[i] = false;
-                        if (states[i] !== 2) {
-                            // console.log(dim.y - window.innerHeight, sections[i].id)
-                            for (let j = 0; j < sections[i].children.length; j++) {
-                                gsap.to(sections[i].children[j], {
-                                    opacity: 0,
-                                    duration: 1.25,
-                                    ease: 'Power3.easeInOut'
-                                })
-                            }
-                            states[i] = 2;
-                            setTimeout(() => {
-                                if (states[i] !== 0) states[i] = 1;
-                            }, 1250);
-                        }
-                    }
-                }
+    <script>
+        // Wave Matrix Hex Ripple Background Effect ---
+        /* const canvas = document.getElementById('hero-canvas');
+          const ctx = canvas.getContext('2d');
+  
+          let width, height;
+          const resizeCanvas = () => {
+              width = canvas.width = window.innerWidth;
+              height = canvas.height = document.querySelector('.hero').offsetHeight;
+          };
+  
+          window.addEventListener('resize', resizeCanvas);
+          setTimeout(resizeCanvas, 0);
+  
+          const textToHex = "ClassPad.Dev - Unlock Your Classpad II Superpowers  ";
+          // Convert string to array of Hex strings like "43", "6C", "61"...
+          const hexChars = textToHex.split('').map(c => c.charCodeAt(0).toString(16).padStart(2, '0').toUpperCase());
+  
+          function drawWave() {
+              if (!width || !height) return requestAnimationFrame(drawWave);
+  
+              ctx.fillStyle = '#121415';
+              ctx.fillRect(0, 0, width, height);
+  
+              ctx.font = '14px monospace';
+              const time = Date.now() / 1000;
+  
+              const stepX = 28;
+              const stepY = 24;
+  
+              // Focus ripple on the center-right where the SVG is
+              const centerX = width * 0.75;
+              const centerY = height * 0.5;
+  
+              for (let x = 0; x < width; x += stepX) {
+                  for (let y = 0; y < height; y += stepY) {
+  
+                      // Stagger string characters diagonally
+                      const charIndex = (Math.floor(x / stepX) + Math.floor(y / stepY)) % hexChars.length;
+                      const staticChar = hexChars[charIndex];
+  
+                      // Circular ripple math
+                      const dist = Math.hypot(x - centerX, y - centerY);
+                      const speed = 3;
+                      const frequency = 0.015;
+                      const wave = Math.sin(dist * frequency - time * speed);
+  
+                      if (wave > 0.6) {
+                          ctx.fillStyle = `rgba(0, 220, 104, ${(wave - 0.6) * 2.5})`; // Max opacity ~1
+                      } else {
+                          ctx.fillStyle = `rgba(161, 161, 170, 0.05)`;
+                      }
+                      ctx.fillText(staticChar, x, y);
+                  }
+              }
+              requestAnimationFrame(drawWave);
+          }
+  
+          drawWave();
+          */
+
+        // High Performance CSS Mask Hex Background Generator ---
+        function initHexBackground() {
+            // Text to map into hex
+            const hexText = " ClassPad.Dev - Unlock Your Classpad II Superpowers ";
+
+            // Map string: " 43 6C 61 ..." ensuring leading and trailing spaces
+            const hexArr = hexText
+                .split("")
+                .map((c) =>
+                    c.charCodeAt(0).toString(16).padStart(2, "0").toUpperCase(),
+                );
+            const hexString = " " + hexArr.join(" ") + " ";
+
+            // Create a super long repeating string to ensure it wraps the SVG safely
+            const fullLine = hexString.repeat(20);
+
+            let svgLines = "";
+            for (let i = 0; i < 60; i++) {
+                // Offset each line by staggering characters (e.g. shift by 3 chars per line = 1 hex block + space)
+                const shift = (i * 3) % hexString.length;
+                const lineText = fullLine.substring(shift, shift + 300);
+                svgLines += `<text x="0" y="${i * 24}">${lineText}</text>`;
             }
+
+            const svg = `<svg width="2000" height="1500" xmlns="http://www.w3.org/2000/svg"><style>text{font-family:monospace;font-size:14px;font-weight:bold;fill:white;}</style>${svgLines}</svg>`;
+
+            // Encode pure ASCII text to base64 to assign as Mask Image
+            const b64 = btoa(svg);
+            const dataUrl = `url("data:image/svg+xml;base64,${b64}")`;
+
+            document.getElementById("hero-hex-base").style.maskImage = dataUrl;
+            document.getElementById("hero-hex-base").style.webkitMaskImage =
+                dataUrl;
+
+            document.getElementById("hero-hex-ripple").style.maskImage = dataUrl;
+            document.getElementById("hero-hex-ripple").style.webkitMaskImage =
+                dataUrl;
         }
 
-        // OverlayScroll
-        var instance = OverlayScrollbars(document.body, {
-            className: 'os-theme-light',
-            callbacks: {
-                onScroll: () => {
-                    scrollAnims()
-                }
-            },
-            overflowBehavior: {
-                x: "scroll",
-                y: "scroll"
-            }
+        // initHexBackground builds a 2000x1500 SVG with 60 text lines and base64-encodes it
+        // as a CSS mask. Skip on mobile — the masked elements are display:none anyway.
+        if (!window.matchMedia("(max-width: 768px)").matches) {
+            initHexBackground();
+        }
+
+        // Hero Image Carousel Logic ---
+        const images = [
+            "https://classpaddev.github.io/img/term.png",
+            "https://classpaddev.github.io/img/doom.png",
+            "https://classpaddev.github.io/img/gb.png",
+            "https://classpaddev.github.io/img/3drender.png",
+            "https://classpaddev.github.io/img/flappy.png",
+        ];
+        let currentIndex = 0;
+        const heroImg = document.getElementById("screenshots");
+
+        images.forEach((src) => {
+            const img = new Image();
+            img.src = src;
         });
 
-        // Table
-        OverlayScrollbars(document.getElementById("table"), {
-            className: 'os-theme-light',
-            overflowBehavior: {
-                x: "scroll",
-                y: "scroll-visible"
-            }
-        });
-
-        // Navigation
-        function nav(id) {
-            if (id === 'top') {
-                instance.scroll([0, 0], 500);
-            } else {
-                instance.scroll({
-                    el: document.getElementById(id),
-                    scroll: {
-                        y: "begin",
-                        x: "never"
-                    }
+        setInterval(() => {
+            if (heroImg) {
+                heroImg.style.opacity = 0;
+                setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    heroImg.src = images[currentIndex];
+                    heroImg.style.opacity = 1;
                 }, 500);
             }
+        }, 6000);
+
+        // Copy Install Command Logic ---
+        function copyCommand() {
+            const cmd = "irm https://get.classpad.dev/ | iex";
+
+            const textArea = document.createElement("textarea");
+            textArea.value = cmd;
+            document.body.appendChild(textArea);
+            textArea.select();
+
+            try {
+                document.execCommand("copy");
+                const copyText = document.getElementById("copy-text");
+                copyText.innerText = "Copied!";
+                setTimeout(() => {
+                    copyText.innerText = "Copy";
+                }, 2000);
+            } catch (err) {
+                console.error("Failed to copy", err);
+            }
+            document.body.removeChild(textArea);
         }
 
-        // Scrolling images
-        // Image URLs
-        var images = ["img/gb.png", "img/doom.png", "img/term.png", "img/3drender.png", "img/flappy.png"];
-        var currentIndex = 0;
+        // Store Data Definitions ---
+        const noHhkData = [
+            {
+                name: "OldTicTacToe",
+                author: "SnailMath",
+                format: ".xcp",
+                desc: "A TicTacToe game running purely in Casio Basic. Doesn't even need Hollyhock. Works on older monochrome models too.",
+                link: "https://github.com/SnailMath/OldTicTacToe/releases",
+                type: "Basic Program",
+            },
+            {
+                name: "Undertale Port",
+                author: "s3ansh33p",
+                format: ".xcp",
+                desc: "A dungeon game port for Casio Basic. Uses background images for maps so only the player is drawn, improving speed.",
+                link: "https://github.com/s3ansh33p/classpad-old-programs/tree/main/undertale",
+                type: "Basic Game",
+            },
+            {
+                name: "txt2xcp",
+                author: "SnailMath",
+                format: "PC Tool",
+                desc: "Convert text files to the native .xcp format from your PC. Read ebooks and notes directly on your unmodified calculator.",
+                link: "https://github.com/SnailMath/txt2xcp/releases",
+                type: "Desktop",
+            },
+            {
+                name: "txt2xcp (WEB)",
+                author: "s3ansh33p",
+                format: "Web Tool",
+                desc: "Same robust txt2xcp conversion tool, completely hosted inside a web interface for instant access everywhere.",
+                link: "https://s3ansh33p.github.io/ClasspadCompiler/website/",
+                type: "Browser",
+            },
+        ];
 
-        // Preload images
-        var preloadedImages = [];
-        images.forEach(function(imageUrl) {
-            var img = new Image();
-            img.src = imageUrl;
-            preloadedImages.push(img);
-        });
+        // Render Apps Function
+        async function renderApps() {
+            // Bypass data for local-only, featured, or pinned apps
+            const pythonBypass = [
+                {
+                    "name": "CED",
+                    "description": "Classpad Editor - A Python code editor for the calculator. Needs CInput.",
+                    "author": "Phoebe",
+                    "releaseDate": "2026-02-09",
+                    "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/ced_new.py",
+                    "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/master/ced_new.py",
+                    "image": "images/CED/cover.png",
+                    "tags": ["Utility", "Development"]
+                },
+                {
+                    "name": "HarmoniExtra",
+                    "description": "A music chord viewer for Classpad. Needs CInput.",
+                    "author": "Phoebe",
+                    "releaseDate": "2026-02-15",
+                    "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/HarmoniExtra.py",
+                    "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/master/HarmoniExtra.py",
+                    "image": "images/HarmoniExtra/cover.png",
+                    "tags": ["Utility", "Music", "Education"]
+                },
+                {
+                    "name": "CPaint",
+                    "description": "A paint program for Classpad. Needs cinput and cgui.",
+                    "author": "Phoebe",
+                    "releaseDate": "2026-02-14",
+                    "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/CPaint.md#cpaint",
+                    "download": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/releases/download/rolling-releases/cpaint-beta.zip",
+                    "image": "images/CPaint/cover.png",
+                    "tags": ["Utility", "Art", "Graphics", "Education"]
+                }
+            ];
 
-        // Function to change image
-        function changeImage() {
-            currentIndex = (currentIndex + 1) % images.length;
-            document.getElementById('screenshots').src = images[currentIndex];
+            // Helper to process, merge, and prioritize app lists
+            const processApps = (list, bypassList = [], limit = 10, forceTopIdOrName = null) => {
+                // Get top 10 from source first
+                let base = list.slice(0, limit);
+
+                // Add bypass apps to the end if they aren't already in the top 10
+                bypassList.forEach(b => {
+                    if (!base.find(m => m.name === b.name)) {
+                        base.push(b);
+                    }
+                });
+
+                // Move specific ID or Name to the very top (index 0)
+                if (forceTopIdOrName) {
+                    const idx = base.findIndex(a => a.name === forceTopIdOrName || a.id == forceTopIdOrName);
+                    if (idx > -1) {
+                        const [app] = base.splice(idx, 1);
+                        base.unshift(app);
+                    }
+                }
+                return base;
+            };
+
+            // Main HHk apps
+            const container = document.getElementById("apps-container");
+            try {
+                const response = await fetch('/store/meta.json');
+                const appsData = await response.json();
+
+                let html = "";
+                // Processed apps for HHk (Force CP Doom to top)
+                const hhkProcess = processApps(appsData, [], 10, "CP Doom");
+
+                hhkProcess.forEach((app) => {
+                    const tagsHtml = (app.tags || [])
+                        .map((t) => `<span class="app-tag">${t}</span>`)
+                        .join("");
+
+                    const bgPos = app.position ? `background-position: ${app.position};` : "";
+                    const downloadBtn = app.downloadUrl || app.link || app.download;
+                    const detailsBtn = app.detailsUrl || app.link || app.installation;
+
+                    html += `
+                        <div class="app-card">
+                            <div class="app-header">
+                                <span class="app-title">${app.name}</span>
+                                <span class="app-author">by ${app.author || 'Community'}</span>
+                            </div>
+                            <div class="app-body">
+                                 <div class="app-image" style="background-image: url('${app.image}'); ${bgPos}"></div>
+                                 <div class="app-details">
+                                    <div style="margin-bottom:0.5rem;">
+                                        ${tagsHtml}
+                                        <span class="app-tag" style="background: rgba(255,255,255,0.1); color: #aaa;">${app.format || '.hh3'}</span>
+                                    </div>
+                                    <p class="app-description">${app.description}</p>
+                                    <div class="app-actions">
+                                        <a href="${downloadBtn}" class="btn btn-primary app-btn" target="_blank">Download</a>
+                                        <a href="${detailsBtn}" class="btn btn-secondary app-btn" target="_blank">Details</a>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    `;
+                });
+                container.innerHTML = html;
+            } catch (err) {
+                console.error("Error fetching main apps:", err);
+            }
+
+            // Python apps - wrapped in 100vw slide blocks
+            const pyContainer = document.getElementById("python-apps-container");
+            try {
+                const response = await fetch('https://classpaddev.github.io/python/store/meta.json');
+                const pythonAppsData = await response.json();
+                const pythonBaseUrl = 'https://classpaddev.github.io/python/store/';
+
+                // Process Python list with bypass at the end
+                const pyProcess = processApps(pythonAppsData, pythonBypass, 10);
+
+                let pyHtml = "";
+                pyProcess.forEach((app) => {
+                    const tagsHtml = (app.tags || [])
+                        .map((t) => `<span class="app-tag">${t}</span>`)
+                        .join("");
+
+                    const imageUrl = app.image.startsWith('http') ? app.image : pythonBaseUrl + app.image;
+                    const detailsUrl = app.installation || app.download || app.detailsUrl;
+                    const downloadUrl = app.download || app.downloadUrl || app.link;
+
+                    pyHtml += `
+                        <div class="app-slide">
+                            <div class="app-card">
+                                <div class="app-header">
+                                    <span class="app-title">${app.name}</span>
+                                    <span class="app-author">by ${app.author || 'Community'}</span>
+                                </div>
+                                <div class="app-body">
+                                     <div class="app-image" style="background-image: url('${imageUrl}');"></div>
+                                     <div class="app-details">
+                                        <div style="margin-bottom:0.5rem;">
+                                            ${tagsHtml}
+                                            <span class="app-tag" style="background: rgba(255,255,255,0.1); color: #aaa;">Python</span>
+                                        </div>
+                                        <p class="app-description">${app.description}</p>
+                                        <div class="app-actions">
+                                            <a href="${downloadUrl}" class="btn btn-primary app-btn" target="_blank">Download</a>
+                                            <a href="${detailsUrl}" class="btn btn-secondary app-btn" target="_blank">Details</a>
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                // Add Explore More card
+                pyHtml += `
+                    <div class="app-slide">
+                        <div class="app-card explore-more">
+                            <div class="app-body" style="align-items: center; text-align: center; flex-direction: column; justify-content: center; gap: 1rem;">
+                                <div class="app-image" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; background: rgba(0, 220, 104, 0.1); border: 1px solid var(--cp-accent);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--cp-accent);">
+                                        <path d="M12 2L2 7L12 12L22 7L12 2Z"></path>
+                                        <path d="M2 17L12 22L22 17"></path>
+                                        <path d="M2 12L12 17L22 12"></path>
+                                    </svg>
+                                </div>
+                                <div class="app-details" style="align-items: center;">
+                                    <h3 class="app-title" style="margin-bottom: 0.5rem;">Explore Python Apps</h3>
+                                    <p class="app-description">Download Python to unlock community-made games or write your own custom programs and scripts on your ClassPad.</p>
+                                    <div class="app-actions" style="margin-top: 1.5rem;">
+                                        <a href="https://classpaddev.github.io/python/store/" class="btn btn-primary app-btn" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 -960 960 960" width="18" fill="currentColor" style="margin-right: 0.5rem;">
+                                                <path d="M160-120v-480l320-240 320 240v480H160Zm80-80h480v-360L480-740 240-560v360Zm160-40h160v-160H400v160Z"></path>
+                                            </svg>
+                                            Explore Store
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                pyContainer.innerHTML = pyHtml;
+            } catch (err) {
+                console.error("Error fetching python apps:", err);
+            }
+
+            // Non-HHk apps
+            const noHhkContainer = document.getElementById("no-hhk-container");
+            let noHhkHtml = "";
+            noHhkData.forEach((app) => {
+                noHhkHtml += `
+                    <div class="no-hhk-card">
+                        <h4>${app.name}</h4>
+                        <div class="meta">
+                            <span>by ${app.author}</span>
+                            <span style="color: var(--cp-accent);">${app.format}</span>
+                        </div>
+                        <p>${app.desc}</p>
+                        <a href="${app.link}" class="btn btn-secondary" style="padding: 0.5rem; font-size: 0.85rem;" target="_blank">View Project</a>
+                    </div>
+                `;
+            });
+            noHhkContainer.innerHTML = noHhkHtml;
         }
 
-        // Initial call
-        changeImage();
-
-        // Start slideshow
-        setInterval(changeImage, 10000); // Change image every 10 seconds
+        renderApps();
     </script>
 </body>
 
